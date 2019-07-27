@@ -1,6 +1,6 @@
 var pub_img_current_image;
 function backgroundImage() {
-    var pub_img_path = 'http://www.ruanyifeng.com/images_pub/';
+    var pub_img_path = 'https://linhaorong.top/images_pub/';
 
     var pub_img_num = 355;
 
