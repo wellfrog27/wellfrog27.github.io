@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>Debian - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/linux/process/job/"
+                                            title="Job">Job</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-13/"
+                                            title="科技爱好者周刊：第13期">科技爱好者周刊：第13期</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/process/job/" title="Job">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-13/" title="科技爱好者周刊：第13期">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">Debian</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2018-09-01&#32;00:00:00&#32;&#43;0000&#32;UTC>2018年9月1日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<p>1993 年8月16日，Ian Murdock 宣布 Debian 发行版诞生。这个名字来自他和妻子的姓名结合。</p>
+
+<p>Debian 是完全的自由软件。在开发哲学上，它比较保守，注重系统的稳定甚于功能。一般来说，它的稳定版里面的软件，会比最新版落后一到两年。这样避免了使用最新版，导致的各种 Bug 和系统不稳定。</p>
+
+<h2 id="分支">分支</h2>
+
+<p>Debian 总是同时至少维护三个版本：stable，testing和unstable。</p>
+
+<ul>
+<li>stable是最新的官方发行版，也是推荐安装的版本。目前是version 8，代码名jessie。该分支有backports服务，提供某些软件当前版本。</li>
+<li>testing是正在测试、将要成为stable的版本，会包含更新的软件。目前的testing版是sid。</li>
+<li>unstable是当前正在积极开发的，包含有最新的软件，但可能不稳定、并且有错误。</li>
+</ul>
+
+<p>其他分支还有：</p>
+
+<ul>
+<li>Oldstable是比Stable更老的版本，stable发布一年之内都会支持这个更老的版本。</li>
+<li>Experimental是暂保存实验性软件的分支。</li>
+</ul>
+
+<h2 id="版本名称">版本名称</h2>
+
+<p>Debian 每个版本的名字是以《玩具总动员》的人物命名的。</p>
+
+<ul>
+<li>1.1：Buzz</li>
+<li>1.2：Rex</li>
+<li>1.3：Bo</li>
+<li>2.0：Hamm</li>
+<li>2.1：Slink</li>
+<li>2.2：Potato</li>
+<li>3.0：Woody</li>
+<li>3.1：Sarge</li>
+<li>4.0：Etch</li>
+<li>5.0：Lenny</li>
+<li>6.0：Squeeze</li>
+<li>7.0：Wheezy</li>
+<li>8.0：Jessie</li>
+<li>9.0：Stretch</li>
+<li>10.0：Buster</li>
+<li>11.0：Bullseye</li>
+<li>12.0：Bookworm</li>
+</ul>
+
+<h2 id="apt">apt</h2>
+
+<p>apt是软件包管理工具，来自“A Package Tool”的缩写。</p>
+
+<h3 id="软件源">软件源</h3>
+
+<p>apt的源列表存放在<code>/etc/apt/sources.list</code>文件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">deb http://mirrors.163.com/debian/ unstable main contrib non-free
+deb-src http://mirrors.163.com/debian/ unstable main contrib non-free
+
+deb http://security.debian.org/ testing/updates main contrib non-free
+deb-src http://security.debian.org/ testing/updates main contrib non-free
+
+deb http://mirrors.163.com/debian/ testing-updates main
+deb-src http://mirrors.163.com/debian/ testing-updates main
+
+deb http://mirrors.163.com/debian/ testing-proposed-updates main contrib non-free
+deb http://mirrors.ustc.edu.cn/debian-security testing/updates main contrib non-free</code></pre></td></tr></table>
+</div>
+</div>
+<p>sources.list文件的每一行就是一个软件源。它的格式分成四个部分。</p>
+
+<ol>
+<li>deb或者deb-src（表示deb包或者源代码）。</li>
+<li>debian镜像的地址，标准的结构下这个地址目录下有dists、pool等子目录。</li>
+<li>第三部分为版本目录，即<code>http://mirrors.163.com/debian/dists/</code>下的子目录，我们要选择想要使用的版本，比如我们要用testing，则此部分为testing。注意Unstable和Sid是相同的，目前来说，Testing和Wheezy是相同的，Stable和Squeeze是相同的。</li>
+<li>第四部分为第三部分目录下的子文件夹，通常是main、contrib、non-free三个文件夹（ubuntu的命名与此不同），分别代表自由软件，半自由软件和非自由软件。通常我们将这三个都写上，以空格分开。</li>
+</ol>
+
+<h3 id="安装和卸载软件">安装和卸载软件</h3>
+
+<p>apt-get install命令用来安装软件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get remove [软件名]</code></pre></td></tr></table>
+</div>
+</div>
+<p>apt-get remove命令用来卸载软件（保留配置文件）。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get remove [软件名]</code></pre></td></tr></table>
+</div>
+</div>
+<p>apt-get purge用来彻底卸载软件（包括删除配置文件）。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get purge [软件名]</code></pre></td></tr></table>
+</div>
+</div>
+<p>apt-get dist-upgrade命令用于Debian系统版本的升级。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get dist-upgrade</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="升级">升级</h3>
+
+<p>apt-get update命令用来更新本地的软件信息库。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update</code></pre></td></tr></table>
+</div>
+</div>
+<p>升级单个软件，只要重新使用apt-get install即可。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install [软件名] </code></pre></td></tr></table>
+</div>
+</div>
+<p>apt-get upgrade命令升级所有本地已安装的软件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get upgrade </code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="搜索软件">搜索软件</h3>
+
+<p>apt-cache search命令用来搜索软件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ apt-cache search [搜索词] </code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="dpkg-软件包管理命令">dpkg：软件包管理命令</h2>
+
+<p>（1）安装软件包</p>
+
+<p>使用<code>dpkg -i</code>（表示install）命令，安装deb软件包。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dpkg -i &lt;package-file-name&gt;</code></pre></td></tr></table>
+</div>
+</div>
+<p>（2）查看软件包安装信息</p>
+
+<p>使用<code>dpkg -l</code>（表示list）命令，查看软件包的安装状态。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dpkg -l | grep <span style="color:#cd5555">&#39;tcl&#39;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>如果返回信息的最前面有<code>ii</code>两个字母，就表示已安装(installed ok installed）。</p>
+
+<p>所有已安装包的状态可在<code>/var/lib/dpkg/status</code>文件中查看。</p>
+
+<p>（3）删除软件包</p>
+
+<p>使用<code>dpkg -r</code>（表示remove）命令，删除软件包。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dpkg -r tcl8.4 </code></pre></td></tr></table>
+</div>
+</div>
+<p>这时再使用<code>dpkg -l</code>命令查看软件包信息，会发现软件包最前面的两个字母是<code>rc</code>，表示软件已经卸载，但还没有清除配置文件（removed ok config-files）。</p>
+
+<p>（4）删除软件包及其配置文件</p>
+
+<p>使用<code>dpkg -P</code>（表示purge）命令，彻底删除软件包。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dpkg -P tcl8.4 </code></pre></td></tr></table>
+</div>
+</div>
+<p>这时，再使用<code>dpkg -l</code>命令，查看已安装软件包，就会发现已经找不到该软件包了。</p>
+
+<h2 id="网络配置">网络配置</h2>
+
+<h3 id="网卡配置文件">网卡配置文件</h3>
+
+<p>/etc/network/interfaces是Debian的网卡配置文件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">auto eth0
+iface eth0 inet dhcp</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">iface eth0 inet static
+address <span style="color:#b452cd">192</span>.168.1.5
+netmask <span style="color:#b452cd">255</span>.255.255.0
+gateway <span style="color:#b452cd">192</span>.168.1.254</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="ifconfig">ifconfig</h3>
+
+<p>ifconfig命令用于提供网络各个端口的信息。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ifconfig</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面命令会提供ifconfig能够找到的所有网络端口的信息，一般会包括一个以太网网卡的物理网口，以及一个本机虚拟的回路（loopback）网口（供本机程序互相通信）。</p>
+
+<p>返回信息一般包括以下几个部分。</p>
+
+<ul>
+<li>Link encap：网络封装类型，一般是Ethernet或者Local Loopback。</li>
+<li>Hwaddr：网络接口的MAC地址。</li>
+<li>inet addr：网络接口的IP地址。</li>
+<li>Bcast：所在网络的广播地址。</li>
+<li>Mask：子网掩码</li>
+<li>MTU：最大传输单元（Maximum transmission unit），单个数据包（packet）的最大体积。</li>
+<li>RX：收到的包的统计。</li>
+<li>TC：发出的包的统计。</li>
+<li>collisions：发生包碰撞的次数。</li>
+<li>txqueuelen：传输队列的长度。</li>
+<li>RX bytes，TX bytes：该网络接口通过数据的统计。</li>
+</ul>
+
+<p>ifup命令和ifdown命令用于开启/关闭网络接口。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo ifdown eth0
+
+$ sudo ifup eth0</code></pre></td></tr></table>
+</div>
+</div>
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2018年9月1日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

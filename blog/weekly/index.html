@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel="alternate" type="application/rss+xml" href="https://wellfrog27.github.io/blog/weekly/index.xml" title="阮一峰的个人网站" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>分类：周刊 - 阮一峰的网络日志</title>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive two-columns">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+                <a href="/blog/weekly/index.xml" type="application/rss+xml" target="_blank" title="RSS订阅">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAUzSURBVHjavFdbbFRVFF3nPjoz7dTWTittaW0jUDRAUqaNojyqREnEQKgfUj9MqqAmhqRt/OCD4CuY+Kckoh+aiGKC+gMJbdHoRysJ8dkhhmJLNdDKtJU+6GMK87j3Hs85d2Z6HzNtMYWb3Dn3NWftvfba+5xNYDl+e6Fkj6yqb/oDRbWq14vlPBLRKCITkxf0ROLt+hNjp1PPSRK4kA3vF1dXNRcWlyA2OQU9eos9opAkAiKxD+XkKO6t15aRWO7J/MgmAZU8MEgexgZHMX518Dh72sYMmVKShnxWuWHdHtxKIDIYTgMuDzgfmSOIQkYMpdUF8OY92Hytt4/jvkg47czzU16iQovM3QFwmNck+Yyduu7D6NA0Z6JR4THntFs9V4tWQg6Ui3s6MwKDncsFTnXKLJhDSeUK3AgPtyhccDzmVs999buRt/1Vm4i0od+hX7+MRG87jPGB/w1u8FPj9xEw7McVrnYuOCvtpjTth3J/nTg99c8LRhKhr6D3dTB5R24bXFwbMXBsyZzeoXaycEpJ95TB09AGX/NpqLVNtw8urnVzLvHjFNxiFqRy2OOHuqUVnue+ACkoWzo4O6lGzTmuHq6nPvY2m9rVqjrIK2rMEKxqyG5NPAKt+wjo0LklgfNxJkZMA3KJvqRUk3z5UFY3QH14P0h+WUY79HPvgv7VuSg4ZRGY1YgZgqXmORccF17sy2ehnf9AeO085K2HQFbtXBScj0LcpgF2cN+WV+DZ/LJQu6gD4R7oV7pBJwbSgtMvfiPoVp56DySwxm7EtkMs1WdAB7qzggsDJKQYsHucSkOudrkiCPWR/fA2nYCn8SNIK4NptSMyAu3sAdDRkIsJdfth0LzSrODUoPNZ4KI9SxJI5UHk7D4GdQfz2us31c7CoHMjRkKuDPHseCMrONVhNcDJwMJpKFVvg9L4OaTiNWm1x789KCqkrXhVBiEz0WYCT2nAzQAD1/vaETv1GrRfP4Vx5cfMNcDPwvP0h0DhanPym7OIf/+O67vcJ1/PCJ4KgdzaUP6Wz+dU+5yIL6fV+PsHGAOdwlPpvvUOyeeAVGyCdqkDNB6DPjsBSrnndfOGevOh3RhGItxvA+fX1CtbGFhgYUFkFMZPR6F1HnClHq8HyubWtJexX06CRmdt33hrd7nA7SFY4qoGpnYuOKcRykPPgDCBcsHx9Iv+fNL2PueBehCWUfYQIIMGLOCcOmXDXsh1+yCt35tUPfvzGFuSvzvoinXOxqa02qOhM6733nVP2MAdaej2XN11DPKjLZCD+yBvahGCo7JfTKAN9UD7s8Oe9zUNIhz8fWI8DG2k38WCFdxugANcXrvTVd1IEbuv3Jour7Hzn7jLMBNfKs7R3i67gRVrbeCOEDhinmWhAatsqdquM2XzHZINhK2cqTjHr/XZdVJUbgN3MWAVXKbSyg9jesRW2xP9di+lwrL5ojM3m2H/kG9hwcIA37c71W6wJdW2J2S5nrjYbq/t1AHAhJsKQeyfPvf6IMJgghPJhFZ4x0KlfLFvt22du45Au/A1SOlGc0P672XXwhLtOcM0kTTEMMd0qkVmMNXxMd/tsedUjInr4SQDgOfeXMSiN0FCL5WHah4L1qqYXPJOJlttd+a5M+YpcG5poLYKQ5f+6JJ4r8bbJYP47hq4r7QAs9PjYNhHJd4o8l5taiwuOpa7AS4XKqI/5NjJbTnaWK92nLdLuhQAJayRNMiygXPBeQN+Qbvu0zDc3y+aUzhbkGR73sI7ljvUnndx2q3t+X8CDAD66FtrIL864AAAAABJRU5ErkJggg=="
+                        alt="" style="border: 0pt none;">
+                </a>
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div id="content">
+  <div id="content-inner">
+    <div id="alpha">
+      <div id="alpha-inner">
+        <h1 id="page-title" class="archive-title"><a href="/blog/archives/">分类</a>： 周刊 （共63文章）
+        </h1>
+        <div class="module-categories module">
+          <div class="module-content">
+            
+            <h3 style="font-size:2em;margin-top:1.5em;">2019年</h3>
+            <ul class="module-list">
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-1/">科技爱好者周刊：第1期</a><span class="RankBar"><span
+                    class="hint">（2019.07.25）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-41/">科技爱好者周刊：第41期</a><span class="RankBar"><span
+                    class="hint">（2019.07.08）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-37/">科技爱好者周刊：第37期</a><span class="RankBar"><span
+                    class="hint">（2019.06.30）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-59/">科技爱好者周刊：第59期</a><span class="RankBar"><span
+                    class="hint">（2019.06.17）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-3/">科技爱好者周刊：第3期</a><span class="RankBar"><span
+                    class="hint">（2019.05.17）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-23/">科技爱好者周刊：第23期</a><span class="RankBar"><span
+                    class="hint">（2019.04.01）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-40/">科技爱好者周刊：第40期</a><span class="RankBar"><span
+                    class="hint">（2019.03.27）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-10/">科技爱好者周刊：第10期</a><span class="RankBar"><span
+                    class="hint">（2019.02.08）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-28/">科技爱好者周刊：第28期</a><span class="RankBar"><span
+                    class="hint">（2019.01.10）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-15/">科技爱好者周刊：第15期</a><span class="RankBar"><span
+                    class="hint">（2019.01.04）</span></span>
+              </li>
+              
+            </ul>
+            
+            <h3 style="font-size:2em;margin-top:1.5em;">2018年</h3>
+            <ul class="module-list">
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-32/">科技爱好者周刊：第32期</a><span class="RankBar"><span
+                    class="hint">（2018.12.23）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-20/">科技爱好者周刊：第20期</a><span class="RankBar"><span
+                    class="hint">（2018.12.22）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-57/">科技爱好者周刊：第57期</a><span class="RankBar"><span
+                    class="hint">（2018.11.20）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-6/">科技爱好者周刊：第6期</a><span class="RankBar"><span
+                    class="hint">（2018.10.23）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-13/">科技爱好者周刊：第13期</a><span class="RankBar"><span
+                    class="hint">（2018.08.25）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-19/">科技爱好者周刊：第19期</a><span class="RankBar"><span
+                    class="hint">（2018.06.10）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-26/">科技爱好者周刊：第26期</a><span class="RankBar"><span
+                    class="hint">（2018.05.19）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-31/">科技爱好者周刊：第31期</a><span class="RankBar"><span
+                    class="hint">（2018.03.25）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-30/">科技爱好者周刊：第30期</a><span class="RankBar"><span
+                    class="hint">（2018.02.16）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-39/">科技爱好者周刊：第39期</a><span class="RankBar"><span
+                    class="hint">（2018.02.12）</span></span>
+              </li>
+              
+            </ul>
+            
+            <h3 style="font-size:2em;margin-top:1.5em;">2017年</h3>
+            <ul class="module-list">
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-42/">科技爱好者周刊：第42期</a><span class="RankBar"><span
+                    class="hint">（2017.12.08）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-46/">科技爱好者周刊：第46期</a><span class="RankBar"><span
+                    class="hint">（2017.10.11）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-60/">科技爱好者周刊：第60期</a><span class="RankBar"><span
+                    class="hint">（2017.09.08）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-55/">科技爱好者周刊：第55期</a><span class="RankBar"><span
+                    class="hint">（2017.09.02）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-29/">科技爱好者周刊：第29期</a><span class="RankBar"><span
+                    class="hint">（2017.08.21）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-56/">科技爱好者周刊：第56期</a><span class="RankBar"><span
+                    class="hint">（2017.07.16）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-22/">科技爱好者周刊：第22期</a><span class="RankBar"><span
+                    class="hint">（2017.07.12）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-52/">科技爱好者周刊：第52期</a><span class="RankBar"><span
+                    class="hint">（2017.07.07）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-53/">科技爱好者周刊：第53期</a><span class="RankBar"><span
+                    class="hint">（2017.06.18）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-48/">科技爱好者周刊：第48期</a><span class="RankBar"><span
+                    class="hint">（2017.05.17）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-36/">科技爱好者周刊：第36期</a><span class="RankBar"><span
+                    class="hint">（2017.04.20）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-4/">科技爱好者周刊：第4期</a><span class="RankBar"><span
+                    class="hint">（2017.03.09）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-49/">科技爱好者周刊：第49期</a><span class="RankBar"><span
+                    class="hint">（2017.02.13）</span></span>
+              </li>
+              
+            </ul>
+            
+            <h3 style="font-size:2em;margin-top:1.5em;">2016年</h3>
+            <ul class="module-list">
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-21/">科技爱好者周刊：第21期</a><span class="RankBar"><span
+                    class="hint">（2016.11.25）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-11/">科技爱好者周刊：第11期</a><span class="RankBar"><span
+                    class="hint">（2016.08.17）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-24/">科技爱好者周刊：第24期</a><span class="RankBar"><span
+                    class="hint">（2016.05.20）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-63/">科技爱好者周刊：第63期</a><span class="RankBar"><span
+                    class="hint">（2016.04.13）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-7/">科技爱好者周刊：第7期</a><span class="RankBar"><span
+                    class="hint">（2016.01.23）</span></span>
+              </li>
+              
+            </ul>
+            
+            <h3 style="font-size:2em;margin-top:1.5em;">2015年</h3>
+            <ul class="module-list">
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-34/">科技爱好者周刊：第34期</a><span class="RankBar"><span
+                    class="hint">（2015.12.07）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-12/">科技爱好者周刊：第12期</a><span class="RankBar"><span
+                    class="hint">（2015.11.16）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-2/">科技爱好者周刊：第2期</a><span class="RankBar"><span
+                    class="hint">（2015.11.10）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-18/">科技爱好者周刊：第18期</a><span class="RankBar"><span
+                    class="hint">（2015.10.24）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-58/">科技爱好者周刊：第58期</a><span class="RankBar"><span
+                    class="hint">（2015.10.06）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-25/">科技爱好者周刊：第25期</a><span class="RankBar"><span
+                    class="hint">（2015.09.30）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-62/">科技爱好者周刊：第62期</a><span class="RankBar"><span
+                    class="hint">（2015.08.28）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-8/">科技爱好者周刊：第8期</a><span class="RankBar"><span
+                    class="hint">（2015.06.19）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-50/">科技爱好者周刊：第50期</a><span class="RankBar"><span
+                    class="hint">（2015.03.02）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-61/">科技爱好者周刊：第61期</a><span class="RankBar"><span
+                    class="hint">（2015.02.12）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-45/">科技爱好者周刊：第45期</a><span class="RankBar"><span
+                    class="hint">（2015.02.02）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-38/">科技爱好者周刊：第38期</a><span class="RankBar"><span
+                    class="hint">（2015.01.30）</span></span>
+              </li>
+              
+            </ul>
+            
+            <h3 style="font-size:2em;margin-top:1.5em;">2014年</h3>
+            <ul class="module-list">
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-14/">科技爱好者周刊：第14期</a><span class="RankBar"><span
+                    class="hint">（2014.11.08）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-27/">科技爱好者周刊：第27期</a><span class="RankBar"><span
+                    class="hint">（2014.09.03）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-5/">科技爱好者周刊：第5期</a><span class="RankBar"><span
+                    class="hint">（2014.08.29）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-47/">科技爱好者周刊：第47期</a><span class="RankBar"><span
+                    class="hint">（2014.07.22）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-16/">科技爱好者周刊：第16期</a><span class="RankBar"><span
+                    class="hint">（2014.07.04）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-43/">科技爱好者周刊：第43期</a><span class="RankBar"><span
+                    class="hint">（2014.06.27）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-44/">科技爱好者周刊：第44期</a><span class="RankBar"><span
+                    class="hint">（2014.05.11）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-33/">科技爱好者周刊：第33期</a><span class="RankBar"><span
+                    class="hint">（2014.04.26）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-9/">科技爱好者周刊：第9期</a><span class="RankBar"><span
+                    class="hint">（2014.03.20）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-54/">科技爱好者周刊：第54期</a><span class="RankBar"><span
+                    class="hint">（2014.03.09）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-35/">科技爱好者周刊：第35期</a><span class="RankBar"><span
+                    class="hint">（2014.03.02）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-51/">科技爱好者周刊：第51期</a><span class="RankBar"><span
+                    class="hint">（2014.01.16）</span></span>
+              </li>
+              
+              <li class="module-list-item">
+                <a href="https://wellfrog27.github.io/blog/weekly/weekly-17/">科技爱好者周刊：第17期</a><span class="RankBar"><span
+                    class="hint">（2014.01.13）</span></span>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="beta">
+      <div id="beta-inner">
+        <div class="module-categories module">
+          <h2 class="module-header">分类</h2>
+          <div class="module-content">
+            <ul class="module-list">
+              
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/clang/"
+                  title="C语言">C语言</a>（10）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/docker/"
+                  title="Docker">Docker</a>（1）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/java/"
+                  title="Java">Java</a>（4）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/javascript/"
+                  title="Javascript">Javascript</a>（3）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/linux/"
+                  title="Linux">Linux</a>（46）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/nginx/"
+                  title="Nginx">Nginx</a>（8）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/vim/"
+                  title="Vim">Vim</a>（15）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/web/"
+                  title="Web开发">Web开发</a>（12）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/weekly/"
+                  title="周刊">周刊</a>（63）</li>
+              
+              <li class="module-list-item"><a href="https://wellfrog27.github.io/blog/database/"
+                  title="数据库">数据库</a>（1）</li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+        | <a href="/blog/weekly/index.xml" type="application/rss+xml" target="_blank" title="RSS订阅">RSS订阅</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

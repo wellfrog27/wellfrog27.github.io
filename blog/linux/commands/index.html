@@ -1,0 +1,1094 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>bash命令一览 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-10/"
+                                            title="科技爱好者周刊：第10期">科技爱好者周刊：第10期</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-28/"
+                                            title="科技爱好者周刊：第28期">科技爱好者周刊：第28期</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-10/" title="科技爱好者周刊：第10期">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-28/" title="科技爱好者周刊：第28期">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">bash命令一览</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2019-02-03&#32;00:00:00&#32;&#43;0000&#32;UTC>2019年2月3日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<h3 id="alias">alias</h3>
+
+<p><code>alias</code>用来为命令建立别名。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#658b00">alias</span> <span style="color:#00688b">cp</span>=<span style="color:#cd5555">&#34;cp -R&#34;</span>
+<span style="color:#658b00">alias</span> <span style="color:#00688b">mkdir</span>=<span style="color:#cd5555">&#34;mkdir -p&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>unalias</code>用来解除别名。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 列出现有别名</span>
+$ <span style="color:#658b00">alias</span> ls ll
+<span style="color:#658b00">alias</span> <span style="color:#00688b">ls</span>=<span style="color:#cd5555">&#39;ls --color=auto&#39;</span>
+<span style="color:#658b00">alias</span> <span style="color:#00688b">ll</span>=<span style="color:#cd5555">&#39;ls -l --color=auto&#39;</span>
+<span style="color:#228b22"># 增加一个别名</span>
+$ <span style="color:#658b00">alias</span> <span style="color:#00688b">llrt</span>=<span style="color:#cd5555">&#39;ls -lrt --color=auto&#39;</span>
+
+<span style="color:#228b22"># 解除别名</span>
+$ <span style="color:#658b00">unalias</span> llrt</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="bind">bind</h3>
+
+<p>显示可绑定的操作，以及已经绑定的快捷键。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">bind</span> -P</code></pre></td></tr></table>
+</div>
+</div>
+<p>显示可绑定的操作。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">bind</span> -l</code></pre></td></tr></table>
+</div>
+</div>
+<p>自定义绑定的键。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> .bash_profile (or, more accurately, in my global bash settings file) I use:
+<span style="color:#228b22"># make cursor jump over words</span>
+<span style="color:#658b00">bind</span> <span style="color:#cd5555">&#39;&#34;\e[5C&#34;: forward-word&#39;</span>    <span style="color:#228b22"># control+arrow_right</span>
+<span style="color:#658b00">bind</span> <span style="color:#cd5555">&#39;&#34;\e[5D&#34;: backward-word&#39;</span>   <span style="color:#228b22"># control+arrow_left</span>
+
+<span style="color:#228b22"># make history searchable by entering the beginning of command</span>
+<span style="color:#228b22"># and using up and down keys</span>
+<span style="color:#658b00">bind</span> <span style="color:#cd5555">&#39;&#34;\e[A&#34;: history-search-backward&#39;</span>  <span style="color:#228b22"># arrow_up</span>
+<span style="color:#658b00">bind</span> <span style="color:#cd5555">&#39;&#34;\e[B&#34;: history-search-forward&#39;</span>   <span style="color:#228b22"># arrow_down</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="cat">cat</h3>
+
+<p>cat命令用来将一个或多个文件的内容，显示在标准输出。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat file1 file2</code></pre></td></tr></table>
+</div>
+</div>
+<p>参数-n表示输出带行号。</p>
+
+<h3 id="chgrp">chgrp</h3>
+
+<p>chgrp命令改变文件的群组。</p>
+
+<h3 id="chmod">chmod</h3>
+
+<p>chmod命令用来改变文件的权限。</p>
+
+<p>用户类型</p>
+
+<ul>
+<li>u - user</li>
+<li>g - group</li>
+<li>a - all</li>
+</ul>
+
+<p>权限类型</p>
+
+<ul>
+<li>r - read</li>
+<li>w - write</li>
+
+<li><p>x - execute</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ chmod u+x myfile
+$ chmod g+rxw myfile
+$ chmod ga-wx myfile
+
+$ chmod <span style="color:#b452cd">777</span> myfile
+$ chmod <span style="color:#b452cd">755</span> myfile</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h3 id="chown">chown</h3>
+
+<p>chown命令改变文件的所有者。</p>
+
+<h3 id="command">command</h3>
+
+<p>有时候，脚本中有与系统命令同名的函数，<code>command</code>命令指定使用系统命令。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span><span style="color:#228b22"># Create a wrapper around the command ls</span>
+ls () {
+  <span style="color:#658b00">command</span> ls -lh
+}
+ls</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面代码中，如果函数<code>ls</code>里面，如果没有<code>command</code>命令，就会形成函数<code>ls</code>调用自身的无限循环。</p>
+
+<h3 id="cp">cp</h3>
+
+<p>cp命令用来复制文件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cp <span style="color:#658b00">source</span> target</code></pre></td></tr></table>
+</div>
+</div>
+<p>参数-R用来递归复制目录。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cp -R dir1 dir2</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="cut">cut</h3>
+
+<p>将字符串按照指定符号切分。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00688b">INPUT</span>=<span style="color:#cd5555">&#39;someletters_12345_moreleters.ext&#39;</span>
+<span style="color:#00688b">SUBSTRING</span>=<span style="color:#8b008b;font-weight:bold">$(</span><span style="color:#658b00">echo</span> <span style="color:#00688b">$INPUT</span>| cut -d<span style="color:#cd5555">&#39;_&#39;</span> -f <span style="color:#b452cd">2</span><span style="color:#8b008b;font-weight:bold">)</span>
+<span style="color:#228b22"># 输出12345</span>
+<span style="color:#658b00">echo</span> <span style="color:#00688b">$SUBSTRING</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="echo">echo</h3>
+
+<p>echo命令用于将参数显示在标准输出上。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">echo</span> joe
+joe
+$ <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;joe&#34;</span>
+joe</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面两个命令都将Joe显示在标准输出，引号（包括单引号）默认不起作用。</p>
+
+<p>如果要输出引号，需要用反斜杠转义。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">echo</span> <span style="color:#cd5555">\&#34;</span>joe<span style="color:#cd5555">\&#34;</span>
+<span style="color:#cd5555">&#34;joe&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>参数-e表示不输出换行符。</p>
+
+<p>参数-n表示解释特殊符号。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#658b00">echo</span> -e <span style="color:#cd5555">&#34;joe\tjoe\njoe&#34;</span>
+joe	joe
+joe</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="egrep">egrep</h3>
+
+<p>egrep命令与grep命令类似，但可以使用正则表达式。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ egrep <span style="color:#cd5555">&#34;apple|orange&#34;</span> myfile.txt</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="exit">exit</h3>
+
+<p>exit命令用来退出当前脚本。</p>
+
+<h3 id="export">export</h3>
+
+<p>export命令用于将脚本中的变量，输出到当前Shell。</p>
+
+<h3 id="fg">fg</h3>
+
+<p>fg命令将后台进程放到前台。</p>
+
+<h3 id="file">file</h3>
+
+<p>file命令用来查看文件类型。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ file Default.png
+Default.png: PNG image data, <span style="color:#b452cd">640</span> x <span style="color:#b452cd">1136</span>, <span style="color:#b452cd">8</span>-bit/color RGB, non-interlaced</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="find">find</h3>
+
+<p>find命令用来按照指定条件搜索文件或目录。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 格式</span>
+$ find where-to-look [what-to-do]
+
+<span style="color:#228b22"># -name 从当前目录中，按照文件名查找文件。</span>
+$ find . -name <span style="color:#cd5555">&#34;*.txt&#34;</span>
+
+<span style="color:#228b22"># -iname 文件名的大小写不敏感</span>
+$ find . -iname <span style="color:#cd5555">&#34;*.txt&#34;</span>
+
+<span style="color:#228b22"># -type 只查找文件，不查找目录。</span>
+<span style="color:#228b22"># f表示文件，d表示目录</span>
+$ find . -iname <span style="color:#cd5555">\*</span>book<span style="color:#cd5555">\*</span>.txt<span style="color:#cd5555">&#34; -type f
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555"># -maxdepth 查找当前目录及下面一层目录
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find . -maxdepth 2 -type d
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555"># -empty 搜索当前目录下的空目录
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find . -type d -empty
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555"># -size 当前目录下，大小在100K以上的文件
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find . -name &#34;</span>*.txt<span style="color:#cd5555">&#34; -size +100K
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555"># -size 当前目录下，大小在50K到100K以上的文件
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find . -size +50K -size -100K
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555"># -mtime 24小时内，修改过的文件
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find . -size +50K -size -100K -mtime 0
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555"># -delete 删除指定文件
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find . -name &#39;.DS_Store&#39; -type f -delete
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find . -name &#39;*.zip&#39; -type f -delete
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555"># -exec 执行其他命令
+</span><span style="color:#cd5555"></span>$<span style="color:#cd5555"> find ./docs -name &#39;*.md&#39; -exec grep &#39;static&#39; {} \;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>find命令默认搜索子目录。</p>
+
+<h3 id="grep">grep</h3>
+
+<p>grep命令用来在文件中搜索指定文本。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 输出指定文件中，包括关键字的行</span>
+$ grep apple myfile.txt
+
+<span style="color:#228b22"># -v 输出不包含搜索词的行</span>
+$ grep -v the tempfile
+
+<span style="color:#228b22"># -n 输出内容包括行号</span>
+$ grep -n apple myfile.txt
+
+<span style="color:#228b22"># -R 递归搜索指定目录及其子目录</span>
+$ grep apple -R .
+
+<span style="color:#228b22"># --exclude-dir  排除指定目录</span>
+$ grep apple --exclude-dir=<span style="color:#cd5555">&#34;spec&#34;</span>
+
+<span style="color:#228b22"># -E 使用正则搜索</span>
+$ grep -E <span style="color:#cd5555">&#34;apple|orange&#34;</span> -R .
+
+<span style="color:#228b22"># -C 显示上下文（指定上下的行数）</span>
+$ grep apple -R . -C <span style="color:#b452cd">1</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>参数-A表示显示搜索结果+后面（After）的行，参数-B表示显示搜索结果+前面（Before）的行，参数-C表示显示搜索结果+前后（Context）的行。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ grep -A1 apple myfile.txt  <span style="color:#228b22"># return lines with the match, as well as 1 after</span>
+$ grep -B2 apple myfile.txt  <span style="color:#228b22"># return lines with the match, as well as 2 before</span>
+$ grep -C3 apple myfile.txt  <span style="color:#228b22"># return lines with the match, as well as 3 before and after.</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>参数-c：输出匹配的行数。</p>
+
+<p>参数&ndash;color表示搜索结果高亮显示。</p>
+
+<p>参数-e表示正则搜索。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ grep -e apples? -r dir/</code></pre></td></tr></table>
+</div>
+</div>
+<p>参数&ndash;exclude-dir=dir指定搜索时排除在外的目录。</p>
+
+<p>参数-F表示对于使用字面量处理搜索字符，不将其当作正则。</p>
+
+<p>参数-h：在多文件搜索中，不输出文件名。</p>
+
+<p>参数-H表示同时输出文件名。</p>
+
+<p>参数-i表示搜索时忽略大小写。</p>
+
+<p>参数-I表示忽略二进制文件。</p>
+
+<p>参数-l（&ndash;files-with-matches）表示只输出文件名，不输出匹配的行。这能加快搜索速度，因为grep一旦在一个文件中找到第一个匹配的行，就不再向下搜索了。</p>
+
+<p>参数-L：输出不匹配的文件名。</p>
+
+<p>参数-P：表示可以使用正则表达式。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat login.txt | grep -P <span style="color:#cd5555">&#39;(?&lt;=abc)\s(?=def)&#39;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>参数-n表示搜索结果包含行号。</p>
+
+<p>参数-r表示递归搜索。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ grep -r <span style="color:#cd5555">&#39;string&#39;</span> dir/
+<span style="color:#228b22"># 如果不支持-r参数，可以用下面的命令</span>
+$ find dir/ -type f -exec grep -H <span style="color:#cd5555">&#39;string&#39;</span> {} +</code></pre></td></tr></table>
+</div>
+</div>
+<p>参数-v：显示所有不匹配该模式的行。</p>
+
+<h3 id="groups">groups</h3>
+
+<p>groups命令查看当前用户所属的群组。</p>
+
+<h3 id="head">head</h3>
+
+<p>head命令用来查看文件头部的内容。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ head myfile.txt      <span style="color:#228b22"># print the first 10 lines of the file</span>
+$ head -1 myfile.txt   <span style="color:#228b22"># print the first line of the file</span>
+$ head -50 myfile.txt  <span style="color:#228b22"># print the first 50 lines of the file</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>head命令可以查看多个文件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ head -2 hello.txt kitty.txt
+==&gt; hello.txt &lt;==
+hello
+<span style="color:#00688b">hello</span>
+
+==&gt; kitty.txt &lt;==
+kitty
+kitty</code></pre></td></tr></table>
+</div>
+</div>
+<p>查看所有文件的头部。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ head *</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="history">history</h3>
+
+<p>history命令显示了过去输入的500条命令。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">history</span>
+
+<span style="color:#228b22"># 执行特定编号的命令</span>
+$ !100
+
+<span style="color:#228b22"># 搜索某些命令</span>
+$ <span style="color:#658b00">history</span> | grep “BLOW”
+
+<span style="color:#228b22"># 分屏查看</span>
+$ <span style="color:#658b00">history</span> | less</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="locate">locate</h3>
+
+<p>locate 用来在整个文件系统（从根目录开始）搜索某个文件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ locate -i mybook</code></pre></td></tr></table>
+</div>
+</div>
+<p>locate命令区分大小写，i参数表示大小写不敏感。</p>
+
+<p>locate命令通过预先生成的数据库搜索，所以速度很快，缺点是搜索不到刚刚生成的文件。</p>
+
+<ul>
+<li>n 指定结果数，比如 n 10 表示只返回10条结果。</li>
+<li>r 进行正则搜索，将文件名解释为正则表达式。</li>
+</ul>
+
+<h3 id="mkdir">mkdir</h3>
+
+<p>mkdir命令用来新建目录。</p>
+
+<p>参数-p用来遇到已存在的目录时不报错。</p>
+
+<h3 id="nmap">nmap</h3>
+
+<p>nmap命令用于扫描网络端口。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ nmap <span style="color:#b452cd">192</span>.168.1.0/24</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面命令扫描本地网络254个IP地址，返回哪些IP地址是可以ping的，以及它们打开的端口是什么。</p>
+
+<h3 id="passwd">passwd</h3>
+
+<p>passwd命令用来改变密码。</p>
+
+<h3 id="ps">ps</h3>
+
+<p>ps命令显示进程信息。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ps -A   <span style="color:#228b22"># show all process info</span>
+$ ps -fA  <span style="color:#228b22"># show all process info (verbose)</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="pstree">pstree</h3>
+
+<p>pstree以树状形式显示进程树。</p>
+
+<h3 id="read">read</h3>
+
+<p>read命令将用户输入读入变量。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">read</span> x</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="rename">rename</h3>
+
+<p>为文件批量改名。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rename [-v -n -f] &lt;pcre&gt; &lt;files&gt;</code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>v 在标准输出显示改名过程</li>
+<li>n 模拟显示改名的结果，并不实际改名</li>
+<li>f 覆盖同名文件</li>
+
+<li><p><pcre> 代表Perl-compatible regular expression (PCRE)，即改名的正则表达式，形式为&rsquo;s/old-name/new-name/&rsquo;</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rename <span style="color:#cd5555">&#39;s/\.jpeg$/\.jpg/&#39;</span> *.jpeg
+
+<span style="color:#228b22"># 小写改成大写</span>
+$ rename <span style="color:#cd5555">&#39;y/A-Z/a-z/&#39;</span> *
+
+$ rename -v <span style="color:#cd5555">&#39;s/img_(\d{4})\.jpeg$/dan_$1\.jpg/&#39;</span> *.jpeg</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h3 id="rm">rm</h3>
+
+<p>rm命令用来删除文件或目录。</p>
+
+<p>参数-r表示递归删除。</p>
+
+<p>参数-f表示强制删除，即忽视警告。</p>
+
+<h3 id="sed">sed</h3>
+
+<p>sed命令主要用于文本替换和删除行。</p>
+
+<h3 id="source">source</h3>
+
+<p>Bash运行脚本文件，会新建一个Shell。它与原有Shell之间没有通信。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat ./test_src.sh
+<span style="color:#228b22">#!/usr/bin/env bash</span>
+
+<span style="color:#00688b">myvariable</span>=<span style="color:#b452cd">54</span>
+<span style="color:#658b00">echo</span> <span style="color:#00688b">$myvariable</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>在当前Shell运行上面的脚本，脚本中的变量便不存在了。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./test_src.sh
+<span style="color:#b452cd">54</span>
+$ <span style="color:#658b00">echo</span> <span style="color:#00688b">$myvariable</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>source命令就用来让脚本文件运行在当前Shell。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">source</span> ./test_src.sh
+<span style="color:#b452cd">54</span>
+$ <span style="color:#658b00">echo</span> <span style="color:#00688b">$myvariable</span>
+<span style="color:#b452cd">54</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>source命令可以用一个点代替。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ . ./test_src.sh
+<span style="color:#b452cd">54</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="tar">tar</h3>
+
+<p>tar命令用于将多个文件打包成一个文件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -c -f destination.tar file1.txt file2.txt file3.txt</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面代码中，c选项表示新建，f选项表示文件，目的文件destination实际上是f选项的参数。几乎所有的tar命令用法，都需要带有c和f两个参数。</p>
+
+<h3 id="tcpdump">tcpdump</h3>
+
+<p>tcpdump命令在链接层过滤每个网络数据包，能够网络上的所有通信。它是Berkeley Packet Filters的命令行界面。</p>
+
+<h3 id="top">top</h3>
+
+<p>top输出系统当前状态。</p>
+
+<h3 id="uname">uname</h3>
+
+<p><code>uname</code>命令输出当前操作系统的信息。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ uname
+Linux
+
+<span style="color:#228b22"># -a 参数输出详细信息</span>
+$ uname -a
+Linux myHost <span style="color:#b452cd">3</span>.16.0-4-amd64 <span style="color:#228b22">#1 SMP Debian 3.16.7-ckt11-1+deb8u6 (2015-11-09) x86_64 GNU/Linux</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="which">which</h3>
+
+<p>which命令输出当前shell命令对应的命令行程序。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ which bash
+/bin/bash</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="who">who</h3>
+
+<p>who命令显示当前登录的用户。</p>
+
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2019年2月3日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

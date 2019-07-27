@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/blog/linux/</link>
+    <description>Recent content in Linux on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    
+        <atom:link href="https://wellfrog27.github.io/blog/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fish Shell的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/shells/fish-shell/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/shells/fish-shell/</guid>
+      <description>prompt fish有一个函数fish_prompt，该函数的输出内容就是命令行提示符。 1 2 3 function fish_prompt echo &amp;#34;New Prompt % &amp;#34; end 可以将该文件存入设置目录，变成自动运行。 1 2 3 4 cat ~/.config/fish/functions/fish_prompt.fish function fish_prompt echo (pwd) &amp;#39;&amp;gt; &amp;#39; end 实例一。 1 2 3 4 5 6 function fish_prompt set_color $fish_color_cwd echo -n (prompt_pwd)</description>
+    </item>
+    
+    <item>
+      <title>SSH 端口转发</title>
+      <link>https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/</guid>
+      <description>对于开发者来说，ssh 是一个必备的工具，用来登录服务器。 但是，它还有一大用途，就是作为加密通信的中介，充当两台服务器之间的通信加密跳板。这个功能称为端口转发（port forwarding），又称 ssh 隧道</description>
+    </item>
+    
+    <item>
+      <title>Linux的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/</guid>
+      <description>权限 SUID：如果设置该权限，user的执行位从x变为s。它表示执行时，就拥有文件所有者的权限，比如所有者是root，则执行时其他用户也会拥有root的权限。该权限只对可执行文件有效，对目录设置该权限</description>
+    </item>
+    
+    <item>
+      <title>配置文件</title>
+      <link>https://wellfrog27.github.io/blog/linux/apache/config/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/apache/config/</guid>
+      <description>下面是一个典型的虚拟主机配置文件/etc/httpd/conf.d/example.com.conf。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 &amp;lt;VirtualHost *:80&amp;gt; ServerName example.com ServerAlias www.example.com ServerAdmin webmaster@example.com DocumentRoot /var/www/example.com/public_html &amp;lt;Directory /var/www/example.com/public_html&amp;gt; Options -Indexes +FollowSymLinks AllowOverride All &amp;lt;/Directory&amp;gt; ErrorLog /var/log/httpd/example.com-error.log CustomLog /var/log/httpd/example.com-access.log combined &amp;lt;/VirtualHost&amp;gt; ServerName: 域名 ServerAlias: 域名的别名 DocumentRoot: 网</description>
+    </item>
+    
+    <item>
+      <title>语言和区域设置</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/locale/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/locale/</guid>
+      <description>操作系统允许将语言、度量衡、时间格式等，按照不同的区域进行设置。 locale 命令 不带有任何参数时，locale命令显示当前设置。 1 $ locale 区域设置一般有以下几个属性。 LC_MESSAGES：系统消息的语言。 LC_R</description>
+    </item>
+    
+    <item>
+      <title>bash命令一览</title>
+      <link>https://wellfrog27.github.io/blog/linux/commands/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/commands/</guid>
+      <description>alias alias用来为命令建立别名。 1 2 alias cp=&amp;#34;cp -R&amp;#34; alias mkdir=&amp;#34;mkdir -p&amp;#34; unalias用来解除别名。 1 2 3 4 5 6 7 8 9 # 列出现有别名 $ alias ls ll alias ls=&amp;#39;ls --color=auto&amp;#39; alias ll=&amp;#39;ls -l --color=auto&amp;#39; # 增加一个别名 $ alias llrt=&amp;#39;ls -lrt --color=auto&amp;#39; # 解除别名 $ unalias llrt bind 显示可绑定的操作，以及已经绑</description>
+    </item>
+    
+    <item>
+      <title>IP 地址</title>
+      <link>https://wellfrog27.github.io/blog/linux/network/ip/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/network/ip/</guid>
+      <description>Linux有以下工具，可以查看网络接口。 ip：显示和操作路由 netstat：显示网络连接、路由表等。 ifconfig：展示和配置网络接口 1 2 # 列出所有正在使用的IPv4连接 $ lsof -Pnl +M -i4 whois 命令 whois命</description>
+    </item>
+    
+    <item>
+      <title>Job</title>
+      <link>https://wellfrog27.github.io/blog/linux/process/job/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/process/job/</guid>
+      <description>Linux 的运行程序运行分为前台和后台。程序可以在前台运行，也可以在后台运行。它们的区别在于，前台运行的时候，程序会独占命令行窗口，无法再使用当前命令行窗口做其他事情；后台运行不会占用命令行窗口，但是程序的结</description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/debian/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/debian/</guid>
+      <description>1993 年8月16日，Ian Murdock 宣布 Debian 发行版诞生。这个名字来自他和妻子的姓名结合。 Debian 是完全的自由软件。在开发哲学上，它比较保守，注重系统的稳定甚于功能。一般来说，它的稳定版里面的软件，会比最新版落后一到两年。</description>
+    </item>
+    
+    <item>
+      <title>Linux的应用工具</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/tool/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/tool/</guid>
+      <description>PdfTk PdfTk用于修改PDF文件。 1 2 # 合并两个PDF $ pdftk input1.pdf input2.pdf cat output output.pdf ffmpeg ffmpeg用于音频和视频的操作。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 查看多媒体文件信息 $ ffprobe &amp;lt;inputFile&amp;gt; # 切割出一个片段 $ ffmpeg -ss &amp;lt;startTime #00:00:50&amp;gt; -i example -t &amp;lt;length #00:00:20&amp;gt; -vcodec</description>
+    </item>
+    
+    <item>
+      <title>时间管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/time/</link>
+      <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/time/</guid>
+      <description>timedatectl 命令 timedatectl命令用来控制系统的时间和日期。 不使用任何参数时，会显示当前的时间和日期。 1 2 3 4 5 6 7 8 9 $ timedatectl Local time: Wed 2017-11-15 15:58:33 UTC Universal time: Wed 2017-11-15 15:58:33 UTC RTC time: Wed 2017-11-15 15:58:32 Time zone: UTC (UTC, +0000) NTP enabled: yes NTP synchronized: yes RTC in local TZ: no DST active: n/a 上面字</description>
+    </item>
+    
+    <item>
+      <title>Linux常用操作</title>
+      <link>https://wellfrog27.github.io/blog/linux/operations/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/operations/</guid>
+      <description>用户操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 列出当前用户 $ whoami # 列出所有用户 $ sudo cat /etc/shadow # 列出所有用户的密码 $ sudo cat /etc/passwd # 创建用户 $ sudo useradd [用户名] # 为用户设置密码。 $ sudo passwd [用户名] 组操作 （1）显示当前用户所在的组 1 $</description>
+    </item>
+    
+    <item>
+      <title>bzip2</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/bzip2/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/bzip2/</guid>
+      <description>bzip2用于将文件压缩成bz2格式。 基本用法 1 2 3 4 5 6 7 8 9 10 11 12 # 格式 $ bzip2 [OPTIONS] filenames ... # 压缩单个文件 $ bzip2 list.txt # 压缩多个文件 # 下面的命令会产生三个 bz2 文件 $ bzip2 list.txt list1.txt list2.txt # 解压 $ bzip2 -d list.txt.bz2 注意，bzip2默认会在压缩</description>
+    </item>
+    
+    <item>
+      <title>Group</title>
+      <link>https://wellfrog27.github.io/blog/linux/account/group/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/account/group/</guid>
+      <description>一个用户可以属于多个组（group）。组的最大作用就是，同组的成员可以共享组权限。 Linux 的组分成两类。 主要组（primary group）。用户创建文件的时候，文件所在的组就是用户的主要组。大多数情况下，用</description>
+    </item>
+    
+    <item>
+      <title>终止进程</title>
+      <link>https://wellfrog27.github.io/blog/linux/process/kill/</link>
+      <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/process/kill/</guid>
+      <description>概述 如果进程失去响应，这时可以手动终止该进程。 kill和killall是清除进程的两个命令。它们的区别是，killall根据名称终止进程，kill根据进程号（PID）终止进程。注意，用户只能终止自己的</description>
+    </item>
+    
+    <item>
+      <title>帮助</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/help/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/help/</guid>
+      <description>manpath 命令 manpath命令显示帮助文件所在的路径。 1 2 $ manpath /usr/local/man:/usr/local/share/man:/usr/share/man 输出结果中，不同路径之间使用冒号分隔。 -d参数可以显示路径的详细信息。 1 $ manpath -d</description>
+    </item>
+    
+    <item>
+      <title>zsh的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/shells/zsh/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/shells/zsh/</guid>
+      <description>特点 补全文件名，可以在列出的文件名清单中选择。 自动从history中适配与已输入的部分吻合的前次命令。 多个活动shell共享history 自动将环境变量替换成值 自动将kill命令的参数，在ps ax中搜</description>
+    </item>
+    
+    <item>
+      <title>Shadowsocks的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/shadowsocks/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/shadowsocks/</guid>
+      <description>Shadowsocks简称SS，是轻量代理应用服务端。在VPS上搭建SS服务端，可支持在android、iPhone、window、macos多平台上使用。 Linux 环境安装客户端 1 $ sudo pip install shadowsocks 启动客户端。 1 2</description>
+    </item>
+    
+    <item>
+      <title>xMonad的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/xmonad/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/xmonad/</guid>
+      <description>xMonad是一款平铺式窗口管理器（Tiling window manager），即能够以一定顺序，自动将多个应用程序窗口平铺放置在桌面上。 xfce4 xMonad 一般与桌面环境 XFCE 配合使用。执行下面的命令，安装 XFCE。 1 2 $ sudo apt-get install xfce4</description>
+    </item>
+    
+    <item>
+      <title>Screen</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/screen/</link>
+      <pubDate>Fri, 03 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/screen/</guid>
+      <description>Screen 是一个对话（session）管理器。它允许多个用户共享一个 session，也可以下次登录时回到上次的 session。 1 2 3 4 5 # 新建 session $ screen -S foobar # 同一个用户在其他终端，进入这个 session $ screen -x foobar</description>
+    </item>
+    
+    <item>
+      <title>用户管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/account/user/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/account/user/</guid>
+      <description>Linux系统的用户管理，主要用到以下命令。 useradd 增加新用户 usermod 修改现有用户 userdel 删除指定用户 passwd 为用户指定密码 chage 查看或修改用户密码的过期信息 在登录后，新 shell 进程会使用您的用户和组 ID 来运行。这些是控制您对系统上任何</description>
+    </item>
+    
+    <item>
+      <title>bash的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/bash/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/bash/</guid>
+      <description>Bash环境之中，用户配置文件位于主目录的~/.bashrc和~/.profile文件。这些配置文件会在用户登录时加载。 修改后，下面的命令可以让修改立刻生效。 1 $ source ~/bash_profile chsh命令可以切换shell。 1</description>
+    </item>
+    
+    <item>
+      <title>显示</title>
+      <link>https://wellfrog27.github.io/blog/linux/hardware/display/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/hardware/display/</guid>
+      <description>Display Manager Display Manager（显示管理器）是从命令行启动图形界面的引导器和管理器。它包含图形登录界面。 下面的命令用来查看本机的 Display Manager。 1 $ cat /etc/X11/default-display-manager 截图 PrtSc – Save a screenshot of the entire screen to the “Pictures” directory. Shift + PrtSc –</description>
+    </item>
+    
+    <item>
+      <title>端口</title>
+      <link>https://wellfrog27.github.io/blog/linux/network/port/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/network/port/</guid>
+      <description>端口（port）是网络通信的一种机制，用于将网络数据分配到指定的软件，供 TCP 和 UDP 协议使用。端口号是一个16位整数，从0到65535。 下面的命令可以查看已经定义用途的端口。 1 $ less /etc/services 端口号可以分成三段。 0～</description>
+    </item>
+    
+    <item>
+      <title>文件管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/general/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/general/</guid>
+      <description>file 命令 file命令用来查看文件类型。 1 2 $ file /etc /etc: directory 上面命令显示/etc是一个目录。 -f参数用于查询一个文件里面的多个路径的类型（每行一个文件）。 1 $ file -f files.list -s参数读取块文件或者字符文件。 1 2 $ file -s /dev/sda /dev/sda:</description>
+    </item>
+    
+    <item>
+      <title>Stream的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/stream/</link>
+      <pubDate>Thu, 25 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/stream/</guid>
+      <description>Bash接收输入和输出，是字符串的流（stream）形式完成的。这些流可以导向文件，或者导向另一个流。 Shell默认会打开三个文件。 文件0：名为stdin，标准输入 文件1：名为stdout，标准输出 文</description>
+    </item>
+    
+    <item>
+      <title>SSH 的配置</title>
+      <link>https://wellfrog27.github.io/blog/linux/ssh/configuration/</link>
+      <pubDate>Fri, 12 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/ssh/configuration/</guid>
+      <description>SSH 的配置文件是/etc/ssh/sshd_config（服务端）和/etc/ssh/ssh_config（客户端），用户个人的配置文件在~/.ssh/config，下面是一个例子。 1 2 3 4 5 6 7 8 Host *</description>
+    </item>
+    
+    <item>
+      <title>pgrep</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/pgrep/</link>
+      <pubDate>Thu, 07 Jan 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/pgrep/</guid>
+      <description>pgrep用于从应用名搜索进程，返回相关进程的进程号。 1 2 3 4 $ pgrep nginx 1110 1112 19789</description>
+    </item>
+    
+    <item>
+      <title>Bash脚本</title>
+      <link>https://wellfrog27.github.io/blog/linux/script/</link>
+      <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/script/</guid>
+      <description>变量 概述 Bash脚本之中，可以自定义变量。变量使用等号赋值，等号前后都不能有空格。 1 $ a=3 对变量取值的时候，变量名前要加上美元符号。 1 2 $ echo $a 3 Bash变量名是大小写敏感的。变量名如果后面还紧跟着其他字</description>
+    </item>
+    
+    <item>
+      <title>Apache 的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/apache/apache/</link>
+      <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/apache/apache/</guid>
+      <description>安装 1 2 3 4 5 # centos $ sudo yum install httpd # debian $ sudo apt-get install apache2 它的配置文件在/etc/apache2。 apache2.conf：主配置文件 ports.conf：指定虚拟主机监听的端口 conf.d/：该目录用于配置某些特定</description>
+    </item>
+    
+    <item>
+      <title>Graphviz 的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/graphviz/</link>
+      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/graphviz/</guid>
+      <description>简介 Graphviz（Graph Visualization Software的缩写）是贝尔实验室开发的一个开源的工具包，它使用一个特定的DSL(领域特定语言):dot作为脚本语言，然后使用布局引擎来解析此脚本，并完成自动布局。</description>
+    </item>
+    
+    <item>
+      <title>密码</title>
+      <link>https://wellfrog27.github.io/blog/linux/account/password/</link>
+      <pubDate>Sat, 27 Jun 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/account/password/</guid>
+      <description>passwd 命令 passwd命令用于修改用户的密码。 没有任何参数时，passwd只能改变用户自己的密码。 1 $ passwd 非根用户会被要求先输入当前密码，然后再设置新密码。 如果是根用户，可以改变其他用户的密码。 1 $ sudo passwd &amp;lt;username&amp;gt; 下</description>
+    </item>
+    
+    <item>
+      <title>rsync</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/rsync/</link>
+      <pubDate>Fri, 12 Jun 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/rsync/</guid>
+      <description>rsync 用来在两台计算机或者两个路径之间同步文件。它名称里面的r就是指 remote。 与其他文件传输工具（如 FTP 或 SCP）不同，rsync 检查发送方和接收方上的文件，仅传输同步它们所需的文件。 1 $ rsync -a /source/path /target/path 上面的</description>
+    </item>
+    
+    <item>
+      <title>Emacs的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/emacs/</link>
+      <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/emacs/</guid>
+      <description>通用命令 帮助：C-h C-h 退出 Emacs：C-x C-c 退出一个正在运行的命令：C-g（比如某条命令迟迟没有响应，或者取消输入到一半的命令，实质是退出当前buffer，回到前一个buffer） 执行命令：M-x 文</description>
+    </item>
+    
+    <item>
+      <title>文件链接</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/link/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/link/</guid>
+      <description>硬链接 硬盘分成一个个数据块，文件的数据都保存在这些数据块里面。这种数据块就叫做 inode，每个数据库块都有编号，称为 inode 号码。 文件系统有一个文件表，将文件名与它所在的 inode 号码联系起来。每当读取文件的时候，</description>
+    </item>
+    
+    <item>
+      <title>进程信息</title>
+      <link>https://wellfrog27.github.io/blog/linux/process/info/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/process/info/</guid>
+      <description>进程是程序的运行实例。 进程号 每个进程创建的时候，操作系统会为这个进程分配一个唯一编号（简称 PID），供内核使用。操作系统中创建时会自动分配给每个进程。 32位系统的 PID 最大值默认为是32,768，64位系</description>
+    </item>
+    
+    <item>
+      <title>系统管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/system/</link>
+      <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/system/</guid>
+      <description>Systemd Systemd是一个系统管理软件，主要用于管理后台守护进程（daemon）。它用来取代传统的initd服务启动方式。在使用它的系统中，它是所有其他进程的父进程。 Systemd每个启动的进程，称为“单</description>
+    </item>
+    
+    <item>
+      <title>软件包管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/package/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/package/</guid>
+      <description>搜索 1 2 3 $ apt-cache search search_string $ yum search search_string 安装 1 2 $ apt-get install package_name $ yum install package_name 安装本地软件包文件。 1 2 $ dpkg --install package_file $ rpm -i package_file 卸载软件 1 2 $ apt-get remove package_name $ yum erase package_name 更新软件。 1 2 $ apt-get update; apt-get upgrade $ yum update 从本地软件包文件更新。 1 2 $ dpkg --install package_file $ rpm -U package_file 列出所安装</description>
+    </item>
+    
+    <item>
+      <title>SSH 基本知识</title>
+      <link>https://wellfrog27.github.io/blog/linux/ssh/basic/</link>
+      <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/ssh/basic/</guid>
+      <description>SSH（Secure Shell 的缩写）是一种加密网络协议，用于客户端和服务器之间的安全连接，并支持各种身份验证机制。 两种最流行的机制是基于密码的身份验证和基于公钥的身份验证。后者比传统的密码验证更安全，更方便</description>
+    </item>
+    
+    <item>
+      <title>Tmux</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/tmux/</link>
+      <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/tmux/</guid>
+      <description>简介 Tmux 是对话（session）复用工具，可以替代 GNU Screen。 它可以在一个会话中，打开多个窗口。每个窗口可以占据整个屏幕，可以分成矩形窗格。用户可以方便地切换窗口，并且某个窗口从当前对话转移到其他对</description>
+    </item>
+    
+    <item>
+      <title>权限</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/permission/</link>
+      <pubDate>Thu, 02 Oct 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/permission/</guid>
+      <description>普通权限 文件有三种权限。 r，读权限，用八进制的4或者二进制的100表示 w，写权限，用八进制的2或者二进制的010表示 x，执行权限，用八进制的1或者二进制的001表示 文件权限的含义。 r：文件可以打开，读</description>
+    </item>
+    
+    <item>
+      <title>USB 设备</title>
+      <link>https://wellfrog27.github.io/blog/linux/hardware/usb/</link>
+      <pubDate>Thu, 26 Jun 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/hardware/usb/</guid>
+      <description>插入 USB 储存设备后，使用fdisk -l命令列出本机可用的储存系统。 1 $ sudo fdisk -l USB 储存设备通常是/dev/sdb[n]。 然后，新建一个挂载点（比如/media/USB）。 1 $ sudo mkdir /media/[mountPointName] 接着，将 USB 设备挂载到挂载点</description>
+    </item>
+    
+    <item>
+      <title>磁盘管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/hardware/disk/</link>
+      <pubDate>Fri, 13 Jun 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/hardware/disk/</guid>
+      <description>硬件设备 块设备 是一个表示任何可格式化为固定大小的块的存储设备的抽象层；各个块可与其他块地址独立地存取。这种存取通常称为随机存取。 可使用 ls -l 命令显示 /dev 条目。每个输出行上的第一个字符是 b，表示块设备，比如</description>
+    </item>
+    
+    <item>
+      <title>OpenSSL的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/openssl/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/openssl/</guid>
+      <description>生成私钥 1 2 3 4 # 密钥位数 1024 # 对称加密算法 des3 # 生成的密钥文件 server.enc.key $ openssl genrsa -des3 -out server.enc.key 1024 解除密钥的pass-phrase保护 1 $ openssl rsa -in server.enc.key -out server.key 生成证书 1 2 3 4 5 6 7 # 生成的证书文件 server.csr $ openssl req -new -key server.enc.key -out server.csr $ openssl x509 -req -days 365 -in server.csr</description>
+    </item>
+    
+    <item>
+      <title>文件时间</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/time/</link>
+      <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/time/</guid>
+      <description>概述 Linux 系统的每个文件都有三个时间戳。 atime（access time）：上一次读取时间，包括直接读取和 cat、vim、less 之类的软件读取。 mtime（modify time）：上一次修改时间，指的是</description>
+    </item>
+    
+    <item>
+      <title>Apache 重定向</title>
+      <link>https://wellfrog27.github.io/blog/linux/apache/redirect/</link>
+      <pubDate>Mon, 06 Jan 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/apache/redirect/</guid>
+      <description>重定向功能用于将对一个网址的请求，自动导向另一个网址。 HTTP 提供两个重定向状态：301 永久性跳转和302 暂时性跳转。 Redirect 指令 Redirect指令将旧的 URL 导向新的 URL。 1 2 3 4 5 6 7 8 9 10 &amp;lt;VirtualHost *:80&amp;gt; ServerName www.domain1.com Redirect / http://www.domain2.com &amp;lt;/VirtualHost&amp;gt; &amp;lt;VirtualHost</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on 阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/blog/vim/</link>
+    <description>Recent content in Vim on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    
+        <atom:link href="https://wellfrog27.github.io/blog/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vim 概述</title>
+      <link>https://wellfrog27.github.io/blog/vim/basic/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/basic/</guid>
+      <description>历史 1977年10月，Bill Joy 在行编辑软件 ex 的基础上开发了 vi。vi 是visual的前两个字母，意为视觉模式，也就是编辑起来比 ex 更加直观。 由于 ex/vi 编辑器可能有 AT＆T 公司的知识产权。为了避免知识产权纠</description>
+    </item>
+    
+    <item>
+      <title>文件操作</title>
+      <link>https://wellfrog27.github.io/blog/vim/file/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/file/</guid>
+      <description>基本操作 vi 可以同时打开多个文件。 1 $ vi file1 file2 file3 默认显示第一个文件。 :n 转到下一个文件 :N 回到先前的文件 :buffers 显示正在编辑的文件列表 :buffer 1 转到缓冲区1 :e 加载一个新的文件 当我们从一个文件移到另一个文件时，如果当前文件</description>
+    </item>
+    
+    <item>
+      <title>窗口</title>
+      <link>https://wellfrog27.github.io/blog/vim/window/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/window/</guid>
+      <description>ZZ：退出窗口</description>
+    </item>
+    
+    <item>
+      <title>帮助</title>
+      <link>https://wellfrog27.github.io/blog/vim/help/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/help/</guid>
+      <description>:help进入帮助窗口，:help {主题}可以显示某个主题的帮助。下面是一些例子。 :help deleting :help index： 显示帮助索引 :help CTRL-A：显示CTRL-A的帮助 :help i_CTRL-H：显示插入模式的CTRL-H的帮</description>
+    </item>
+    
+    <item>
+      <title>.vimrc 配置文件</title>
+      <link>https://wellfrog27.github.io/blog/vim/vimrc/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/vimrc/</guid>
+      <description>用户主目录下的.vimrc，是 Vim 的配置文件。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 colorscheme badwolf &amp;#34; 配色方案 syntax enable &amp;#34; 打开语法处理 set tabstop=4 &amp;#34; 打开新文件时，遇到 tab 键等于4个空格 set softtabstop=4 &amp;#34; 编辑时按下 tab 键，相当于4个空格 set expandtab &amp;#34; 将 tab 键变为空格</description>
+    </item>
+    
+    <item>
+      <title>剪切，复制，粘贴</title>
+      <link>https://wellfrog27.github.io/blog/vim/copy/</link>
+      <pubDate>Wed, 30 Nov 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/copy/</guid>
+      <description>剪切 d命令不仅删除文本，它还“剪切”文本。每次我们使用d命令，删除的部分被复制到一个粘贴缓冲区中（看作剪切板）。 粘贴 p命令 剪切板中的文本粘贴到光标位置之后。 P 剪切板中的文本粘贴到光标之前。 :r 把指定的文</description>
+    </item>
+    
+    <item>
+      <title>Vim的配置</title>
+      <link>https://wellfrog27.github.io/blog/vim/config/</link>
+      <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/config/</guid>
+      <description>使用下面的命令，在命令模式下，查看启动时加载的文件。 1 :scriptnames 可以打印成日志文件查看。 1 $ vim --startuptime start.log name-of-your-file :hlsearch 打开高亮搜索 :syntax on 打开语法高亮 :set hlsearch 查找结果高亮 :set tabstop=4 设置一个 tab 字符缩进的行数 :set autoindent 打开“auto indent”功</description>
+    </item>
+    
+    <item>
+      <title>编辑</title>
+      <link>https://wellfrog27.github.io/blog/vim/edit/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/edit/</guid>
+      <description>进入编辑模式 进入编辑模式，有以下几个方式。 i 光标位于当前字符的前面（insert） a 光标位于当前字符的后面（append） I 光标位于当前行的行首 A 光标位于当前行的行尾 o 当前行的下方插入一行 O 当前行的上</description>
+    </item>
+    
+    <item>
+      <title>Vim操作</title>
+      <link>https://wellfrog27.github.io/blog/vim/operation/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/operation/</guid>
+      <description>命令格式 vim的命令采用下面的格式。 1 [OPERATOR][NUMBER][MOTION] Operator是动词。 d – Delete (等同于cut命令) c – Change y – Yank p – Insert last deleted text after cursor (put command) r – Replace v - 可视化选择 Motion表示操作的上下文。 w – 直到下一个单词的起始位置</description>
+    </item>
+    
+    <item>
+      <title>撤销</title>
+      <link>https://wellfrog27.github.io/blog/vim/operations/undo/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/operations/undo/</guid>
+      <description>命令模块下，u（代表 undo）会撤销上一个操作。 默认情况下，撤销只在当前对话（session）有效。如果关闭文件再打开，就无法撤销上一个对话的操作。如果想跨对话撤销，需要在.vimrc里面打开下面的设</description>
+    </item>
+    
+    <item>
+      <title>模式</title>
+      <link>https://wellfrog27.github.io/blog/vim/mode/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/mode/</guid>
+      <description>Vim 分成多种模式。按i键进入编辑模式，按esc键退出编辑模式。 命令模式 编辑模式 可视模式 可视模式 v - Enter visual mode ctrl+v - Enter visual mode (vertical) V - Enter visual mode (full lines) 在窗口底部输入:set showmode，以后窗口底部就会显示当前状态，比</description>
+    </item>
+    
+    <item>
+      <title>查找和替换</title>
+      <link>https://wellfrog27.github.io/blog/vim/search/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/search/</guid>
+      <description>查找 f查找一行，移动光标到下一个所指定的字符上。例如，命令fa会把光标定位到同一行中的下一个出现的a字符上。 在一行中执行了字符的查找命令之后，通过输入分号来重复这个查找。 /命令移动光标到下一个出现的单</description>
+    </item>
+    
+    <item>
+      <title>shell 命令</title>
+      <link>https://wellfrog27.github.io/blog/vim/shell/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/shell/</guid>
+      <description>有两种主要方法可以在 Vim 里调用外部程序： :!——在从 Vim 内容跑某命令时很有用，尤其是在你想把运行结果输出到 Vim buffer 的情况下。 :shell——以 Vim 子进程的方式弹开一个命令行。适合交互式命令。 可以用 :r! 把呼叫命令的</description>
+    </item>
+    
+    <item>
+      <title>netrw 插件</title>
+      <link>https://wellfrog27.github.io/blog/vim/plugins/netrw/</link>
+      <pubDate>Sun, 14 Dec 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/plugins/netrw/</guid>
+      <description>netrw是 Vim 内置插件，用来提供目录浏览器功能。 启用 它可以用以下三个命令打开。 :Explore：netrw 在当前窗口中打开。 :Sexplore：垂直分割当前窗口，netrw 在上半部分打开。可用鼠标调整</description>
+    </item>
+    
+    <item>
+      <title>移动</title>
+      <link>https://wellfrog27.github.io/blog/vim/move/</link>
+      <pubDate>Sun, 21 Sep 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/move/</guid>
+      <description>上下左右移动 l or 右箭头 向右移动一个字符 h or 左箭头 向左移动一个字符 j or 下箭头 向下移动一行 k or 上箭头 向上移动一行 0 (零按键) 移动到当前行的行首。 ^ 移动到当前行的第一个非空字符。 $ 移动到当前行的末尾。 语义移</description>
+    </item>
+    
+    
+  </channel>
+</rss>

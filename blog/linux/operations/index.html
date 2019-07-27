@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>Linux常用操作 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/nginx/server-blocks/"
+                                            title="Server Blocks">Server Blocks</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-30/"
+                                            title="科技爱好者周刊：第30期">科技爱好者周刊：第30期</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/nginx/server-blocks/" title="Server Blocks">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-30/" title="科技爱好者周刊：第30期">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">Linux常用操作</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2018-03-03&#32;00:00:00&#32;&#43;0000&#32;UTC>2018年3月3日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<h2 id="用户操作">用户操作</h2>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 列出当前用户</span>
+$ whoami
+
+<span style="color:#228b22"># 列出所有用户</span>
+$ sudo cat /etc/shadow
+
+<span style="color:#228b22"># 列出所有用户的密码</span>
+$ sudo cat /etc/passwd
+
+<span style="color:#228b22"># 创建用户</span>
+$ sudo useradd [用户名]
+
+<span style="color:#228b22"># 为用户设置密码。</span>
+$ sudo passwd [用户名]</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="组操作">组操作</h2>
+
+<p>（1）显示当前用户所在的组</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ groups</code></pre></td></tr></table>
+</div>
+</div>
+<p>（2) 显示特定用户所在的组</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ groups [userID]</code></pre></td></tr></table>
+</div>
+</div>
+<p>(3) 查看所有的组</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat /etc/group</code></pre></td></tr></table>
+</div>
+</div>
+<p>/etc/group文件的记录格式如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">group_name:passwd:GID:user_list</pre></td></tr></table>
+</div>
+</div>
+<p>每条记录分四个字段：</p>
+
+<ol>
+<li>用户组名称；</li>
+<li>用户组密码；</li>
+<li>GID</li>
+<li>用户列表，每个用户之间用,号分割；本字段可以为空；如果字段为空表示用户组为GID的用户名；</li>
+</ol>
+
+<h2 id="挂载usb盘">挂载USB盘</h2>
+
+<p>（1）将USB盘插入电脑</p>
+
+<p>（2）列出所有储存设备。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo fdisk -l</code></pre></td></tr></table>
+</div>
+</div>
+<p>你会看到储存盘都是<code>/dev/sdXN</code>的形式，其中X是盘号，N是分区号。</p>
+
+<p>（3）在文件系统中创建一个挂载点。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mkdir /media/externaldrive</code></pre></td></tr></table>
+</div>
+</div>
+<p>（4） 此时，只有root用户才能读取U盘，因此要将U盘变为所有用户都可以读取。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo chgrp -R users /media/externaldrive
+$ sudo chmod -R g+w /media/externaldrive</code></pre></td></tr></table>
+</div>
+</div>
+<p>（5）挂载USB盘。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mount [/dev/sdXN] /media/externaldrive</code></pre></td></tr></table>
+</div>
+</div>
+<p>（6）刻录镜像盘</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dd <span style="color:#8b008b;font-weight:bold">if</span>=debian-*-netinst.iso <span style="color:#00688b">of</span>=/dev/sdX</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="信号-signal">信号（signal）</h2>
+
+<p>信号是进程间的一种通信机制，用于内核向某个进程发送消息。</p>
+
+<ul>
+<li>SIGTERM信号表示内核要求进程终止，进程可以自行退出，也可以不理会这个信号。</li>
+
+<li><p>SIGKILL信号用于立即终止进程，进程不能忽略该信号。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 发出SIGTERM</span>
+$ <span style="color:#658b00">kill</span> [processID]</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h2 id="nmcli-网络操作">nmcli 网络操作</h2>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 查看所有网络连接</span>
+$ nmcli connection show
+
+<span style="color:#228b22"># 显示所有网络接口</span>
+$ nmcli device status
+
+<span style="color:#228b22"># 显示所有wifi连接</span>
+$ nmcli dev wifi list
+
+<span style="color:#228b22"># 连接某个已经成功的连接</span>
+$ nmcli con up id
+
+<span style="color:#228b22"># 连接某个wifi</span>
+$ nmcli dev wifi connect &lt;name&gt; password &lt;password&gt;</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="截图">截图</h2>
+
+<p>xfce截图。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xfce4-screenshooter -f</code></pre></td></tr></table>
+</div>
+</div>
+<p>Gnome截图。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ gnome-panel-screenshot
+$ gnome-panel-screenshot --delay <span style="color:#b452cd">10</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>ImageMagick截图。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ import MyScreenshot.png</code></pre></td></tr></table>
+</div>
+</div>
+<p>然后，用鼠标选中所要截图的范围。</p>
+
+<p>其他参数</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 10秒后抓取整个屏幕</span>
+$ sleep <span style="color:#b452cd">10</span>; import -window root MyScreenshot2.png
+
+<span style="color:#228b22"># 抓取图片后，并打开编辑软件</span>
+$ sleep <span style="color:#b452cd">15</span>; import -window root MyScreenshot3.png; gimp MyScreenshot3.png
+
+<span style="color:#228b22"># 抓取图片后，将宽度缩为500像素</span>
+$ import -window root -resize <span style="color:#b452cd">500</span> AnotherScreenshot.png</code></pre></td></tr></table>
+</div>
+</div>
+<p>scrot截图</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 安装</span>
+$ sudo aptitude install scrot
+
+$ scrot MyScreenshot.png
+
+<span style="color:#228b22"># 设置质量和延迟，并进行编辑</span>
+$ scrot -q <span style="color:#b452cd">85</span> -d <span style="color:#b452cd">5</span> screenshot.png &amp;&amp; gimp screenshot.png &amp;</code></pre></td></tr></table>
+</div>
+</div>
+<p>GIMP也可以用来截图，命令为<code>File —&gt; Acquire —&gt; Screen Shot</code>。</p>
+
+<h2 id="crontab-定时任务">Crontab 定时任务</h2>
+
+<p>crontab是UNIX下用来执行定时任务的一个守护进程。它可以定时执行某些脚本。</p>
+
+<p>crontab的格式如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">MIN HOUR DOM MON DOW CMD</code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>MIN：分钟，0-59</li>
+<li>HOUR：小时，0-23</li>
+<li>DOM：每个月的第几天，1-31</li>
+<li>MON：月份，1-12</li>
+<li>DOW：每周的第几天，0-6</li>
+<li>CMD：需要执行的命令或脚本</li>
+</ul>
+
+<p>下面的命令可以进入contab的编辑模式。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 进入crontab编辑模式</span>
+$ crontab -e
+
+<span style="color:#228b22"># 列出所有定时任务</span>
+$ crontab -l
+
+<span style="color:#228b22"># 列出指定用户的所有定时任务</span>
+$ crontab -u &lt;userName&gt; -l
+
+<span style="color:#228b22"># 删除Crontab条目</span>
+$ crontab -r
+
+<span style="color:#228b22"># 删除前询问</span>
+$ crontab -i -r</code></pre></td></tr></table>
+</div>
+</div>
+<p>下面是一些例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 8月20日下午4点30分</span>
+<span style="color:#b452cd">30</span> <span style="color:#b452cd">16</span> <span style="color:#b452cd">20</span> <span style="color:#b452cd">8</span> * /path/to/script
+
+<span style="color:#228b22"># 9点到18点，每小时执行一次</span>
+<span style="color:#b452cd">00</span> <span style="color:#b452cd">09</span>-18 * * * /path/to/script
+
+<span style="color:#228b22"># 每天11点半或16点半检查邮件</span>
+<span style="color:#b452cd">30</span> <span style="color:#b452cd">11</span>,16 * * * /path/to/script
+
+<span style="color:#228b22"># 每过10分钟执行一次，但是周末除外</span>
+*/10 * * * <span style="color:#b452cd">0</span>-4 /path/to/script</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="周期性执行一个命令">周期性执行一个命令</h2>
+
+<p>有多种方式，可以每隔几秒就执行一次命令。</p>
+
+<p>（1）watch</p>
+
+<p><code>watch</code>周期性执行一个命令，输出结果。默认情况下，该命令每隔2秒就执行一次。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 每隔2秒，清理一下内存</span>
+$ watch free -m
+
+<span style="color:#228b22"># 每隔10秒，执行某个脚本</span>
+$ watch -n <span style="color:#b452cd">10</span> script.sh</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>watch</code>命令的参数</p>
+
+<ul>
+<li>-n - 指定两次执行之间间隔的秒数</li>
+<li>-b – 如果命令的退出码非0，则喇叭响一下</li>
+<li>-c – 解释ANSI的颜色码</li>
+<li>-d – 对输出结果发生变化的部分高亮显示</li>
+</ul>
+
+<p>（2）sleep命令</p>
+
+<p><code>sleep</code>命令可以指定暂停多少秒之后，再继续执行。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># foo循环</span>
+$ <span style="color:#8b008b;font-weight:bold">for</span> i in {<span style="color:#b452cd">1</span>..10}; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;This is a test in loop </span><span style="color:#00688b">$i</span><span style="color:#cd5555"> &#34;</span>; date ; sleep <span style="color:#b452cd">5</span>; <span style="color:#8b008b;font-weight:bold">done</span>
+
+<span style="color:#228b22"># while循环</span>
+$ <span style="color:#8b008b;font-weight:bold">while</span> true; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;This is a test of while loop&#34;</span>;date ; sleep <span style="color:#b452cd">5</span>; <span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2018年3月3日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

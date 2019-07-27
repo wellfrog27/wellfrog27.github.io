@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>Tmux - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/web/python/"
+                                            title="Python的用法">Python的用法</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-14/"
+                                            title="科技爱好者周刊：第14期">科技爱好者周刊：第14期</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/web/python/" title="Python的用法">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-14/" title="科技爱好者周刊：第14期">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">Tmux</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2014-11-12&#32;00:00:00&#32;&#43;0000&#32;UTC>2014年11月12日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<h2 id="简介">简介</h2>
+
+<p>Tmux 是对话（session）复用工具，可以替代 GNU Screen。</p>
+
+<p>它可以在一个会话中，打开多个窗口。每个窗口可以占据整个屏幕，可以分成矩形窗格。用户可以方便地切换窗口，并且某个窗口从当前对话转移到其他对话。</p>
+
+<p>Tmux 对话是持久的，这意味着即使断开连接，在 Tmux 中运行的程序也将继续运行。</p>
+
+<p>Tmux 的所有命令都以前缀开头，默认情况下前缀是<code>ctrl+b</code>。</p>
+
+<p>安装命令如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># Ubuntu 和 Debian</span>
+$ sudo apt install tmux
+
+<span style="color:#228b22"># CentOS 和 Fedora</span>
+$ sudo yum install tmux</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="用法">用法</h2>
+
+<p>要开始第一个 Tmux 对话，只需键入<code>tmux</code>。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tmux</code></pre></td></tr></table>
+</div>
+</div>
+<p>这将打开一个新的 Tmux 对话，创建一个新窗口，并在该窗口中启动一个 shell。</p>
+
+<p>进入Tmux 对话后，您会在屏幕底部看到状态行，其中显示有关当前会话的信息。</p>
+
+<p><code>-s</code>参数可以用来为每个对话起名。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tmux new -s session_name</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>tmux ls</code>命令列出当前正在运行的 Tmux 对话。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tmux ls</code></pre></td></tr></table>
+</div>
+</div>
+<p>要将 Tmux 对话剥离当前的 Bash 对话，可以使用快捷键<code>Ctrl+b d</code>。</p>
+
+<p><code>tmux attach-session</code>可以让某个程序重新接回当前对话。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tmux attach-session -t session_name</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="多窗口和窗格">多窗口和窗格</h2>
+
+<p>每个 Tmux 对话默认创建一个窗口，还可以使用<code>Ctrl+b c</code>命令，为这个对话创建多个窗口。窗口的命令默认为从0到9。</p>
+
+<p>所有窗口的列表，会显示在屏幕底部的状态栏。</p>
+
+<p>Tmux 窗口和窗格的快捷键如下。</p>
+
+<ul>
+<li>Ctrl+b c Create a new window (with shell)</li>
+<li>Ctrl+b w Choose window from a list</li>
+<li>Ctrl+b 0 Switch to window 0 (by number )</li>
+<li>Ctrl+b , Rename the current window</li>
+<li>Ctrl+b % Split current pane horizontally into two panes</li>
+<li>Ctrl+b &ldquo; Split current pane vertically into two panes</li>
+<li>Ctrl+b o Go to the next pane</li>
+<li>Ctrl+b ; Toggle between current and previous pane</li>
+<li>Ctrl+b x Close the current pane</li>
+</ul>
+
+<h2 id="配置文件">配置文件</h2>
+
+<p>Tmux 的配置文件是<code>~/.tmux.conf</code>。下面是一个示例。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># Improve colors</span>
+<span style="color:#658b00">set</span> -g default-terminal <span style="color:#cd5555">&#39;screen-256color&#39;</span>
+
+<span style="color:#228b22"># Set scrollback buffer to 10000</span>
+<span style="color:#658b00">set</span> -g history-limit <span style="color:#b452cd">10000</span>
+
+<span style="color:#228b22"># Customize the status line</span>
+<span style="color:#658b00">set</span> -g status-fg  green
+<span style="color:#658b00">set</span> -g status-bg  black</code></pre></td></tr></table>
+</div>
+</div>
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2014年11月12日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>周刊 on 阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/blog/weekly/</link>
+    <description>Recent content in 周刊 on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    
+        <atom:link href="https://wellfrog27.github.io/blog/weekly/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>科技爱好者周刊：第1期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-1/</link>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-1/</guid>
+      <description>每周分享第 1 期 这里记录过去一周，我看到的值得分享的东西。 长久以来，我一直用各种方式，尝试整理我的收藏夹。最近想到，把它写成文章，共享出来，也许效果更好。 语雀 语雀（yuque.com）是阿里巴巴集团内部</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第41期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-41/</link>
+      <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-41/</guid>
+      <description>每周分享第 41 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：杭州，2018） 有几个网友留言问我，怎么看互联网“裁员潮”。我就来</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第37期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-37/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-37/</guid>
+      <description>每周分享第 37 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：安吉，浙江，2018） 前些日子，武侠小说泰斗金庸先生去世了。 他可能</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第59期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-59/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-59/</guid>
+      <description>每周分享第 59 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：浦东滨江，上海，2018年） 关于未来有很多预测，最新的一种预测是，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第3期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-3/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-3/</guid>
+      <description>每周分享第 3 期 这里记录过去一周，我看到的值得分享的东西。 （题图：杭州的一家画廊，2017） 本周开始，这个专栏每周五发布，希望为大家的周末提供一些阅读材料。另一个考虑是，我希望这个专栏有可读性，不要太偏</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第23期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-23/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-23/</guid>
+      <description>每周分享第 23 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：鲁迅公园，上海，2018。） 很多人都说，当今社会趋向阶级固化，贫穷世袭。这种说法有根据吗？ 纽约大学的社会学家就做了一次调查，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第40期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-40/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-40/</guid>
+      <description>每周分享第 40 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 我知道一个朋友，他很喜欢咖啡。 但是，他喜欢的不是喝咖啡，而是制作咖啡。选购</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第10期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-10/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-10/</guid>
+      <description>每周分享第 10 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：卢日尼基体育场，莫斯科，2014。世界杯开幕式的转播，让我意识到自己去过那个体育场。那天想去莫斯科大学玩，路过一个体育场，大</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第28期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-28/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-28/</guid>
+      <description>每周分享第 28 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 第24期时，我引用了一个开发者对年轻程序员的告诫。 在软件开发中，技术变化如此之快，你花费了大量</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第15期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-15/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-15/</guid>
+      <description>每周分享第 15 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：集盒商城，杭州，2018） 很多网友问，《每周分享》的来源是什么，你从哪里得知这些消息？ 我的消息来源主要是下面几个。 Hacker News GitHub RSS 订</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第32期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-32/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-32/</guid>
+      <description>每周分享第 32 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：陆家嘴，上海，2018） 最近，我看到一个小寓言，很值得跟大家分享。 三个建筑工人正在砌砖</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第20期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-20/</link>
+      <pubDate>Sat, 22 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-20/</guid>
+      <description>每周分享第 20 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：特洛伊遗址，土耳其，2014。游客付费后，可以穿上古罗马士兵的服装，拍照留念。） 本周，我向大家推荐一篇好文章《大学的替代方案</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第57期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-57/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-57/</guid>
+      <description>每周分享第 57 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：陆家嘴，上海，2018） 前些日子，一个运营的女同学问我：“为什么程</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第6期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-6/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-6/</guid>
+      <description>每周分享第 6 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 最近，我有一个行程，可能要去日本。我还没去过日本呢，听说日本人普遍听不懂英语，我又不会说日语，这可怎么办？ 突然想到，&amp;rdquo;谷</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第13期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-13/</link>
+      <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-13/</guid>
+      <description>每周分享第 13 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：武林门码头，杭州，2017） 自从我认定，未来二三十年，人类社会将有天翻地覆的大变。我的所有时间，就都投在技术领域了。因为变化</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第19期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-19/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-19/</guid>
+      <description>每周分享第 19 期每周分享第 19 期每周分享第 19 期每周分享第 19 期每周分享第 19 期每周分享第 19 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周，我看了电影《头号玩家》（Ready Player One）。这是今年的</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第26期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-26/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-26/</guid>
+      <description>每周分享第 26 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 Basecamp 是 IT 行业很有名的一家公司，提供团队协作工具，同时也是 Rails on Ruby 框架的创造者。这家公司的特别之处在于，它不仅写软件，还写畅销书！ 它的两位</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第31期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-31/</link>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-31/</guid>
+      <description>每周分享第 31 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：天荒坪，安吉，2018） 计算机科学家 Tim Bray 最近写了一篇博客，他觉得自己可能应该退休了。 他</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第30期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-30/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-30/</guid>
+      <description>每周分享第 30 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上个月谷歌宣布，社交应用 G+ 将在10个月后关闭。 主要原因有两个。一是缺乏用户，90%的用户会话短</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第39期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-39/</link>
+      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-39/</guid>
+      <description>每周分享第 39 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 新年的1月2日，苹果公司发布了一份公开信，长达1400字。主要内容是，由于</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第42期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-42/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-42/</guid>
+      <description>每周分享第 42 期（20190201） 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 通知：下周春节假期，周刊暂停一期。 呆伯特漫画的作者亚当</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第46期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-46/</link>
+      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-46/</guid>
+      <description>每周分享第 46 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：西子宾馆，杭州，2018） 现在，很多网站使用大数据算法，很精确地知</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第60期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-60/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-60/</guid>
+      <description>每周分享第 60 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 中国历史的第一课，总是教大家，我国很早就有人类活动，周口店发现的北京猿人已</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第55期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-55/</link>
+      <pubDate>Sat, 02 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-55/</guid>
+      <description>每周分享第 55 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 ：（题图：昆山火车站，苏州，2018） 关于 996 工作制，已经有很多评论和报道，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第29期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-29/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-29/</guid>
+      <description>每周分享第 29 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 1968年，计算机学家梅尔文·E·康威发表了一篇著名论文，后来被称为康威定律（Conway&amp;r</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第56期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-56/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-56/</guid>
+      <description>每周分享第 56 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：昆山森林公园，苏州，2018） 一篇新闻报道提到，美国就业行情最好的</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第22期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-22/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-22/</guid>
+      <description>每周分享第 22 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 2008年，英国摄影师大卫·斯莱特（David Slater）来到印度尼西亚，拍摄一种珍贵的猕猴。他把照相机固定在三脚架上，放在丛林中</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第52期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-52/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-52/</guid>
+      <description>每周分享第 52 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 据报道，汉王科技开发了一个“课堂呵护系统”，已经在北京牛栏山一中、内蒙古赤</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第53期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-53/</link>
+      <pubDate>Sun, 18 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-53/</guid>
+      <description>每周分享第 53 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 日本东京最近举行了一次“DNA 相亲会”。参加活动的男女互不认识，婚介公司根</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第48期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-48/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-48/</guid>
+      <description>每周分享第 48 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上图是世界最著名的程序员之一：Bill Joy。 四十年前，他20岁出头，在加</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第36期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-36/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-36/</guid>
+      <description>每周分享第 36 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：安吉，浙江，2018） 美国一个编程培训班的老板，写了一篇文章。他说</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第4期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-4/</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-4/</guid>
+      <description>每周分享第 4 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 今年5月5日是马克思诞生200周年的纪念日，中新社的记者来到伦敦的马克思墓地，写了一篇《墓地见闻》。 马克思墓地位于伦敦北部的海格特公</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第49期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-49/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-49/</guid>
+      <description>每周分享第 49 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：千岛湖，浙江，2018） 一个美国程序员分享自己的工作方法，其中有一</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第21期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-21/</link>
+      <pubDate>Fri, 25 Nov 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-21/</guid>
+      <description>每周分享第 21 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 漫画家蔡志忠有一个演讲，题目叫做《努力是没有用的》。读完这份演讲稿，我觉得他说的有道理。 有些人非常勤奋，别人休息和娱乐的时候，都在工</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第11期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-11/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-11/</guid>
+      <description>每周分享第 11 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：虎跑后山，杭州，2016。 很多人去虎跑泉游玩，却不知道，泉眼后面的山是可以爬上去的，山顶有很棒的视野。翻过山就是九溪，可以一</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第24期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-24/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-24/</guid>
+      <description>每周分享第 24 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：浦东滨江，上海，2018。） Hacker News 上面，有人问：&amp;rdquo;新人进入软件行业，应该学什么？&amp;rdquo; 很多热心人提供建议。</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第63期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-63/</link>
+      <pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-63/</guid>
+      <description>科技爱好者周刊：第 63 期 这里记录每周值得分享的科技内容，周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 前些日子，我看到一则新闻。 “5月17日，中国 CDN 服务提供商蓝汛发布公告称，公司因</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第7期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-7/</link>
+      <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-7/</guid>
+      <description>每周分享第 7 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：海底都是矿泉水瓶。） 我看到一篇《国家地理》杂志的报道。地球最深的地方是太平洋的马里亚纳海沟，深达海平面下11公里。2016年</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第34期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-34/</link>
+      <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-34/</guid>
+      <description>每周分享第 34 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 由于微信不允许外部链接，你需要点击页尾左下角的“阅读原文”，才能访问文中的</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第12期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-12/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-12/</guid>
+      <description>每周分享第 12 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：佘山，上海，2018。） 我看到一篇报道，美国2016年的社会福利支出，占到政府总支出的73%。这就是说，美国政府的大部分支出</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第2期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-2/</link>
+      <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-2/</guid>
+      <description>每周分享第 2 期 这里记录过去一周，我看到的值得分享的东西。 （题图：青岛火车站） 上周发了第一期以后，有朋友问为什么写这个专栏？ 我想了想，除了整理收藏夹，主要原因还是我希望自己多发声。长久以来，我一直努力，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第18期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-18/</link>
+      <pubDate>Sat, 24 Oct 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-18/</guid>
+      <description>每周分享第 18 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周（8月4日），委内瑞拉总统马杜罗发表公众演讲，结果天空中出现了两个无人飞行器，慢慢靠近人群。每个飞行器都携带了1公斤的炸药，企图</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第58期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-58/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-58/</guid>
+      <description>每周分享第 58 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 据我观察，经营最好的自媒体，似乎都是美妆类的，介绍化妆品和服饰。 那些频道天</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第25期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-25/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-25/</guid>
+      <description>每周分享第 25 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周我看到一个报道，9月23日是安卓手机的十周年纪念日。 十年前的2008年9月23日，HTC 发布了世界上第一台安卓手机 G1，3.2英</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第62期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-62/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-62/</guid>
+      <description>科技爱好者周刊：第 62 期 这里记录每周值得分享的科技内容，周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 今天向大家推荐一部日本电影《编舟记》。 它讲述了一个编词典的故事，编辑们花了15</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第8期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-8/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-8/</guid>
+      <description>每周分享第 8 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：烟台山历史保护区，烟台，2017。我小时候的商店都是这种样子。） 最近，日本厚生劳动省公布了正式的统计数据。2017年，日本全</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第50期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-50/</link>
+      <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-50/</guid>
+      <description>每周分享第 50 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：杭州，2018） 前几天，我听一个广播节目。主持人问，现在很多人开网</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第61期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-61/</link>
+      <pubDate>Thu, 12 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-61/</guid>
+      <description>科技爱好者周刊：第61期 这里记录每周值得分享的科技内容，周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：前滩，上海，2018） 上月的周刊提到，文科生不容易就业，理工科的就业</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第45期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-45/</link>
+      <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-45/</guid>
+      <description>每周分享第 45 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 美国科幻小说大师阿西莫夫，写过一本回忆录《人生舞台》。他在里面提到，成名后</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第38期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-38/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-38/</guid>
+      <description>每周分享第 38 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：公交站的电子墨水屏，上海，2018） 最近我总在想，手机支付是否真的</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第14期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-14/</link>
+      <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-14/</guid>
+      <description>每周分享第 14 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周，特斯拉汽车的老板马斯克（Elon Musk）来中国，7月11日在上海建立全球第二家工厂，7月12日在北京建立研发中心，当天下午就</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第27期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-27/</link>
+      <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-27/</guid>
+      <description>每周分享第 27 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎大家去 GitHub 的 ruanyf/weekly 提交 issue，进行投稿。 2005年，斯坦福大学邀请乔布斯在毕业典礼演讲。这个演讲后来成为经典，《乔布斯传》说&amp;rd</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第5期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-5/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-5/</guid>
+      <description>每周分享第 5 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：世博公园，上海，2018） 本周，服务器遭受攻击，网站下线50多个小时。我一度以为，《每周分享》不能按时发了。现在，攻击停了，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第47期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-47/</link>
+      <pubDate>Tue, 22 Jul 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-47/</guid>
+      <description>每周分享第 47 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 如果你长期看这个周刊，可能知道我的观点：人工智能将导致大量失业，因为算法将</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第16期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-16/</link>
+      <pubDate>Fri, 04 Jul 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-16/</guid>
+      <description>每周分享第 16 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 影视作品经常出现，病人的心脏停止跳动，医生使用两块电极板对心脏电击。它叫除颤器（defibrillator），通过放电刺激心脏恢复跳</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第43期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-43/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-43/</guid>
+      <description>每周分享第 43 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上图是一架小飞机停在草地，一个人从上面跳下来。 这张图取自一篇2018年12</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第44期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-44/</link>
+      <pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-44/</guid>
+      <description>每周分享第 44 期（20190222） 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：杭州西湖，2018年） 最近，一位荷兰统计学教授</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第33期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-33/</link>
+      <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-33/</guid>
+      <description>每周分享第 33 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上周六是台北市长选举。原定下午四点结束投票，但是排队的人太多，于是改成只要四点你还在排队，就可</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第9期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-9/</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-9/</guid>
+      <description>每周分享第 9 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 这个周末是端午节，我要陪家人旅行，所以提前一天发布，祝大家端午节快乐。 （题图：星愿公园，上海，2017） 一个网友看了我的新书《未来世</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第54期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-54/</link>
+      <pubDate>Sun, 09 Mar 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-54/</guid>
+      <description>https://github.com/ruanyf/weekly/issues/498# 每周分享第 54 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：鸣号自动侦测系统，上海，2019。） 能够获得暴利的职业，都有一个</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第35期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-35/</link>
+      <pubDate>Sun, 02 Mar 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-35/</guid>
+      <description>每周分享第 35 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 媒体报道，50岁以上的日本男性每四人就有一人独自生活，女性每七人就有一人独</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第51期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-51/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-51/</guid>
+      <description>每周分享第 51 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 一个程序员的 Macbook 送修了，他只好重新使用10年前的笔记本电脑（上图）。结果意外</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第17期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-17/</link>
+      <pubDate>Mon, 13 Jan 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-17/</guid>
+      <description>每周分享第 17 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （图片说明：2018年6月的气温与1951-1980年平均气温的对比，来自推特@SimonLeeWx） 今天夏天，全球高温创纪录。日本</description>
+    </item>
+    
+    
+  </channel>
+</rss>

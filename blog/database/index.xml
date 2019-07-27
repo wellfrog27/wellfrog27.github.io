@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 on 阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/blog/database/</link>
+    <description>Recent content in 数据库 on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    
+        <atom:link href="https://wellfrog27.github.io/blog/database/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>数据库</title>
+      <link>https://wellfrog27.github.io/blog/database/datebase/</link>
+      <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/database/datebase/</guid>
+      <description>如何选择noSQL数据库 第一个问题，你是否应该使用noSQL数据库，还是关系型数据库？ 是否需要支持交易（Transaction），即操作的原子性？大多数noSQL数据库不支持交易。 是否需要记录之间立即</description>
+    </item>
+    
+    
+  </channel>
+</rss>

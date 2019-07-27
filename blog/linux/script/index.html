@@ -1,0 +1,1996 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>Bash脚本 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/linux/util/pgrep/"
+                                            title="pgrep">pgrep</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/linux/apache/apache/"
+                                            title="Apache 的用法">Apache 的用法</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/util/pgrep/" title="pgrep">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/apache/apache/" title="Apache 的用法">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">Bash脚本</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2015-12-16&#32;00:00:00&#32;&#43;0000&#32;UTC>2015年12月16日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<h2 id="变量">变量</h2>
+
+<h3 id="概述">概述</h3>
+
+<p>Bash脚本之中，可以自定义变量。变量使用等号赋值，等号前后都不能有空格。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#00688b">a</span>=<span style="color:#b452cd">3</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>对变量取值的时候，变量名前要加上美元符号。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">echo</span> <span style="color:#00688b">$a</span>
+<span style="color:#b452cd">3</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Bash变量名是大小写敏感的。变量名如果后面还紧跟着其他字符，可以将其放在大括号中。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00688b">INIT_DIR</span>=<span style="color:#cd5555">&#34;</span><span style="color:#cd5555">${</span><span style="color:#00688b">HOME</span><span style="color:#cd5555">}</span><span style="color:#cd5555">/.dotfiles/bash&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>如果使用没有定义的变量，该变量的值为空字符。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat v1.sh
+<span style="color:#228b22">#!/bin/sh</span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Variable value is: </span><span style="color:#00688b">$VAR1</span><span style="color:#cd5555">&#34;</span>
+<span style="color:#00688b">VAR1</span>=<span style="color:#cd5555">&#34;Hello&#34;</span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Variable value is: </span><span style="color:#00688b">$VAR1</span><span style="color:#cd5555">&#34;</span>
+
+$ ./v1.sh
+Variable value is:
+Variable value is: Hello</code></pre></td></tr></table>
+</div>
+</div>
+<p>Bash变量是弱类型的，可以随时改为其他类型的值。如果变量的值是字符串，而且包含空格，那么需要用双引号包起来。另外，双引号中的变量会被扩展成对应的值，单引号没有变量扩展的功能。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Your home: </span><span style="color:#00688b">$HOME</span><span style="color:#cd5555">&#34;</span> <span style="color:#228b22"># Your home: /Users/&lt;username&gt;</span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#39;Your home: $HOME&#39;</span> <span style="color:#228b22"># Your home: $HOME</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>变量只对创建它的进程可见，因此使用上面这种方式声明的变量，都是本地变量。除非使用<code>export</code>命令，将变量输出到子进程。执行脚本会新建一个子进程，因此脚本之中的变量不会泄漏到它的执行环境。</p>
+
+<p>如果在Bash变量之前放上变量赋值语句，则该变量会输入子进程。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$VAR5</span><span style="color:#cd5555"> / </span><span style="color:#00688b">$VAR6</span><span style="color:#cd5555">&#34;</span>
+ /
+$ <span style="color:#00688b">VAR5</span>=<span style="color:#b452cd">5</span> <span style="color:#00688b">VAR6</span>=<span style="color:#cd5555">&#34;some value&#34;</span> bash
+$ <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$VAR5</span><span style="color:#cd5555"> / </span><span style="color:#00688b">$VAR6</span><span style="color:#cd5555">&#34;</span>
+<span style="color:#b452cd">5</span> / some value
+$ <span style="color:#658b00">exit</span>
+$ <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$VAR5</span><span style="color:#cd5555"> / </span><span style="color:#00688b">$VAR6</span><span style="color:#cd5555">&#34;</span>
+ /</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>unset</code>命令用于删除一个变量。</p>
+
+<p>在函数之中，使用<code>local</code>关键字声明只在函数内部有效的变量。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#658b00">local</span> <span style="color:#00688b">local_var</span>=<span style="color:#cd5555">&#34;I&#39;m a local value&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>使用冒号可以设置变量的默认值。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 如果变量为空，则赋予默认值</span>
+: <span style="color:#cd5555">${</span><span style="color:#00688b">VAR</span>:=<span style="color:#cd5555">&#39;default&#39;</span><span style="color:#cd5555">}</span>
+: <span style="color:#cd5555">${</span><span style="color:#00688b">$1</span>:=<span style="color:#cd5555">&#39;first&#39;</span><span style="color:#cd5555">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>declare</code>命令可以声明特定的命令。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">declare</span> option variablename</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>declare</code>命令的参数为</p>
+
+<ul>
+<li>-r read only variable</li>
+<li>-i integer variable</li>
+<li>-a array variable</li>
+<li>-f for funtions</li>
+
+<li><p>-x declares and export to subsequent commands via the environment.</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#658b00">declare</span> -i intvar
+<span style="color:#00688b">intvar</span>=<span style="color:#b452cd">123</span>
+<span style="color:#00688b">intvar</span>=<span style="color:#b452cd">12</span>.3 <span style="color:#228b22"># 报错</span>
+
+<span style="color:#658b00">declare</span> -r <span style="color:#00688b">rovar</span>=<span style="color:#b452cd">281</span>
+<span style="color:#00688b">rovar</span>=<span style="color:#b452cd">212</span> <span style="color:#228b22"># 报错</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<p><code>readonly</code>命令可以设置只读变量。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">readonly</span> <span style="color:#00688b">rov2</span>=<span style="color:#cd5555">&#34;another constant value&#34;</span>
+$ <span style="color:#00688b">rov2</span>=<span style="color:#b452cd">3</span>
+bash: rov2: <span style="color:#658b00">readonly</span> variable</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>let</code>命令声明一个变量的值等于表达式的值。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">let</span> <span style="color:#00688b">x</span>=<span style="color:#b452cd">6</span>-4
+$ <span style="color:#658b00">echo</span> <span style="color:#00688b">$x</span>
+<span style="color:#b452cd">2</span>
+
+$ <span style="color:#00688b">x</span>=<span style="color:#b452cd">6</span>-4
+<span style="color:#658b00">echo</span> <span style="color:#00688b">$x</span>
+<span style="color:#b452cd">6</span>-4</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>local</code>关键字用于声明区块可见的局部代码。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pprint()
+{
+  <span style="color:#658b00">local</span> <span style="color:#00688b">lvar</span>=<span style="color:#cd5555">&#34;Local content&#34;</span>
+  <span style="color:#658b00">echo</span> -e <span style="color:#cd5555">&#34;Local variable value with in the function&#34;</span>
+  <span style="color:#658b00">echo</span> <span style="color:#00688b">$lvar</span>
+}
+pprint</code></pre></td></tr></table>
+</div>
+</div>
+<p>如果不加<code>local</code>，函数中声明的变量就是局部变量。</p>
+
+<h3 id="变量扩展">变量扩展</h3>
+
+<p>变量名前面加上<code>$</code>符号，就会输出变量的值。这就叫做“变量扩展”（parameter expansion）。</p>
+
+<p>使用<code>$(command)</code>或者<code>command</code>，会执行命令，并将该命令的输出，存入变量。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00688b">now</span>=<span style="color:#cd5555">`</span>data +%T<span style="color:#cd5555">`</span>
+<span style="color:#228b22"># or</span>
+<span style="color:#00688b">now</span>=<span style="color:#8b008b;font-weight:bold">$(</span>data +%T<span style="color:#8b008b;font-weight:bold">)</span>
+
+<span style="color:#658b00">echo</span> now <span style="color:#228b22"># 19:08:26</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>$(( expression ))</code>会计算算术表达式。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">echo</span> <span style="color:#8b008b;font-weight:bold">$((</span><span style="color:#b452cd">3</span>+<span style="color:#b452cd">4</span><span style="color:#8b008b;font-weight:bold">))</span>
+<span style="color:#b452cd">7</span>
+
+$ <span style="color:#00688b">result</span>=<span style="color:#8b008b;font-weight:bold">$((</span> ((<span style="color:#b452cd">10</span> + <span style="color:#b452cd">5</span>*<span style="color:#b452cd">3</span>) - <span style="color:#b452cd">7</span>) / <span style="color:#b452cd">2</span> <span style="color:#8b008b;font-weight:bold">))</span>
+<span style="color:#658b00">echo</span> <span style="color:#00688b">$result</span> <span style="color:#228b22"># 9</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>变量扩展有多种形式，可以修改并输出变量的值。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 如果varname没有设置或等于null，就将其设为value</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">varname</span>:=value<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 只有当变量varname没有设置时，才将其设为value</span>
+<span style="color:#228b22"># 如果变量varname等于空字符串，则不进行操作</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">varname</span>=value<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 返回变量长度</span>
+<span style="color:#cd5555">${#</span><span style="color:#00688b">string</span><span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 返回某个位置开始的子字符串</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>:<span style="color:#00688b">position</span><span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 返回某个位置开始的、指定长度的子字符串</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>:<span style="color:#00688b">position</span>:<span style="color:#00688b">length</span><span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 从字符串头部开始删除$substring的最短匹配</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>#substring<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 从字符串尾部开始删除$substring的最短匹配</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>%substring<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 从字符串头部开始删除最长匹配</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>##substring<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 从字符串尾部开始删除最短匹配</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>%%substring<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 字符串的查找和替换（仅替换第一个匹配）</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>/pattern/replacement<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 替换所有匹配</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>//pattern/replacement<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 替换字符串的头部匹配</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>/#pattern/replacement<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 替换字符串的尾部匹配</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">string</span>/%pattern/replacement<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 提取文件名的主体部分</span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">filename</span>#*.<span style="color:#cd5555">}</span>
+
+<span style="color:#228b22"># 提取文件名的后缀名部分</span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">filename</span>%.*<span style="color:#cd5555">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="环境变量">环境变量</h3>
+
+<p>环境变量是脚本运行时外部使用<code>export</code>命令带入的变量。</p>
+
+<ul>
+<li>$PS1 提示符</li>
+<li>$HOME 用户的主目录</li>
+<li>$PATH 分号分隔的一组目录，shell会在这组目录里面寻找命令</li>
+<li>$SHELL 当前使用的Shell</li>
+<li>$PWD 当前目录</li>
+<li>$UID 当前用户的数字ID</li>
+<li>$RANDOM 0到32767之间的一个数</li>
+<li>$$ 当前进程的ID</li>
+
+<li><p>$PPID 父进程的ID</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">echo</span> <span style="color:#00688b">$$</span>
+<span style="color:#b452cd">20708</span>
+<span style="color:#228b22"># 新建一个子Shell</span>
+$ bash
+$ <span style="color:#658b00">echo</span> <span style="color:#00688b">$PPID</span>
+<span style="color:#b452cd">20708</span>
+<span style="color:#228b22"># 退出子进程</span>
+$ exit</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h3 id="特殊变量">特殊变量</h3>
+
+<ul>
+<li>$? 特殊变量，表示上一个命令的输出结果，如果是0，表示运行成功。</li>
+<li><code>$*</code>或<code>$@</code> 全部参数，不含$0</li>
+<li>$0 脚本名</li>
+<li>$1 脚本的第一个参数</li>
+<li>$2 脚本的第二个参数，以此类推，直到$9</li>
+<li>${10}&hellip;${N} 从10到N的参数</li>
+<li>$# 参数数组的大小，不含$0</li>
+<li>$$ 当前进程的ID</li>
+<li>$! 最近执行的背景线程的ID</li>
+<li>$- 使用<code>set</code>命令的参数</li>
+<li>$_ 上一个命令的最后一个参数。如果是shell脚本，就会给出绝对路径的文件名。</li>
+</ul>
+
+<p><code>$-</code>的例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#658b00">set</span> -e
+<span style="color:#228b22"># 输出 e</span>
+<span style="color:#658b00">echo</span> <span style="color:#00688b">$-</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>参数的例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># hellokitty.sh</span>
+<span style="color:#228b22">#!/usr/bin/env bash</span>
+
+<span style="color:#658b00">echo</span> hello <span style="color:#00688b">$1</span>
+
+<span style="color:#228b22"># 运行</span>
+$ ./hellokitty.sh kitty
+hello kitty</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="if结构">if结构</h2>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">if</span> condition
+<span style="color:#8b008b;font-weight:bold">then</span>
+<span style="color:#8b008b;font-weight:bold">do</span> something
+<span style="color:#8b008b;font-weight:bold">else</span>
+<span style="color:#8b008b;font-weight:bold">do</span> something <span style="color:#8b008b;font-weight:bold">else</span>
+<span style="color:#8b008b;font-weight:bold">fi</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>实例</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#00688b">a</span>=joe
+$ <span style="color:#8b008b;font-weight:bold">if</span> [ <span style="color:#00688b">$a</span> == <span style="color:#cd5555">&#34;joe&#34;</span> ]; <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#658b00">echo</span> hello; <span style="color:#8b008b;font-weight:bold">fi</span>
+hello</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>if</code>后面的判断条件，可以单层大括号（<code>[</code>），或<code>test</code>命令。双层大括号内部可以使用<code>&amp;&amp;</code>和<code>||</code>代替<code>-a</code>和<code>-o</code>，以及使用正则运算符<code>=~</code>。</p>
+
+<p>花括号用来处理变量的值。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#00688b">VARIABLE</span>=abcdef
+$ <span style="color:#658b00">echo</span> Variable: <span style="color:#00688b">$VARIABLE</span>
+Variable: abcdef
+$ <span style="color:#658b00">echo</span> Variable: <span style="color:#00688b">$VARIABLE123456</span>
+Variable:
+$ <span style="color:#658b00">echo</span> Variable: <span style="color:#cd5555">${</span><span style="color:#00688b">VARIABLE</span><span style="color:#cd5555">}</span><span style="color:#b452cd">123456</span>
+Variable: abcdef123456
+
+<span style="color:#228b22"># 截取变量</span>
+$ <span style="color:#00688b">var</span>=<span style="color:#cd5555">&#34;abcde&#34;</span>; <span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">var</span>%d*<span style="color:#cd5555">}</span>
+abc
+
+<span style="color:#228b22"># 替换字符串</span>
+$ <span style="color:#00688b">var</span>=<span style="color:#cd5555">&#34;abcde&#34;</span>; <span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">var</span>/de/12<span style="color:#cd5555">}</span>
+abc12
+
+<span style="color:#228b22"># 替换第一个foo</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">var</span>/foo/bar<span style="color:#cd5555">}</span>;
+<span style="color:#228b22"># 替换所有的foo</span>
+<span style="color:#cd5555">${</span><span style="color:#00688b">var</span>//foo/bar<span style="color:#cd5555">}</span>;
+
+<span style="color:#228b22"># 使用默认值</span>
+$ <span style="color:#00688b">default</span>=<span style="color:#cd5555">&#34;hello&#34;</span>; <span style="color:#658b00">unset</span> var; <span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">var</span><span style="color:#8b008b;font-weight:bold">:-</span><span style="color:#00688b">$default</span><span style="color:#cd5555">}</span>
+hello
+
+$ <span style="color:#658b00">echo</span> f{oo,ee,a}d
+food feed fad
+
+$ mv error.log{,.OLD}
+(error.log is renamed to error.log.OLD because the brace expression
+expands to <span style="color:#cd5555">&#34;mv error.log error.log.OLD&#34;</span>)
+
+$ <span style="color:#8b008b;font-weight:bold">for</span> num in {<span style="color:#b452cd">000</span>..2}; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$num</span><span style="color:#cd5555">&#34;</span>; <span style="color:#8b008b;font-weight:bold">done</span>
+<span style="color:#b452cd">000</span>
+<span style="color:#b452cd">001</span>
+<span style="color:#b452cd">002</span>
+
+$ <span style="color:#658b00">echo</span> {<span style="color:#b452cd">00</span>..8..2}
+<span style="color:#b452cd">00</span> <span style="color:#b452cd">02</span> <span style="color:#b452cd">04</span> <span style="color:#b452cd">06</span> <span style="color:#b452cd">08</span>
+
+$ <span style="color:#658b00">echo</span> {D..T..4}
+D H L P T</code></pre></td></tr></table>
+</div>
+</div>
+<p>双层圆括号用于算术运算。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">(( <span style="color:#00688b">var</span> = <span style="color:#b452cd">78</span> ))
+<span style="color:#00688b">var</span>=<span style="color:#8b008b;font-weight:bold">$((</span> <span style="color:#b452cd">20</span> + <span style="color:#b452cd">5</span> <span style="color:#8b008b;font-weight:bold">))</span>
+(( var++ ))
+(( var-- ))
+(( <span style="color:#00688b">var0</span> = var1&lt;<span style="color:#b452cd">98</span>?9:21 ))
+((a++))
+
+((<span style="color:#00688b">meaning</span> = <span style="color:#b452cd">42</span>))
+
+<span style="color:#8b008b;font-weight:bold">for</span> ((<span style="color:#00688b">i</span>=<span style="color:#b452cd">0</span>; i&lt;<span style="color:#b452cd">10</span>; i++))
+
+<span style="color:#658b00">echo</span> <span style="color:#8b008b;font-weight:bold">$((</span>a + b + (<span style="color:#b452cd">14</span> * c<span style="color:#8b008b;font-weight:bold">))</span>)</code></pre></td></tr></table>
+</div>
+</div>
+<p>在双层圆括号之中，可以不用变量名之前加上美元符号，也可以使用空格。</p>
+
+<p>单个方括号用于数组索引。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">array[<span style="color:#b452cd">4</span>]=<span style="color:#cd5555">&#34;hello&#34;</span>
+
+<span style="color:#00688b">element</span>=<span style="color:#cd5555">${</span><span style="color:#00688b">array</span>[index]<span style="color:#cd5555">}</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>圆括号用于新建一个子shell或者创造数组。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">pwd</span>
+/home/user
+$ (<span style="color:#658b00">cd</span> /tmp; <span style="color:#658b00">pwd</span>)
+/tmp
+$ <span style="color:#658b00">pwd</span>
+/home/user
+
+<span style="color:#00688b">array</span>=(<span style="color:#b452cd">1</span> <span style="color:#b452cd">2</span> <span style="color:#b452cd">3</span>)
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">array</span>[1]<span style="color:#cd5555">}</span>
+<span style="color:#b452cd">2</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>脚本实例</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/usr/bin/env bash
+</span><span style="color:#1e889b"></span>
+<span style="color:#00688b">a</span>=joe
+
+<span style="color:#8b008b;font-weight:bold">if</span> [ <span style="color:#00688b">$a</span> == <span style="color:#cd5555">&#34;joe&#34;</span> ]; <span style="color:#8b008b;font-weight:bold">then</span>
+  <span style="color:#658b00">echo</span> hello;
+<span style="color:#8b008b;font-weight:bold">elif</span> [ <span style="color:#00688b">$a</span> == <span style="color:#cd5555">&#34;doe&#34;</span> ]; <span style="color:#8b008b;font-weight:bold">then</span>
+  <span style="color:#658b00">echo</span> goodbye;
+<span style="color:#8b008b;font-weight:bold">else</span>
+  <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;ni hao&#34;</span>;
+<span style="color:#8b008b;font-weight:bold">fi</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>进行判断的脚本。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ mkdir testdir   <span style="color:#228b22"># make a test directory</span>
+$ <span style="color:#00688b">outputdir</span>=testdir
+$ <span style="color:#8b008b;font-weight:bold">if</span> ! <span style="color:#658b00">cd</span> <span style="color:#00688b">$outputdir</span>; <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;couldnt cd into output dir&#34;</span>; exit; <span style="color:#8b008b;font-weight:bold">fi</span>
+$ <span style="color:#228b22"># no error -  now we&#39;re in the directory testdir</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>test是判断命令，也可以不把判断条件放在<code>[...]</code>之中。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">if</span> <span style="color:#658b00">test</span> <span style="color:#00688b">$?</span> -eq <span style="color:#b452cd">0</span>
+<span style="color:#8b008b;font-weight:bold">then</span>
+<span style="color:#8b008b;font-weight:bold">fi</span>
+
+<span style="color:#228b22"># 判断文件是否存在</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [ -e <span style="color:#00688b">$file</span> ]
+
+<span style="color:#228b22"># 判断文件大小是否为0</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [ -s <span style="color:#00688b">$file</span> ]</code></pre></td></tr></table>
+</div>
+</div>
+<p>多个表达式的联合</p>
+
+<ul>
+<li><code>[ ! EXPR ]</code> 如果EXPR为false，则返回true</li>
+<li><code>[ (EXPR) ]</code> 返回EXPR的值.</li>
+<li><code>[ EXPR1 -a EXPR2 ]</code> 表达式1和表达式2同时为<code>true</code>，则返回<code>true</code></li>
+<li><code>[ EXPR1 -o EXPR2 ]</code> 只要EXPR1或EXPR2有一个为true，则返回true。</li>
+<li><code>?(&lt;PATTERN-LIST&gt;)</code>   Matches zero or one occurrence of the given patterns</li>
+<li><code>*(&lt;PATTERN-LIST&gt;)</code>   Matches zero or more occurrences of the given patterns</li>
+<li><code>+(&lt;PATTERN-LIST&gt;)</code>   Matches one or more occurrences of the given patterns</li>
+<li><code>@(&lt;PATTERN-LIST&gt;)</code>   Matches one of the given patterns</li>
+
+<li><p><code>!(&lt;PATTERN-LIST&gt;)</code>   Matches anything except one of the given patterns</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ rm -f !(survivior.txt)</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<p>运算符</p>
+
+<ul>
+<li>-eq 等于</li>
+<li>-ne 不等于</li>
+<li>-gt 大于</li>
+<li>-ge 大于或等于</li>
+<li>-lt 小于</li>
+
+<li><p>-le 小于或等于</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 单行判断</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#b452cd">1</span> -eq <span style="color:#b452cd">1</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;true&#34;</span>; <span style="color:#8b008b;font-weight:bold">fi</span>;
+
+<span style="color:#228b22"># 多行判断</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#b452cd">1</span> -eq <span style="color:#b452cd">1</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;true&#34;</span>;
+<span style="color:#8b008b;font-weight:bold">fi</span>;</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<p><code>if...else</code>结构。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 单行</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#b452cd">2</span> -ne <span style="color:#b452cd">1</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;true&#34;</span>; <span style="color:#8b008b;font-weight:bold">else</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;false&#34;</span>; <span style="color:#8b008b;font-weight:bold">fi</span>;
+
+<span style="color:#228b22"># 多行</span>
+<span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#b452cd">2</span> -ne <span style="color:#b452cd">1</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+  <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;true&#34;</span>;
+<span style="color:#8b008b;font-weight:bold">else</span>
+  <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;false&#34;</span>;
+<span style="color:#8b008b;font-weight:bold">fi</span>;</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>if..elif..else</code>结构。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#cd5555">`</span>uname<span style="color:#cd5555">`</span> == <span style="color:#cd5555">&#34;Adam&#34;</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+  <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Do not eat an apple!&#34;</span>;
+<span style="color:#8b008b;font-weight:bold">elif</span> [[ <span style="color:#cd5555">`</span>uname<span style="color:#cd5555">`</span> == <span style="color:#cd5555">&#34;Eva&#34;</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+  <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Do not take an apple!&#34;</span>;
+<span style="color:#8b008b;font-weight:bold">else</span>
+  <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Apples are delicious!&#34;</span>;
+<span style="color:#8b008b;font-weight:bold">fi</span>;</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>case</code>结构</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#8b008b;font-weight:bold">case</span> <span style="color:#cd5555">&#34;$extension&#34;</span> <span style="color:#8b008b;font-weight:bold">in</span>
+  <span style="color:#cd5555">&#34;jpg&#34;</span>|<span style="color:#cd5555">&#34;jpeg&#34;</span>)
+    echo <span style="color:#cd5555">&#34;It&#39;s image with jpeg extension.&#34;</span>
+  ;;
+  <span style="color:#cd5555">&#34;png&#34;</span>)
+    echo <span style="color:#cd5555">&#34;It&#39;s image with png extension.&#34;</span>
+  ;;
+  <span style="color:#cd5555">&#34;gif&#34;</span>)
+    echo <span style="color:#cd5555">&#34;Oh, it&#39;s a giphy!&#34;</span>
+  ;;
+  *)
+    echo <span style="color:#cd5555">&#34;Woops! It&#39;s not image!&#34;</span>
+  ;;
+esac;
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面代码中，<code>|</code>符号用来分隔多个模式，<code>)</code>符号用来终结一个模式队列，<code>*</code>表示除了上面模式以外的所有其他模式。每个<code>case</code>代码块应该以<code>;;</code>符号表示结束。</p>
+
+<p>字符串比较运算符</p>
+
+<ul>
+<li>== Is Equal To</li>
+<li>!= Is Not Equal To</li>
+<li>&lt; Is Less Than</li>
+<li>&lt;= Is Less Than Or Equal To</li>
+<li>&gt; Is Greater Than if</li>
+<li>&gt;= Is Greater Than Or Equal To</li>
+</ul>
+
+<p>常见的判断表达式。</p>
+
+<ul>
+<li><code>[ -a FILE ]</code> 如果路径存在，返回<code>true</code></li>
+<li><code>[ -b FILE ]</code> True if FILE exists and is a block-special file.</li>
+<li><code>[ -c FILE ]</code> True if FILE exists and is a character-special file.</li>
+<li><code>[ -d FILE ]</code> 如果路径存在，而且是一个目录，返回<code>true</code></li>
+<li><code>[ -e FILE ]</code> 如果路径存在，而且是一个目录或常规文件，返回<code>true</code>，否则返回<code>false</code></li>
+<li><code>[ -f FILE ]</code> 如果路径存在，而且是一个常规文件，返回<code>true</code>，否则返回<code>false</code></li>
+<li><code>[ -g FILE ]</code> True if FILE exists and its SGID bit is set.</li>
+<li><code>[ -h FILE ]</code> True if FILE exists and is a symbolic link.</li>
+<li><code>[ -k FILE ]</code> True if FILE exists and its sticky bit is set.</li>
+<li><code>[ -L FILE ]</code> 如果文件存在且是符号链接，则返回true</li>
+<li><code>[ -p FILE ]</code> True if FILE exists and is a named pipe (FIFO).</li>
+<li><code>[ -r FILE ]</code> 如果文件存在且可读，则返回true</li>
+<li><code>[ -s FILE ]</code> 如果文件存在，而且非空（size大于0），则返回true</li>
+<li><code>[ -t FD ]</code>   True if file descriptor FD is open and refers to a terminal.</li>
+<li><code>[ -u FILE ]</code> True if FILE exists and its SUID (set user ID) bit is set.</li>
+<li><code>[ -w FILE ]</code> 如果文件存在且可写，则返回true</li>
+<li><code>[ -x FILE ]</code> 如果文件存在且可执行，则返回true</li>
+<li><code>[ -O FILE ]</code> True if FILE exists and is owned by the effective user ID.</li>
+<li><code>[ -G FILE ]</code> True if FILE exists and is owned by the effective group ID.</li>
+<li><code>[ -L FILE ]</code> True if FILE exists and is a symbolic link.</li>
+<li><code>[ -N FILE ]</code> True if FILE exists and has been modified since it was last read.</li>
+<li><code>[ -S FILE ]</code> True if FILE exists and is a socket.</li>
+<li><code>[ FILE1 -nt FILE2 ]</code> 如果FILE1比FILE2更新（最近改动过），或者FILE1存在而FILE2不存在，则返回true</li>
+<li><code>[ FILE1 -ot FILE2 ]</code> 如果FILE1比FILE2更老，或FILE2存在而FILE1不存在，则返回true。</li>
+<li><code>[ FILE1 -ef FILE2 ]</code> True if FILE1 and FILE2 refer to the same device and inode numbers.</li>
+<li><code>[ -o OPTIONNAME ]</code>   True if shell option &ldquo;OPTIONNAME&rdquo; is enabled.</li>
+<li><code>[ -z STRING ]</code>   如果参数字符串的长度为0，则返回<code>true</code>，否则返回<code>false</code></li>
+<li><code>[ -n STRING ]</code> or <code>[ STRING ]</code> 如果&rdquo;STRING&rdquo;的长度是非零，则返回true</li>
+<li><code>[ STRING1 == STRING2 ]</code>  True if the strings are equal. &ldquo;=&rdquo; may be used instead of &ldquo;==&rdquo; for strict POSIX compliance.</li>
+<li><code>[ STRING1 != STRING2 ]</code>  True if the strings are not equal.</li>
+<li><code>[ STRING1 &lt; STRING2 ]</code>   True if &ldquo;STRING1&rdquo; sorts before &ldquo;STRING2&rdquo; lexicographically in the current locale.</li>
+<li><code>[ STRING1 &gt; STRING2 ]</code>   True if &ldquo;STRING1&rdquo; sorts after &ldquo;STRING2&rdquo; lexicographically in the current locale.</li>
+<li><code>[ ARG1 OP ARG2 ]</code>    &ldquo;OP&rdquo; is one of -eq, -ne, -lt, -le, -gt or -ge. These arithmetic binary operators return true if &ldquo;ARG1&rdquo; is equal to, not equal to, less than, less than or equal to, greater than, or greater than or equal to &ldquo;ARG2&rdquo;, respectively. &ldquo;ARG1&rdquo; and &ldquo;ARG2&rdquo; are integers.</li>
+</ul>
+
+<h2 id="循环">循环</h2>
+
+<p>for循环</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 单行</span>
+<span style="color:#8b008b;font-weight:bold">for</span> variable in list; <span style="color:#8b008b;font-weight:bold">do</span> ... ; <span style="color:#8b008b;font-weight:bold">done</span>
+
+<span style="color:#228b22"># 多行</span>
+<span style="color:#8b008b;font-weight:bold">for</span> arg in elem1 elem2 ... elemN
+<span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#228b22"># statements</span>
+<span style="color:#8b008b;font-weight:bold">done</span>
+<span style="color:#228b22"># 实例</span>
+$ <span style="color:#8b008b;font-weight:bold">for</span> i in <span style="color:#b452cd">1</span> <span style="color:#b452cd">2</span> <span style="color:#b452cd">3</span>; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> <span style="color:#00688b">$i</span>; <span style="color:#8b008b;font-weight:bold">done</span>
+<span style="color:#b452cd">1</span>
+<span style="color:#b452cd">2</span>
+<span style="color:#b452cd">3</span>
+
+$ <span style="color:#8b008b;font-weight:bold">for</span> i in <span style="color:#b452cd">1</span> <span style="color:#b452cd">2</span> hello; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> <span style="color:#00688b">$i</span>; <span style="color:#8b008b;font-weight:bold">done</span>
+<span style="color:#b452cd">1</span>
+<span style="color:#b452cd">2</span>
+hello
+
+$ <span style="color:#8b008b;font-weight:bold">for</span> i in {<span style="color:#b452cd">1</span>..10}; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$i</span><span style="color:#cd5555"> &#34;</span>; <span style="color:#8b008b;font-weight:bold">done</span>; <span style="color:#658b00">echo</span>
+<span style="color:#b452cd">1</span> <span style="color:#b452cd">2</span> <span style="color:#b452cd">3</span> <span style="color:#b452cd">4</span> <span style="color:#b452cd">5</span> <span style="color:#b452cd">6</span> <span style="color:#b452cd">7</span> <span style="color:#b452cd">8</span> <span style="color:#b452cd">9</span> <span style="color:#b452cd">10</span>
+
+$ <span style="color:#8b008b;font-weight:bold">for</span> i in <span style="color:#8b008b;font-weight:bold">$(</span> seq <span style="color:#b452cd">1</span> <span style="color:#b452cd">2</span> <span style="color:#b452cd">10</span> <span style="color:#8b008b;font-weight:bold">)</span>; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$i</span><span style="color:#cd5555"> &#34;</span>; <span style="color:#8b008b;font-weight:bold">done</span>; <span style="color:#658b00">echo</span>
+<span style="color:#b452cd">1</span> <span style="color:#b452cd">3</span> <span style="color:#b452cd">5</span> <span style="color:#b452cd">7</span> <span style="color:#b452cd">9</span>
+
+<span style="color:#8b008b;font-weight:bold">for</span> FILE in <span style="color:#00688b">$HOME</span>/*.bash; <span style="color:#8b008b;font-weight:bold">do</span>
+  mv <span style="color:#00688b">$FILE</span> <span style="color:#cd5555">${</span><span style="color:#00688b">HOME</span><span style="color:#cd5555">}</span>/scripts
+  chmod +x <span style="color:#cd5555">${</span><span style="color:#00688b">HOME</span><span style="color:#cd5555">}</span>/scripts/<span style="color:#cd5555">${</span><span style="color:#00688b">FILE</span><span style="color:#cd5555">}</span>
+<span style="color:#8b008b;font-weight:bold">done</span>
+
+<span style="color:#228b22"># C语法的循环</span>
+<span style="color:#8b008b;font-weight:bold">for</span> (( <span style="color:#00688b">i</span> = <span style="color:#b452cd">0</span>; i &lt; <span style="color:#b452cd">10</span>; i++ )); <span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#658b00">echo</span> <span style="color:#00688b">$i</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>while循环则是只要满足某个条件，就一直循环下去。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 单行</span>
+<span style="color:#8b008b;font-weight:bold">while</span> condition; <span style="color:#8b008b;font-weight:bold">do</span> ... ; <span style="color:#8b008b;font-weight:bold">done</span>
+
+<span style="color:#228b22"># 多行</span>
+<span style="color:#8b008b;font-weight:bold">while</span> [[ condition ]]
+<span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#228b22"># statements</span>
+<span style="color:#8b008b;font-weight:bold">done</span>
+
+<span style="color:#228b22"># 实例</span>
+$ <span style="color:#00688b">x</span>=<span style="color:#b452cd">1</span>; <span style="color:#8b008b;font-weight:bold">while</span> [ <span style="color:#00688b">$x</span> -lt <span style="color:#b452cd">4</span> ]; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> <span style="color:#00688b">$x</span>; <span style="color:#00688b">x</span>=<span style="color:#8b008b;font-weight:bold">$((</span><span style="color:#00688b">$x</span>+<span style="color:#b452cd">1</span><span style="color:#8b008b;font-weight:bold">))</span>; <span style="color:#8b008b;font-weight:bold">done</span>
+<span style="color:#b452cd">1</span>
+<span style="color:#b452cd">2</span>
+<span style="color:#b452cd">3</span>
+
+$ cat junk.txt
+<span style="color:#b452cd">1</span>
+<span style="color:#b452cd">2</span>
+<span style="color:#b452cd">3</span>
+$ <span style="color:#8b008b;font-weight:bold">while</span> <span style="color:#658b00">read</span> x; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#658b00">echo</span> <span style="color:#00688b">$x</span>; <span style="color:#8b008b;font-weight:bold">done</span> &lt; junk.txt
+<span style="color:#b452cd">1</span>
+<span style="color:#b452cd">2</span>
+<span style="color:#b452cd">3</span>
+
+<span style="color:#00688b">x</span>=<span style="color:#b452cd">0</span>
+<span style="color:#8b008b;font-weight:bold">while</span> [[ <span style="color:#00688b">$x</span> -lt <span style="color:#b452cd">10</span> ]]; <span style="color:#8b008b;font-weight:bold">do</span> <span style="color:#228b22"># value of x is less than 10</span>
+  <span style="color:#658b00">echo</span> <span style="color:#8b008b;font-weight:bold">$((</span><span style="color:#00688b">$x</span>*<span style="color:#00688b">$x</span><span style="color:#8b008b;font-weight:bold">))</span>
+  <span style="color:#00688b">x</span>=<span style="color:#cd5555">`</span>expr <span style="color:#00688b">$x</span> + <span style="color:#b452cd">1</span><span style="color:#cd5555">`</span> <span style="color:#228b22"># increase x</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>until</code>循环则是只要条件为<code>false</code>，就不断执行。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">until</span> [[ conditions ]]; <span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#228b22">#statements</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>循环过程中，可以使用<code>break</code>命令跳出循环，也可以使用<code>continue</code>命令直接跳到下一轮循环。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">for</span> (( <span style="color:#00688b">i</span> = <span style="color:#b452cd">0</span>; i &lt; <span style="color:#b452cd">10</span>; i++ )); <span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#8b008b;font-weight:bold">$((</span><span style="color:#00688b">$i</span> % <span style="color:#b452cd">2</span><span style="color:#8b008b;font-weight:bold">))</span> == <span style="color:#b452cd">0</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span> <span style="color:#8b008b;font-weight:bold">continue</span>; <span style="color:#8b008b;font-weight:bold">fi</span>;
+  <span style="color:#658b00">echo</span> <span style="color:#00688b">$i</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="select命令">select命令</h2>
+
+<p>select命令用于在屏幕上显示一组选项，供用户选择。它跟<code>for</code>循环的语法很相似。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">select</span> answer in elem1 elem2 ... elemN
+<span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#228b22"># statements</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<p><code>select</code>会将所有选项，显示在屏幕上，并且在每一项前面加上序号，提示用户选择一个。用户的选择会储存在变量<code>answer</code>里面。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span>
+<span style="color:#00688b">PS3</span>=<span style="color:#cd5555">&#34;Choose the package manager: &#34;</span>
+<span style="color:#8b008b;font-weight:bold">select</span> ITEM in bower npm gem pip
+<span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;Enter the package name: &#34;</span> &amp;&amp; <span style="color:#658b00">read</span> PACKAGE
+  <span style="color:#8b008b;font-weight:bold">case</span> <span style="color:#00688b">$ITEM</span> in
+    bower) bower install <span style="color:#00688b">$PACKAGE</span> ;;
+    npm)   npm   install <span style="color:#00688b">$PACKAGE</span> ;;
+    gem)   gem   install <span style="color:#00688b">$PACKAGE</span> ;;
+    pip)   pip   install <span style="color:#00688b">$PACKAGE</span> ;;
+  <span style="color:#8b008b;font-weight:bold">esac</span>;
+  <span style="color:#658b00">break</span> <span style="color:#228b22"># avoid infinite loop</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>运行上面代码，结果如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./my_script
+<span style="color:#b452cd">1</span>) bower
+<span style="color:#b452cd">2</span>) npm
+<span style="color:#b452cd">3</span>) gem
+<span style="color:#b452cd">4</span>) pip
+Choose the package manager: <span style="color:#b452cd">2</span>
+Enter the package name: bash-handbook
+&lt;installing of bash-handbook&gt;</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="正则运算符">正则运算符</h2>
+
+<p><code>=~</code>是Bash的正则运算符，左侧运算数为等待验证的值，右侧为一个正则表达式。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#00688b">$digit</span> =~ [<span style="color:#b452cd">0</span>-9] ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+    <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$digit</span><span style="color:#cd5555"> is a digit&#34;</span>
+<span style="color:#8b008b;font-weight:bold">else</span>
+    <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;oops&#34;</span>
+<span style="color:#8b008b;font-weight:bold">fi</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>下面是另一个例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#658b00">echo</span> -n <span style="color:#cd5555">&#34;Your answer&gt; &#34;</span>
+<span style="color:#658b00">read</span> REPLY
+<span style="color:#8b008b;font-weight:bold">if</span> [[ <span style="color:#00688b">$REPLY</span> =~ ^[<span style="color:#b452cd">0</span>-9]+$ ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+    <span style="color:#658b00">echo</span> Numeric
+<span style="color:#8b008b;font-weight:bold">else</span>
+    <span style="color:#658b00">echo</span> Non-numeric
+<span style="color:#8b008b;font-weight:bold">fi</span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00688b">files</span>=<span style="color:#cd5555">&#34;*.jpg&#34;</span>
+<span style="color:#00688b">regex</span>=<span style="color:#cd5555">&#34;[0-9]+_([a-z]+)_[0-9a-z]*&#34;</span>
+<span style="color:#8b008b;font-weight:bold">for</span> f in <span style="color:#00688b">$files</span>
+<span style="color:#8b008b;font-weight:bold">do</span>
+    [[ <span style="color:#00688b">$f</span> =~ <span style="color:#00688b">$regex</span> ]]
+    <span style="color:#00688b">name</span>=<span style="color:#cd5555">&#34;</span><span style="color:#cd5555">${</span><span style="color:#00688b">BASH_REMATCH</span>[1]<span style="color:#cd5555">}</span><span style="color:#cd5555">&#34;</span>
+    <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">${</span><span style="color:#00688b">name</span><span style="color:#cd5555">}</span><span style="color:#cd5555">.jpg&#34;</span>    <span style="color:#228b22"># concatenate strings</span>
+    <span style="color:#00688b">name</span>=<span style="color:#cd5555">&#34;</span><span style="color:#cd5555">${</span><span style="color:#00688b">name</span><span style="color:#cd5555">}</span><span style="color:#cd5555">.jpg&#34;</span>    <span style="color:#228b22"># same thing stored in a variable</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>特殊字符</p>
+
+<ul>
+<li><code>*</code>   Matches any string, including the null string (empty string)</li>
+<li><code>?</code>   Matches any single character</li>
+<li><code>X</code>   Matches the character X which can be any character that has no special meaning</li>
+<li><code>\X</code>  Matches the character X, where the character&rsquo;s special meaning is stripped by the backslash</li>
+<li><code>\\</code>  Matches a backslash</li>
+</ul>
+
+<p>正则表达式的方括号。</p>
+
+<ul>
+<li><code>[XYZ]</code>   The &ldquo;normal&rdquo; bracket expression, matching either X, Y or Z</li>
+<li><code>[X-Z]</code>   A range expression: Matching all the characters from X to Y (your current locale, defines how the characters are sorted!)</li>
+<li><code>[[:class:]]</code> Matches all the characters defined by a POSIX® character class: alnum, alpha, ascii, blank, cntrl, digit, graph, lower, print, punct, space, upper, word and xdigit</li>
+<li><code>[^…]</code>    A negating expression: It matches all the characters that are not in the bracket expression</li>
+<li><code>[!…]</code>    Equivalent to <code>[^…]</code></li>
+<li><code>[]...]</code> or <code>[-…]</code> Used to include the characters ] and - into the set, they need to be the first characters after the opening bracket</li>
+</ul>
+
+<h2 id="执行脚本命令">执行脚本命令</h2>
+
+<p>在脚本中可以执行shell命令，有两种格式。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#00688b">d</span>=<span style="color:#8b008b;font-weight:bold">$(</span><span style="color:#658b00">pwd</span><span style="color:#8b008b;font-weight:bold">)</span>
+$ <span style="color:#00688b">d</span>=<span style="color:#cd5555">`</span><span style="color:#658b00">pwd</span><span style="color:#cd5555">`</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>实例。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#00688b">len</span>=<span style="color:#8b008b;font-weight:bold">$(</span> cat file.txt | wc -l <span style="color:#8b008b;font-weight:bold">)</span>
+<span style="color:#00688b">d</span>=<span style="color:#8b008b;font-weight:bold">$(</span> dirname <span style="color:#8b008b;font-weight:bold">$(</span> readlink -m <span style="color:#00688b">$0</span> <span style="color:#8b008b;font-weight:bold">)</span> <span style="color:#8b008b;font-weight:bold">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="process-substitution">Process Substitution</h2>
+
+<p>Process Substitution（进程替换）也是用来在脚本中执行Shell命令，但是该Shell命令的输入和输出都是以文件形式出现。它的形式是<code>&lt;( )</code>。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat &lt;( head -1 file.txt ) &lt;( tail file.txt )</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面命令中cat的参数必须是文件，所以使用“进程替换”。</p>
+
+<p>大括号也可以用来执行shell命令。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#8b008b;font-weight:bold">for</span> i in <span style="color:#b452cd">1</span> <span style="color:#b452cd">2</span> <span style="color:#b452cd">3</span>; <span style="color:#8b008b;font-weight:bold">do</span> { <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;***&#34;</span><span style="color:#00688b">$i</span>; sleep <span style="color:#b452cd">60</span> &amp; } <span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="多行字符串">多行字符串</h2>
+
+<p>使用Here字符串，输出多行文本。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat <span style="color:#cd5555">&lt;&lt;_EOF_
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">Usage:
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">$0 --inp [inputfile] --outputdir [dir]  --inst [number] --prefix [string] 
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">Required Arguments:
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">  --inp         the input file 
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">Options:
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">  --outputdir	the output directory (default: cwd)
+</span><span style="color:#cd5555">  --inst	the number of instances requested (default: 1)
+</span><span style="color:#cd5555">  --prefix	the prefix of output files (default: tmp)
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">Example:
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">$0 --inp tmp.txt --outputdir tmpdir --inst 10
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">_EOF_</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="文件处理">文件处理</h2>
+
+<p>读取文件的命令格式。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#8b008b;font-weight:bold">while</span> <span style="color:#00688b">IFS</span>= <span style="color:#658b00">read</span> -r line;
+<span style="color:#8b008b;font-weight:bold">do</span>
+  COMMAND_on <span style="color:#00688b">$line</span>;
+<span style="color:#8b008b;font-weight:bold">done</span> &lt; input.file</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面的<code>-r</code>参数表示防止反斜杠转义。</p>
+
+<p>实例。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/ksh
+</span><span style="color:#1e889b"></span><span style="color:#00688b">file</span>=<span style="color:#cd5555">&#34;/home/vivek/data.txt&#34;</span>
+<span style="color:#8b008b;font-weight:bold">while</span> <span style="color:#00688b">IFS</span>= <span style="color:#658b00">read</span> -r line
+<span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#228b22"># display $line or do somthing with $line</span>
+  <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$line</span><span style="color:#cd5555">&#34;</span>
+<span style="color:#8b008b;font-weight:bold">done</span> &lt;<span style="color:#cd5555">&#34;</span><span style="color:#00688b">$file</span><span style="color:#cd5555">&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>还可以读取每一行的栏位。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span><span style="color:#00688b">file</span>=<span style="color:#cd5555">&#34;/etc/passwd&#34;</span>
+<span style="color:#8b008b;font-weight:bold">while</span> <span style="color:#00688b">IFS</span>=: <span style="color:#658b00">read</span> -r f1 f2 f3 f4 f5 f6 f7
+<span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#228b22"># display fields using f1, f2,..,f7</span>
+  <span style="color:#658b00">printf</span> <span style="color:#cd5555">&#39;Username: %s, Shell: %s, Home Dir: %s\n&#39;</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$f1</span><span style="color:#cd5555">&#34;</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$f7</span><span style="color:#cd5555">&#34;</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$f6</span><span style="color:#cd5555">&#34;</span>
+<span style="color:#8b008b;font-weight:bold">done</span> &lt;<span style="color:#cd5555">&#34;</span><span style="color:#00688b">$file</span><span style="color:#cd5555">&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="函数">函数</h2>
+
+<p>函数表示一组命令，可以反复调用。它的定义方式如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 方式一</span>
+my_func () {
+  <span style="color:#228b22"># statements</span>
+}
+
+<span style="color:#228b22"># 方式二</span>
+<span style="color:#8b008b;font-weight:bold">function</span> my_func () {
+  <span style="color:#228b22"># statements</span>
+}</code></pre></td></tr></table>
+</div>
+</div>
+<p>命令行调用函数方式如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ functionname arg1 arg2</code></pre></td></tr></table>
+</div>
+</div>
+<p>函数使用<code>return</code>命令退出，<code>return</code>命令的参数就是函数的退出码。如果<code>return</code>命令没有参数，那么函数的退出状态就是函数体内最后一个命令的退出状态。</p>
+
+<p>Bash提供一些特殊变量，用于读取函数变量。</p>
+
+<ul>
+<li>$# 参数个数</li>
+<li>$@ 所有参数，等同于<code>$0 $1 ...</code></li>
+<li>$0 脚本名</li>
+<li>$1、$2、$3 函数各个参数</li>
+</ul>
+
+<p>下面是一个例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># function with params</span>
+greeting () {
+  <span style="color:#8b008b;font-weight:bold">if</span> [[ -n <span style="color:#00688b">$1</span> ]]; <span style="color:#8b008b;font-weight:bold">then</span>
+    <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Hello, </span><span style="color:#00688b">$1</span><span style="color:#cd5555">!&#34;</span>
+  <span style="color:#8b008b;font-weight:bold">else</span>
+    <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Hello, unknown!&#34;</span>
+  <span style="color:#8b008b;font-weight:bold">fi</span>
+  <span style="color:#8b008b;font-weight:bold">return</span> <span style="color:#b452cd">0</span>
+}
+
+greeting Denys  <span style="color:#228b22"># Hello, Denys!</span>
+greeting        <span style="color:#228b22"># Hello, unknown!</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>下面是另一个例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ testfunc () { <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$#</span><span style="color:#cd5555"> parameters&#34;</span>; <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$@</span><span style="color:#cd5555">&#34;</span>; }
+
+$ testfunc
+<span style="color:#b452cd">0</span> parameters
+
+$ testfunc a b c
+<span style="color:#b452cd">3</span> parameters
+a b c
+
+$ testfunc a <span style="color:#cd5555">&#34;b c&#34;</span>
+<span style="color:#b452cd">2</span> parameters
+a b c</code></pre></td></tr></table>
+</div>
+</div>
+<p>根据函数用户相似的，就是为命令起别名。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">alias</span> <span style="color:#00688b">name</span>=<span style="color:#cd5555">&#39;unix command with options&#39;</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>函数内部可以使用变量<code>$FUNCNAME</code>，返回当前执行的函数名。</p>
+
+<h2 id="数组">数组</h2>
+
+<p>Bash可以使用数组表示一组值，每个值之间用空格分隔。数组从0开始计算位置。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">fruits[<span style="color:#b452cd">0</span>]=Apple
+fruits[<span style="color:#b452cd">1</span>]=Pear
+fruits[<span style="color:#b452cd">2</span>]=Plum
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">fruits</span>[*]<span style="color:#cd5555">}</span>
+<span style="color:#228b22"># Apple Pear Plum</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>数组也可以用下面的方法声明。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00688b">fruits</span>=(Apple Pear Plum)</code></pre></td></tr></table>
+</div>
+</div>
+<p>其他操作。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 取出数组的一部分</span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">fruits</span>[*]:<span style="color:#00688b">0</span>:<span style="color:#00688b">2</span><span style="color:#cd5555">}</span> <span style="color:#228b22"># Apple Pear</span>
+
+<span style="color:#228b22"># 添加新成员</span>
+<span style="color:#00688b">fruits</span>=(Orange <span style="color:#cd5555">${</span><span style="color:#00688b">fruits</span>[*]<span style="color:#cd5555">}</span> Banana Cherry)
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">fruits</span>[*]<span style="color:#cd5555">}</span> <span style="color:#228b22"># Orange Apple Pear Plum Banana Charry</span>
+
+<span style="color:#228b22"># 清空数组</span>
+<span style="color:#658b00">unset</span> fruits[<span style="color:#b452cd">0</span>]
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">${</span><span style="color:#00688b">fruits</span>[*]<span style="color:#cd5555">}</span> #</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="除错">除错</h2>
+
+<p>脚本可以打开除错选项，用来除错。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22">#!/bin/bash options</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>可用的选项如下。</p>
+
+<ul>
+<li>-f noglob，禁止文件名扩展（globbing）</li>
+<li>-i interactive，脚本以互动模式运行</li>
+<li>-n noexec，读取命令但不执行，用来语法检查</li>
+<li>-t 执行第一条命令后退出</li>
+<li>-v verbose，每条命令执行前，输出到终端</li>
+<li>-x xtrace，每条命令执行前，输出到标准输出，并且扩展命令</li>
+</ul>
+
+<p>下面是使用<code>-x</code>参数的脚本。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/bash -x
+</span><span style="color:#1e889b"></span>
+<span style="color:#8b008b;font-weight:bold">for</span> (( <span style="color:#00688b">i</span> = <span style="color:#b452cd">0</span>; i &lt; <span style="color:#b452cd">3</span>; i++ )); <span style="color:#8b008b;font-weight:bold">do</span>
+  <span style="color:#658b00">echo</span> <span style="color:#00688b">$i</span>
+<span style="color:#8b008b;font-weight:bold">done</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>运行结果如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ./my_script
++ (( <span style="color:#00688b">i</span> = <span style="color:#b452cd">0</span> ))
++ (( i &lt; <span style="color:#b452cd">3</span> ))
++ <span style="color:#658b00">echo</span> <span style="color:#b452cd">0</span>
+<span style="color:#b452cd">0</span>
++ (( i++  ))
++ (( i &lt; <span style="color:#b452cd">3</span> ))
++ <span style="color:#658b00">echo</span> <span style="color:#b452cd">1</span>
+<span style="color:#b452cd">1</span>
++ (( i++  ))
++ (( i &lt; <span style="color:#b452cd">3</span> ))
++ <span style="color:#658b00">echo</span> <span style="color:#b452cd">2</span>
+<span style="color:#b452cd">2</span>
++ (( i++  ))
++ (( i &lt; <span style="color:#b452cd">3</span> ))</code></pre></td></tr></table>
+</div>
+</div>
+<p>如果只想对脚本的一部分除错，可以使用<code>set</code>命令，配合<code>+</code>和<code>-</code>来打开和关闭。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span>
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;xtrace is turned off&#34;</span>
+<span style="color:#658b00">set</span> -x
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;xtrace is enabled&#34;</span>
+<span style="color:#658b00">set</span> +x
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;xtrace is turned off again&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="实例">实例</h2>
+
+<h3 id="查看指定目录大小">查看指定目录大小</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span><span style="color:#228b22">#Author Leo G</span>
+
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34; Enter your directory: &#34;</span>
+<span style="color:#658b00">read</span> x
+du -sh <span style="color:#cd5555">&#34;</span><span style="color:#00688b">$x</span><span style="color:#cd5555">&#34;</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="备份脚本">备份脚本</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#1e889b">#!/bin/bash
+</span><span style="color:#1e889b"></span><span style="color:#228b22">#Author Leo G</span>
+
+rsync -avz  -e <span style="color:#cd5555">&#34;ssh &#34;</span> /path/to/yourfile user@backupserver.com:/backup/
+
+<span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;backup for </span><span style="color:#8b008b;font-weight:bold">$(</span>date<span style="color:#8b008b;font-weight:bold">)</span><span style="color:#cd5555"> &#34;</span>| mail -s <span style="color:#cd5555">&#34;backup complete&#34;</span> user@youremail.com</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="参考链接">参考链接</h2>
+
+<ul>
+<li>Denys Dovhan, <a href="https://github.com/denysdovhan/bash-handbook">bash-handbook</a></li>
+</ul>
+
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2015年12月16日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

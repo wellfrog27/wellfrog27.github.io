@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>Stream的用法 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/vim/config/"
+                                            title="Vim的配置">Vim的配置</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/vim/edit/"
+                                            title="编辑">编辑</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/vim/config/" title="Vim的配置">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/vim/edit/" title="编辑">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">Stream的用法</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2016-02-25&#32;00:00:00&#32;&#43;0000&#32;UTC>2016年2月25日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<p>Bash接收输入和输出，是字符串的流（stream）形式完成的。这些流可以导向文件，或者导向另一个流。</p>
+
+<p>Shell默认会打开三个文件。</p>
+
+<ul>
+<li>文件0：名为<code>stdin</code>，标准输入</li>
+<li>文件1：名为<code>stdout</code>，标准输出</li>
+<li>文件2：名为<code>stderr</code>，标准错误输出</li>
+</ul>
+
+<p>流的重定向操作符如下。</p>
+
+<ul>
+<li><code>&gt;</code>：重定向输出</li>
+<li><code>&gt;&gt;</code>：将标准输出追加到一个文件</li>
+<li><code>&amp;&gt;</code>：重定向标准输出和错误输出到同一个文件</li>
+<li><code>&amp;&gt;&gt;</code>: 重定向标准输出和错误输出追加到同一个文件</li>
+<li><code>m&gt;&amp;n</code>：文件描述符<code>m</code>重定向到文件描述符<code>n</code></li>
+<li><code>m&gt;&gt;&amp;n</code>：文件描述符<code>m</code>重定向追加到文件描述符<code>n</code></li>
+<li><code>&lt;</code>：重定向输入</li>
+<li><code>&lt;&lt;</code>：Here documents syntax</li>
+<li><code>&lt;&lt;&lt;</code>：Here strings</li>
+</ul>
+
+<p>下面是一些例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 将标准输出写入指定文件</span>
+ls -l &gt; list.txt
+
+<span style="color:#228b22"># 追加标准输出到一个文件</span>
+ls -a &gt;&gt; list.txt
+
+<span style="color:#228b22"># 将标准错误写入一个文件</span>
+grep da * <span style="color:#b452cd">2</span>&gt; errors.txt
+
+<span style="color:#228b22"># 从文件中读取内容</span>
+less &lt; errors.txt
+
+<span style="color:#228b22"># 标准输出和标准错误追加到不同的文件</span>
+cmd &gt;&gt;file1 <span style="color:#b452cd">2</span>&gt;&gt;file2
+
+<span style="color:#228b22"># 将标准输入和标准错误都追加到一个文件之中</span>
+cmd &gt;&gt;file.txt <span style="color:#b452cd">2</span>&gt;&amp;<span style="color:#b452cd">1</span>
+
+<span style="color:#228b22"># Bash 4也支持下面的写法，效果与上一条命令相同</span>
+cmd &amp;&gt;&gt; outfile</code></pre></td></tr></table>
+</div>
+</div>
+<p>注意，下面两种写法效果是不同的。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 第一种写法</span>
+$ <span style="color:#658b00">command</span> <span style="color:#b452cd">2</span>&gt;&amp;<span style="color:#b452cd">1</span> &gt;output.txt
+
+<span style="color:#228b22"># 第二种写法</span>
+$ <span style="color:#658b00">command</span> &gt;output.txt <span style="color:#b452cd">2</span>&gt;&amp;<span style="color:#b452cd">1</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>上面第一种写法，<code>stderr</code>重定向到<code>stdout</code>的当前位置，然后<code>stdout</code>重定向到<code>output.txt</code>，但是第二次重定向仅仅影响<code>stdout</code>，影响不到<code>stderr</code>。第二种写法中，<code>stderr</code>重定向到<code>stdout</code>的当前位置，即<code>output.txt</code>。因为<code>stderr</code>的重定向晚于<code>stdout</code>的重定向，所以<code>stderr</code>不会输出到屏幕上。</p>
+
+<p>如果想彻底忽略某种输出，可以将其重定向到空文件<code>/dev/null</code>。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ls x* z* <span style="color:#b452cd">2</span>&gt;/dev/null</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面命令不会输出错误。</p>
+
+<h2 id="管道命令">管道命令</h2>
+
+<p>不仅可以将“流”重定向到文件，还可以使用<code>|</code>运算符，将<code>流</code>重定向到另一个命令。<code>|</code>运算符称为管道。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ls -l | grep .md$ | less</code></pre></td></tr></table>
+</div>
+</div>
+<p>如果一个命令的参数必须是标准输入，可以使用<code>cat</code>命令将文件内容导出为标准输出，然后使用管道命令将其导向要求标准输入的命令。</p>
+
+<p>许多命令在文件名参数的位置，使用连词线<code>-</code>，表示这里的输入来自标准输入，而不是来自文件。也就是说，根据上下文，连词号解释成标准输入或标准输出。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ bunzip2 -c somefile.tar.bz2 | tar -xvf -</code></pre></td></tr></table>
+</div>
+</div>
+<p>凡是使用<code>-</code>表示标准输入或标准输出的场合，都可以使用<code>/dev/stdin</code>和<code>/dev/stdout</code>替代。</p>
+
+<p><code>2|</code>表示只用管道传递标准错误。</p>
+
+<p>可以将多个命令，组合成管道操作的一个阶段，然后将这些命令的所有输出，都导向管道的下一个阶段。圆括号表示这些在子shell运行，大括号比较这些命令在当前shell运行。大括号与其他内容之间有一个空格，而圆括号是操作符不必有空格。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ (ls -lrS /usr/bin; du /usr/bin) | tail -n <span style="color:#b452cd">3</span>
+-rwxr-xr-x.   <span style="color:#b452cd">1</span> root root    <span style="color:#b452cd">10669512</span> Sep <span style="color:#b452cd">18</span> <span style="color:#b452cd">10</span>:41 mysql
+-rwxr-xr-t.   <span style="color:#b452cd">1</span> root root    <span style="color:#b452cd">15148768</span> Sep <span style="color:#b452cd">14</span> <span style="color:#b452cd">05</span>:11 emacs-24.5
+<span style="color:#b452cd">386296</span>   /usr/bin
+:$ { ls -lrS /usr/bin; du /usr/bin; } | tail -n <span style="color:#b452cd">3</span>
+-rwxr-xr-x.   <span style="color:#b452cd">1</span> root root    <span style="color:#b452cd">10669512</span> Sep <span style="color:#b452cd">18</span> <span style="color:#b452cd">10</span>:41 mysql
+-rwxr-xr-t.   <span style="color:#b452cd">1</span> root root    <span style="color:#b452cd">15148768</span> Sep <span style="color:#b452cd">14</span> <span style="color:#b452cd">05</span>:11 emacs-24.5
+<span style="color:#b452cd">386296</span>   /usr/bin</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="xargs">xargs</h2>
+
+<p>如果希望用一个命令的输入或者文件内容，作为另一个命令的参数而不是标准输入，管道命令不能用于这个场合，必须用下面的方法解决。</p>
+
+<ul>
+<li><code>xargs</code>命令</li>
+<li>带有<code>-exec</code>参数的<code>find</code>命令</li>
+<li>命令替换（Command substitution）</li>
+</ul>
+
+<p><code>xargs</code>命令读取标准输入，然后将其作为指定命令的参数进行执行。如果没有提供命令，就使用<code>echo</code>命令。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat text1
+<span style="color:#b452cd">1</span> apple
+<span style="color:#b452cd">2</span> pear
+<span style="color:#b452cd">3</span> banana
+$ xargs&lt;text1
+<span style="color:#b452cd">1</span> apple <span style="color:#b452cd">2</span> pear <span style="color:#b452cd">3</span> banana</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面命令中，输出显示为一行，这是因为<code>xargs</code>将换行符改成了空格符，每个空格分隔的词都会被当作一个参数。<code>xargs</code>默认会传递尽可能多的参数，可以用<code>-n</code>或<code>--max-args</code>参数改变这个参数。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xargs&lt;text1 <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;args &gt;&#34;</span>
+args &gt; <span style="color:#b452cd">1</span> apple <span style="color:#b452cd">2</span> pear <span style="color:#b452cd">3</span> banana
+$ xargs --max-args <span style="color:#b452cd">3</span> &lt;text1 <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;args &gt;&#34;</span>
+args &gt; <span style="color:#b452cd">1</span> apple <span style="color:#b452cd">2</span>
+args &gt; pear <span style="color:#b452cd">3</span> banana
+$ xargs -n <span style="color:#b452cd">1</span> &lt;text1 <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;args &gt;&#34;</span>
+args &gt; <span style="color:#b452cd">1</span>
+args &gt; apple
+args &gt; <span style="color:#b452cd">2</span>
+args &gt; pear
+args &gt; <span style="color:#b452cd">3</span>
+args &gt; banana</code></pre></td></tr></table>
+</div>
+</div>
+<p>如果空格放在引号之中，<code>xargs</code>就不会转换这个空格。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#39;&#34;4 plum&#34;&#39;</span> | cat text1 -
+<span style="color:#b452cd">1</span> apple
+<span style="color:#b452cd">2</span> pear
+<span style="color:#b452cd">3</span> banana
+<span style="color:#cd5555">&#34;4 plum&#34;</span>
+$ <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#39;&#34;4 plum&#34;&#39;</span> | cat text1 - | xargs -n <span style="color:#b452cd">1</span>
+<span style="color:#b452cd">1</span>
+apple
+<span style="color:#b452cd">2</span>
+pear
+<span style="color:#b452cd">3</span>
+banana
+<span style="color:#b452cd">4</span> plum</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>xargs</code>命令默认将参数加在命令的行尾，如果想放在其他位置，可以用<code>-I</code>参数指定一个替代符。执行的时候，该替代符会被真实参数替代。使用<code>-I</code>参数时，多行输入会将每一行当作一整个参数，可以使用<code>-L</code>改变这个行为，即<code>-I</code>的默认使用<code>-L 1</code>。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xargs -I XYZ <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;START XYZ REPEAT XYZ END&#34;</span> &lt;text1
+START <span style="color:#b452cd">1</span> apple REPEAT <span style="color:#b452cd">1</span> apple END
+START <span style="color:#b452cd">2</span> pear REPEAT <span style="color:#b452cd">2</span> pear END
+START <span style="color:#b452cd">3</span> banana REPEAT <span style="color:#b452cd">3</span> banana END
+
+$ xargs -IX <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;&lt;X&gt;&lt;X&gt;&#34;</span> &lt;text2
+&lt;<span style="color:#b452cd">9</span> plum&gt;&lt;<span style="color:#b452cd">9</span> plum&gt;
+&lt;<span style="color:#b452cd">3</span> banana&gt;&lt;<span style="color:#b452cd">3</span> banana&gt;
+&lt;<span style="color:#b452cd">10</span> apple&gt;&lt;<span style="color:#b452cd">10</span> apple&gt;
+
+$ cat text1 text2 | xargs -L2
+<span style="color:#b452cd">1</span> apple <span style="color:#b452cd">2</span> pear
+<span style="color:#b452cd">3</span> banana <span style="color:#b452cd">9</span> plum
+<span style="color:#b452cd">3</span> banana <span style="color:#b452cd">10</span> apple</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="使用-find-命令的-exec-参数">使用 find 命令的 exec 参数</h2>
+
+<p><code>find</code>命令的<code>-exec</code>参数，类似于<code>xargs</code>命令使用管道提供参数。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ find text[<span style="color:#b452cd">12</span>] -exec cat text3 {} <span style="color:#cd5555">\;</span>
+This is a sentence. This is a sentence. This is a sentence.
+<span style="color:#b452cd">1</span> apple
+<span style="color:#b452cd">2</span> pear
+<span style="color:#b452cd">3</span> banana
+This is a sentence. This is a sentence. This is a sentence.
+<span style="color:#b452cd">9</span> plum
+<span style="color:#b452cd">3</span> banana
+<span style="color:#b452cd">10</span> apple</code></pre></td></tr></table>
+</div>
+</div>
+<p>必须使用<code>{}</code>表示文件名的位置，<code>find</code>不会自动将文件名添加到命令末尾。</p>
+
+<p>必须使用转义后的分号<code>\;</code>（<code>';'</code>或<code>&quot;;&quot;</code>也可）结束命令。</p>
+
+<p>每行输入的文件，命令执行一次。</p>
+
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2016年2月25日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

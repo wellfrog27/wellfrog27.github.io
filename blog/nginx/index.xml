@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on 阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/blog/nginx/</link>
+    <description>Recent content in Nginx on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    
+        <atom:link href="https://wellfrog27.github.io/blog/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>负载均衡</title>
+      <link>https://wellfrog27.github.io/blog/nginx/load-balance/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/load-balance/</guid>
+      <description>Nginx 可以用作负载均衡。 1 2 3 4 5 upstream backend { server backend1.example.com; server backend2.example.com; server backend3.example.com; } 上面代码会将流量分配到三台服务器。具体的分配规则，由 Nginx 自动完成。 Nginx 允许调整不同服务器的权重。 1 2 3 4 5 upstream backend { server backend1.example.com weight=1; server backend2.example.com weight=2; server backend3.example.com weight=4; } 如果有一台服务器有连接</description>
+    </item>
+    
+    <item>
+      <title>配置</title>
+      <link>https://wellfrog27.github.io/blog/nginx/config/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/config/</guid>
+      <description>Nginx的主配置文件是nginx.conf，通常位于/usr/local/etc/nginx或者/etc/nginx。官方网站提供范例配置nginx.conf.default）可以查看。 虚拟主机的默</description>
+    </item>
+    
+    <item>
+      <title>Server Blocks</title>
+      <link>https://wellfrog27.github.io/blog/nginx/server-blocks/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/server-blocks/</guid>
+      <description>nginx 允许一台服务器支持多个网站，这叫做 Server Blocks（跟 Apache 的 virtual host 是一个意思）。 如果/var/www/example.com/是网站的 document root 目录，网站的首页是/var/www/example.com/pub</description>
+    </item>
+    
+    <item>
+      <title>重定向</title>
+      <link>https://wellfrog27.github.io/blog/nginx/redirect/</link>
+      <pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/redirect/</guid>
+      <description>Nginx 的重定向命令较为简单。 1 2 3 4 5 server { listen 80; server_name domain1.com; return 301 $scheme://domain2.com$request_uri; } 上面的代码将所有请求，301重定向到另一个域名。 如果只要重定向某个目录的请求，可以像下面这样写。 1 2 3 4 5 # 301 重定向 rewrite ^/images/(.*)$ http://images.example.com/$1 redirect; # 302 重定向 rewrite ^/images/(.*)$ http://images.example.com/$1 permanent;</description>
+    </item>
+    
+    <item>
+      <title>nginx的用法</title>
+      <link>https://wellfrog27.github.io/blog/nginx/basic/</link>
+      <pubDate>Sun, 12 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/basic/</guid>
+      <description>简介 Nginx（发音/engine x/）是一个轻量级的开源 HTTP 服务器软件，可以用来取代 Apache，或者与 Apache 配合使用。 它与 Apache 的区别在于：它的设计基于事件和异步操作，而 Apache 完全依赖线程。当访问量很大的时候，</description>
+    </item>
+    
+    <item>
+      <title>TLS 设置</title>
+      <link>https://wellfrog27.github.io/blog/nginx/tls/</link>
+      <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/tls/</guid>
+      <description>启用 HTTP/2 打开配置文件（比如/etc/nginx/sites-enabled/sitename)，将下面的一行改掉。 1 listen 443 ssl; 改成 1 listen 443 ssl http2; 改完以后，可以使用下面的命令验证。 1 $ curl --http2 -I https://domain.com/ 弃用 TLS 1.0 如果要放弃使</description>
+    </item>
+    
+    <item>
+      <title>自定义错误页</title>
+      <link>https://wellfrog27.github.io/blog/nginx/error-page/</link>
+      <pubDate>Sat, 14 May 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/error-page/</guid>
+      <description>如果用户请求了错误的网址，或者处理请求时发生错误，nginx 会向用户显示一个错误页。该页面可以自定义。 可以在server块里面，写入下面的定义。 1 2 3 4 5 6 7 error_page 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 421</description>
+    </item>
+    
+    <item>
+      <title>反向代理</title>
+      <link>https://wellfrog27.github.io/blog/nginx/proxy/</link>
+      <pubDate>Sat, 04 Jul 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/proxy/</guid>
+      <description>基本配置 编辑/etc/nginx/sites-available/default，或者在该目录下新建一个配置文件/etc/nginx/sites-available/my-site。 下面是简单的配置。</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>HTTP笔记 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-57/"
+                                            title="科技爱好者周刊：第57期">科技爱好者周刊：第57期</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-6/"
+                                            title="科技爱好者周刊：第6期">科技爱好者周刊：第6期</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/web/"
+                                            rel="tag">Web开发</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-57/" title="科技爱好者周刊：第57期">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-6/" title="科技爱好者周刊：第6期">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">HTTP笔记</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/web/"><abbr class="published"
+                                        title=2018-11-15&#32;00:00:00&#32;&#43;0000&#32;UTC>2018年11月15日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<h2 id="http-2协议">HTTP/2协议</h2>
+
+<p>如今，一张网页通常要发出80到100个HTTP请求（request）。浏览器会同时跟服务器保留6个TCP连接（connection）。每个TCP连接同时只能处理一个请求，必须当前请求结束，才能发起另一个请求。</p>
+
+<p>2015年2月，IETF发布新版HTTP标准HTTP/2。HTTP/2可以一个TCP连接同时处理多个HTTP请求。</p>
+
+<p><img src="https://blog.cloudflare.com/content/images/2015/12/image_1.png" alt="" /></p>
+
+<p>HTTP/2需要兼容HTTP 1.1，两者使用同样的协议符<code>http://</code>，所以需要一种自动协议升级机制Next Protocol Negotiation（缩写NPN）。HTTP 1.1定义了HTTP信息头<code>Upgrade: header</code>，代价是多一次通信往返。服务器告诉浏览器自己支持哪些协议，然后浏览器选择所要采用的协议。但是，HTTP/2没有采用这种方法，而是采用另一种机制ALPN（Application Level Protocol Negotiation），具体做法是浏览器告诉服务器它支持的协议顺序，服务器挑选它所要采用的一种。</p>
+
+<h3 id="http-2协议的特点">HTTP/2协议的特点</h3>
+
+<p>（1）二进制传输</p>
+
+<p><a href="http://http2.github.io/http2-spec/">HTTP/2</a>是一个二进制协议，浏览器与服务器之间交换<a href="http://http2.github.io/http2-spec/#FramingLayer">“数据框”</a>（frame）。每个数据框属于一个<a href="http://http2.github.io/http2-spec/#StreamsLayer">数据流</a>（stream），每个数据流有一个编号（identifier）。多个流可以混合在一个连接中传递，流可以理解成组成response的单位。</p>
+
+<p>（2）并发（concurrency）</p>
+
+<p>同一个TCP连接之中可以同时处理多个请求，服务器可以不按照收到的顺序，发出回应。减少了服务器与浏览器之间建立多个连接的需要。使用HTTP/2时，HTTP请求的数量不再是一个问题，优化主要集中在减小文件体积，利用好缓存。</p>
+
+<p>传统的HTTP连接，在发出Content-Length以后，不能终止传输，否则只能新建另一个TCP连接。HTTP/2允许重置（reset）某个流，传输一个新的流。</p>
+
+<p>（3）多工的流传输（Multiplexing）</p>
+
+<p>这些数据流都是多工的（multiplexed），即浏览器可以向服务器发送，服务器也可以向浏览器发送。也就是说，即使浏览器并没有请求某个资源，服务器也可以向浏览器推送（Server push）。</p>
+
+<p><img src="/image/http-connection-2014-12-06.png" alt="" /></p>
+
+<ol>
+<li>客户端请求page.html</li>
+<li>服务器发现网页包含script.js，就自己向浏览器发送stream 2，发送该脚本。</li>
+<li>服务器发起Stream 3，向浏览器推送style.css。</li>
+</ol>
+
+<p>（4）信息头压缩（Header compression）</p>
+
+<p>HTTP请求的头信息也是压缩后再发送的，使用HPACK算法。</p>
+
+<p>（5）流依赖管理（Stream dependencies）</p>
+
+<p>客户端可以告诉服务器，哪个资源更重要。不同的数据流，可以指定优先性和所依赖的流（dependencies and prioritization）。</p>
+
+<p><img src="https://blogs.akamai.com/assets_c/2015/02/Ludkin%20Blog%20Image%203-thumb-400x508-3507.png" alt="" /></p>
+
+<p>另外，虽然HTTP/2并没有规定，一定要使用加密链接（TLS/SSL），但是所有的浏览器目前都要求，只有加密连接，才能使用HTTP/2协议。</p>
+
+<h3 id="与http-1-1的比较">与HTTP 1.1的比较</h3>
+
+<p>（1）请求的对象数目</p>
+
+<p>HTTP 1.1 ：对于同一个TCP连接，一次只能请求一个对象。只有收到服务器回应后，才能请求下一个对象。</p>
+
+<p><img src="https://blogs.akamai.com/assets_c/2015/02/Ludkin%20Blog%20Image%201-thumb-400x523-3495.png" alt="" /></p>
+
+<p>HTTP/2：启用了多工（multiplexing），对于同一个TCP连接，浏览器能够送出任意数目的请求，收到的HTTP请求是没有次序的。</p>
+
+<p><img src="https://blogs.akamai.com/assets_c/2015/02/Ludkin%20Blog%20Image%202-thumb-400x579-3501.png" alt="" /></p>
+
+<p>（2）HTTP头信息的压缩</p>
+
+<p>HTTP 1.1：每次请求，浏览器需要提供许多session信息，这部分要占据大量的HTTP头信息，造成每次请求的体积很大。</p>
+
+<p>HTTP/2：浏览器和服务器都会对HTTP头信息进行压缩。此外，完整的头信息只需要送出一次。</p>
+
+<p>（3）</p>
+
+<p>HTTP 1.1：通信只能由客户端发起，这意味着服务器只能收到请求后，推送资源到客户端。</p>
+
+<p>HTTP/2：服务器能够发起通信，推送到客户端。这就能够减少GET请求的数目。</p>
+
+<p>以下的网页优化今后将不再需要。</p>
+
+<ul>
+<li>文件合并</li>
+<li>域名分设（Domain sharding）：这一步应该首先去除，因为它增加DNS查找的时间。Sharding的原因有两个，一个不占用TCP请求通道；二是为图片等静态资源，新增没有cookie的域名。</li>
+<li>行内资源（Resource inlining）：data URL</li>
+<li>Image sprites</li>
+<li>使用不含cookie的域名</li>
+</ul>
+
+<p>HTTP 1.1定义了pipelining，允许一个请求尚未得到回应的情况下，就发出另一个请求。但是，大多数浏览器默认没有打开这项功能。</p>
+
+<p>发出HTTP请求就像在超市排队付款，一共只有6条队伍，前面的人排满了，后面的人就只有等着。</p>
+
+<h2 id="http-动词">HTTP 动词</h2>
+
+<p><code>POST</code>方法有三种数据编码方式，在body部分传送数据。</p>
+
+<p>表单的<code>enctype</code>属性用来指定表单数据的<code>content-type</code>。数据会按照指定方式编码，上传到服务器。</p>
+
+<p><strong>（1）x-www-form-urlencoded</strong></p>
+
+<p>这是表单数据的默认编码方式。</p>
+
+<p>键名和键值必须转义，空格变为<code>+</code>。非英文字母和数字会被<code>%HH</code>替换，其中的<code>HH</code>是两个十六进制值，表示该字符的ASCII码。换行符会被替换成“CR LF”（即<code>%0D%0A</code>）。</p>
+
+<p>键名与键值之间使用<code>=</code>分隔，键值对之间使用<code>&amp;</code>连接。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">MyVariableOne=ValueOne&amp;MyVariableTwo=ValueTwo
+</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>content-type</code>的值是<code>application/x-www-form-urlencoded</code>。</p>
+
+<p><strong>（2）form-data</strong></p>
+
+<p>这种格式用于发送大量的二进制数据，或者包含非ASCII字符的文本。</p>
+
+<p>下面是一个例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">   Content-Type: multipart/form-data; boundary=AaB03x
+
+   --AaB03x
+   Content-Disposition: form-data; name=<span style="color:#cd5555">&#34;submit-name&#34;</span>
+
+   Larry
+   --AaB03x
+   Content-Disposition: form-data; name=<span style="color:#cd5555">&#34;files&#34;</span>; filename=<span style="color:#cd5555">&#34;file1.txt&#34;</span>
+   Content-Type: text/plain
+
+   ... contents <span style="color:#8b008b;font-weight:bold">of</span> file1.txt ...
+   --AaB03x--
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>发送二进制文件的例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">   Content-Type: multipart/form-data; boundary=AaB03x
+
+   --AaB03x
+   Content-Disposition: form-data; name=<span style="color:#cd5555">&#34;submit-name&#34;</span>
+
+   Larry
+   --AaB03x
+   Content-Disposition: form-data; name=<span style="color:#cd5555">&#34;files&#34;</span>
+   Content-Type: multipart/mixed; boundary=BbC04y
+
+   --BbC04y
+   Content-Disposition: file; filename=<span style="color:#cd5555">&#34;file1.txt&#34;</span>
+   Content-Type: text/plain
+
+   ... contents <span style="color:#8b008b;font-weight:bold">of</span> file1.txt ...
+   --BbC04y
+   Content-Disposition: file; filename=<span style="color:#cd5555">&#34;file2.gif&#34;</span>
+   Content-Type: image/gif
+   Content-Transfer-Encoding: binary
+
+   ...contents <span style="color:#8b008b;font-weight:bold">of</span> file2.gif...
+   --BbC04y--
+   --AaB03x--
+</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>content-type</code>的值位<code>multipart/form-data</code>。</p>
+
+<h2 id="http信息头">HTTP信息头</h2>
+
+<h3 id="access-control-allow-origin">Access-Control-Allow-Origin</h3>
+
+<p>HTTP回应。Cors相关，表示允许Ajax跨域请求。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Access-Control-Allow-Origin: *</pre></td></tr></table>
+</div>
+</div>
+<h3 id="cache-control">Cache-Control</h3>
+
+<p><code>Cache-Control</code>提供Cache控制。</p>
+
+<ul>
+<li><code>max-age=[seconds]</code> 当前cache最长保存时间</li>
+<li><code>s-maxage=[seconds]</code> 类似max-age，但只用于共享cache（即proxy服务器）</li>
+<li>public 表示已认证的HTTP回应也可以共享cache（proxy服务器）</li>
+<li>private 表示cache只能用于浏览器，不能用于proxy</li>
+<li>no-cache 严格声明每次都要向服务器验证</li>
+<li>no-store 不能保存cache</li>
+<li>must-revalidate 一旦缓存过期，就要重新验证</li>
+
+<li><p>proxy-revalidate 类似must-revalidate，但是只用proxy服务器</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a61717;background-color:#e3d2d2">Cache-Control: max-age=3600, must-revalidate</span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<p>Cache-Control的优先性高于Expires。</p>
+
+<h3 id="content-security-policy">Content-Security-Policy</h3>
+
+<p><code>Content-Security-Policy</code>指定当前网页允许加载外部资源的范围。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a61717;background-color:#e3d2d2">Content-Security-Policy: default-src &#39;self&#39; trustedscripts.foo.com</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>上面代码表示，<code>default-src</code>表示当前设置默认适用于各种场合，<code>self</code>表示当前网址，<code>trustedscripts.foo.com</code>表示指定的安全网址。</p>
+
+<h3 id="expires">Expires</h3>
+
+<p>网页何时过期。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#a61717;background-color:#e3d2d2">Expires: Fri, 30 Oct 1998 14:19:41 GMT</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="type">Type</h3>
+
+<p>HTTP回应的类型。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Type: application/x-web-app-manifest+json</pre></td></tr></table>
+</div>
+</div>
+<h3 id="安全相关的http头信息">安全相关的HTTP头信息</h3>
+
+<ul>
+<li>Content-Security-Policy
+
+<ul>
+<li>Content-Security-Policy-Report-Only</li>
+<li>X-Webkit-Content-Security-Policy</li>
+<li>X-Content-Security-Policy</li>
+</ul></li>
+<li>Public-Key-Pins
+
+<ul>
+<li>Public-Key-Pins-Report-Only</li>
+</ul></li>
+<li>Strict-Transport-Security</li>
+<li>X-Content-Type-Options</li>
+<li>X-Frame-Options</li>
+<li>X-XSS-Protection</li>
+<li>X-Download-Options</li>
+<li>X-Permitted-Cross-Domain-Policies</li>
+<li>Strict-Transport-Security enforces secure (HTTP over SSL/TLS) connections to the server</li>
+<li>X-Frame-Options provides clickjacking protection</li>
+<li>X-XSS-Protection enables the Cross-site scripting (XSS) filter built into most recent web browsers</li>
+<li>X-Content-Type-Options prevents browsers from MIME-sniffing a response away from the declared content-type</li>
+<li>Content-Security-Policy prevents a wide range of attacks, including Cross-site scripting and other cross-site injections</li>
+</ul>
+
+<h2 id="参考网址">参考网址</h2>
+
+<ul>
+<li>Iliyan Peychev, <a href="HTTP 2.0 is coming, be ready">HTTP 2.0 is coming, be ready</a></li>
+<li>Daniel Stenberg, <a href="http://daniel.haxx.se/http2/">http2 explained</a></li>
+<li>Stephen Ludin, <a href="https://blogs.akamai.com/2015/02/with-http2-akamai-introduces-next-gen-web.html">With HTTP/2, Akamai Introduces Next Gen Web</a></li>
+</ul>
+
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2018年11月15日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2018.06.17: <a href="https://wellfrog27.github.io/blog/web/ios/"
+                                    title="iOS App 测试">iOS App 测试</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2018.05.24: <a href="https://wellfrog27.github.io/blog/web/dns/"
+                                    title="DNS 原理">DNS 原理</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2018.04.09: <a href="https://wellfrog27.github.io/blog/web/readme/"
+                                    title="Web开发">Web开发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2018.03.24: <a href="https://wellfrog27.github.io/blog/web/apache/"
+                                    title="Apache的用法">Apache的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

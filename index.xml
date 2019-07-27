@@ -1,0 +1,1494 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/</link>
+    <description>Recent content on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    <lastBuildDate>Thu, 25 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://wellfrog27.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>科技爱好者周刊：第1期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-1/</link>
+      <pubDate>Thu, 25 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-1/</guid>
+      <description>每周分享第 1 期 这里记录过去一周，我看到的值得分享的东西。 长久以来，我一直用各种方式，尝试整理我的收藏夹。最近想到，把它写成文章，共享出来，也许效果更好。 语雀 语雀（yuque.com）是阿里巴巴集团内部</description>
+    </item>
+    
+    <item>
+      <title>Fish Shell的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/shells/fish-shell/</link>
+      <pubDate>Mon, 15 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/shells/fish-shell/</guid>
+      <description>prompt fish有一个函数fish_prompt，该函数的输出内容就是命令行提示符。 1 2 3 function fish_prompt echo &amp;#34;New Prompt % &amp;#34; end 可以将该文件存入设置目录，变成自动运行。 1 2 3 4 cat ~/.config/fish/functions/fish_prompt.fish function fish_prompt echo (pwd) &amp;#39;&amp;gt; &amp;#39; end 实例一。 1 2 3 4 5 6 function fish_prompt set_color $fish_color_cwd echo -n (prompt_pwd)</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第41期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-41/</link>
+      <pubDate>Mon, 08 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-41/</guid>
+      <description>每周分享第 41 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：杭州，2018） 有几个网友留言问我，怎么看互联网“裁员潮”。我就来</description>
+    </item>
+    
+    <item>
+      <title>变量的声明</title>
+      <link>https://wellfrog27.github.io/blog/clang/declaration/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/declaration/</guid>
+      <description>声明的结构 声明一个变量时，前面可以加上三类修饰词。 类型符（Type specifier）：变量的类型 储存符（Storage class）：变量储存在哪里 修饰符（Type qualifier）：一些其他属性 类</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第37期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-37/</link>
+      <pubDate>Sun, 30 Jun 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-37/</guid>
+      <description>每周分享第 37 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：安吉，浙江，2018） 前些日子，武侠小说泰斗金庸先生去世了。 他可能</description>
+    </item>
+    
+    <item>
+      <title>SSH 端口转发</title>
+      <link>https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/</link>
+      <pubDate>Wed, 26 Jun 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/</guid>
+      <description>对于开发者来说，ssh 是一个必备的工具，用来登录服务器。 但是，它还有一大用途，就是作为加密通信的中介，充当两台服务器之间的通信加密跳板。这个功能称为端口转发（port forwarding），又称 ssh 隧道</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第59期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-59/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-59/</guid>
+      <description>每周分享第 59 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：浦东滨江，上海，2018年） 关于未来有很多预测，最新的一种预测是，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第3期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-3/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-3/</guid>
+      <description>每周分享第 3 期 这里记录过去一周，我看到的值得分享的东西。 （题图：杭州的一家画廊，2017） 本周开始，这个专栏每周五发布，希望为大家的周末提供一些阅读材料。另一个考虑是，我希望这个专栏有可读性，不要太偏</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第23期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-23/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-23/</guid>
+      <description>每周分享第 23 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：鲁迅公园，上海，2018。） 很多人都说，当今社会趋向阶级固化，贫穷世袭。这种说法有根据吗？ 纽约大学的社会学家就做了一次调查，</description>
+    </item>
+    
+    <item>
+      <title>Linux的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/</link>
+      <pubDate>Sat, 30 Mar 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/</guid>
+      <description>权限 SUID：如果设置该权限，user的执行位从x变为s。它表示执行时，就拥有文件所有者的权限，比如所有者是root，则执行时其他用户也会拥有root的权限。该权限只对可执行文件有效，对目录设置该权限</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第40期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-40/</link>
+      <pubDate>Wed, 27 Mar 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-40/</guid>
+      <description>每周分享第 40 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 我知道一个朋友，他很喜欢咖啡。 但是，他喜欢的不是喝咖啡，而是制作咖啡。选购</description>
+    </item>
+    
+    <item>
+      <title>配置文件</title>
+      <link>https://wellfrog27.github.io/blog/linux/apache/config/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/apache/config/</guid>
+      <description>下面是一个典型的虚拟主机配置文件/etc/httpd/conf.d/example.com.conf。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 &amp;lt;VirtualHost *:80&amp;gt; ServerName example.com ServerAlias www.example.com ServerAdmin webmaster@example.com DocumentRoot /var/www/example.com/public_html &amp;lt;Directory /var/www/example.com/public_html&amp;gt; Options -Indexes +FollowSymLinks AllowOverride All &amp;lt;/Directory&amp;gt; ErrorLog /var/log/httpd/example.com-error.log CustomLog /var/log/httpd/example.com-access.log combined &amp;lt;/VirtualHost&amp;gt; ServerName: 域名 ServerAlias: 域名的别名 DocumentRoot: 网</description>
+    </item>
+    
+    <item>
+      <title>语言和区域设置</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/locale/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/locale/</guid>
+      <description>操作系统允许将语言、度量衡、时间格式等，按照不同的区域进行设置。 locale 命令 不带有任何参数时，locale命令显示当前设置。 1 $ locale 区域设置一般有以下几个属性。 LC_MESSAGES：系统消息的语言。 LC_R</description>
+    </item>
+    
+    <item>
+      <title>运算符</title>
+      <link>https://wellfrog27.github.io/blog/clang/operator/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/operator/</guid>
+      <description>C 语言的运算符非常多，一共有 50 多种。 算术运算符 +：一元的正值运算符 -：一元的负值运算符 +：加法运算符 -：减法运算符 *：乘法运算符 /：除法运算符 %：余值运算符 赋值运算符 = 赋值运算符 += 加法赋值运算符 -= 减法</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第10期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-10/</link>
+      <pubDate>Fri, 08 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-10/</guid>
+      <description>每周分享第 10 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：卢日尼基体育场，莫斯科，2014。世界杯开幕式的转播，让我意识到自己去过那个体育场。那天想去莫斯科大学玩，路过一个体育场，大</description>
+    </item>
+    
+    <item>
+      <title>bash命令一览</title>
+      <link>https://wellfrog27.github.io/blog/linux/commands/</link>
+      <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/commands/</guid>
+      <description>alias alias用来为命令建立别名。 1 2 alias cp=&amp;#34;cp -R&amp;#34; alias mkdir=&amp;#34;mkdir -p&amp;#34; unalias用来解除别名。 1 2 3 4 5 6 7 8 9 # 列出现有别名 $ alias ls ll alias ls=&amp;#39;ls --color=auto&amp;#39; alias ll=&amp;#39;ls -l --color=auto&amp;#39; # 增加一个别名 $ alias llrt=&amp;#39;ls -lrt --color=auto&amp;#39; # 解除别名 $ unalias llrt bind 显示可绑定的操作，以及已经绑</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第28期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-28/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-28/</guid>
+      <description>每周分享第 28 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 第24期时，我引用了一个开发者对年轻程序员的告诫。 在软件开发中，技术变化如此之快，你花费了大量</description>
+    </item>
+    
+    <item>
+      <title>语句</title>
+      <link>https://wellfrog27.github.io/blog/clang/statement/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/statement/</guid>
+      <description>语句（statement）用来执行某个命令，通常没有返回值。 if 语句 if语句用于判断。 1 if (expression) statement 下面是一个例子。 1 2 if (line_num == MAX_LINES) line_num = 0; 多个语句组成的复合语句，必须写在大括号里面。 1 2 3 4 if (line_num == MAX_LINES) { line_num = 0; page_num++; } i</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第15期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-15/</link>
+      <pubDate>Fri, 04 Jan 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-15/</guid>
+      <description>每周分享第 15 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：集盒商城，杭州，2018） 很多网友问，《每周分享》的来源是什么，你从哪里得知这些消息？ 我的消息来源主要是下面几个。 Hacker News GitHub RSS 订</description>
+    </item>
+    
+    <item>
+      <title>IP 地址</title>
+      <link>https://wellfrog27.github.io/blog/linux/network/ip/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/network/ip/</guid>
+      <description>Linux有以下工具，可以查看网络接口。 ip：显示和操作路由 netstat：显示网络连接、路由表等。 ifconfig：展示和配置网络接口 1 2 # 列出所有正在使用的IPv4连接 $ lsof -Pnl +M -i4 whois 命令 whois命</description>
+    </item>
+    
+    <item>
+      <title>Vim 概述</title>
+      <link>https://wellfrog27.github.io/blog/vim/basic/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/basic/</guid>
+      <description>历史 1977年10月，Bill Joy 在行编辑软件 ex 的基础上开发了 vi。vi 是visual的前两个字母，意为视觉模式，也就是编辑起来比 ex 更加直观。 由于 ex/vi 编辑器可能有 AT＆T 公司的知识产权。为了避免知识产权纠</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第32期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-32/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-32/</guid>
+      <description>每周分享第 32 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：陆家嘴，上海，2018） 最近，我看到一个小寓言，很值得跟大家分享。 三个建筑工人正在砌砖</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第20期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-20/</link>
+      <pubDate>Sat, 22 Dec 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-20/</guid>
+      <description>每周分享第 20 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：特洛伊遗址，土耳其，2014。游客付费后，可以穿上古罗马士兵的服装，拍照留念。） 本周，我向大家推荐一篇好文章《大学的替代方案</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第57期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-57/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-57/</guid>
+      <description>每周分享第 57 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：陆家嘴，上海，2018） 前些日子，一个运营的女同学问我：“为什么程</description>
+    </item>
+    
+    <item>
+      <title>HTTP笔记</title>
+      <link>https://wellfrog27.github.io/blog/web/http/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/http/</guid>
+      <description>HTTP/2协议 如今，一张网页通常要发出80到100个HTTP请求（request）。浏览器会同时跟服务器保留6个TCP连接（connection）。每个TCP连接同时只能处理一个请求，必须当前请求结</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第6期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-6/</link>
+      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-6/</guid>
+      <description>每周分享第 6 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 最近，我有一个行程，可能要去日本。我还没去过日本呢，听说日本人普遍听不懂英语，我又不会说日语，这可怎么办？ 突然想到，&amp;rdquo;谷</description>
+    </item>
+    
+    <item>
+      <title>Job</title>
+      <link>https://wellfrog27.github.io/blog/linux/process/job/</link>
+      <pubDate>Sun, 21 Oct 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/process/job/</guid>
+      <description>Linux 的运行程序运行分为前台和后台。程序可以在前台运行，也可以在后台运行。它们的区别在于，前台运行的时候，程序会独占命令行窗口，无法再使用当前命令行窗口做其他事情；后台运行不会占用命令行窗口，但是程序的结</description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/debian/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/debian/</guid>
+      <description>1993 年8月16日，Ian Murdock 宣布 Debian 发行版诞生。这个名字来自他和妻子的姓名结合。 Debian 是完全的自由软件。在开发哲学上，它比较保守，注重系统的稳定甚于功能。一般来说，它的稳定版里面的软件，会比最新版落后一到两年。</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第13期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-13/</link>
+      <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-13/</guid>
+      <description>每周分享第 13 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：武林门码头，杭州，2017） 自从我认定，未来二三十年，人类社会将有天翻地覆的大变。我的所有时间，就都投在技术领域了。因为变化</description>
+    </item>
+    
+    <item>
+      <title>字符串</title>
+      <link>https://wellfrog27.github.io/blog/clang/string/</link>
+      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/string/</guid>
+      <description>转义序列 \a 响铃 \b 退格 \n 换行符 \t 水平制表符 \&amp;rdquo; 双引号 \ 斜杠</description>
+    </item>
+    
+    <item>
+      <title>iOS App 测试</title>
+      <link>https://wellfrog27.github.io/blog/web/ios/</link>
+      <pubDate>Sun, 17 Jun 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/ios/</guid>
+      <description>iOS Simulator 模拟Home键 按下 Command-Shift-H 选择菜单 硬件&amp;gt;Home</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第19期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-19/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-19/</guid>
+      <description>每周分享第 19 期每周分享第 19 期每周分享第 19 期每周分享第 19 期每周分享第 19 期每周分享第 19 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周，我看了电影《头号玩家》（Ready Player One）。这是今年的</description>
+    </item>
+    
+    <item>
+      <title>负载均衡</title>
+      <link>https://wellfrog27.github.io/blog/nginx/load-balance/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/load-balance/</guid>
+      <description>Nginx 可以用作负载均衡。 1 2 3 4 5 upstream backend { server backend1.example.com; server backend2.example.com; server backend3.example.com; } 上面代码会将流量分配到三台服务器。具体的分配规则，由 Nginx 自动完成。 Nginx 允许调整不同服务器的权重。 1 2 3 4 5 upstream backend { server backend1.example.com weight=1; server backend2.example.com weight=2; server backend3.example.com weight=4; } 如果有一台服务器有连接</description>
+    </item>
+    
+    <item>
+      <title>DNS 原理</title>
+      <link>https://wellfrog27.github.io/blog/web/dns/</link>
+      <pubDate>Thu, 24 May 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/dns/</guid>
+      <description>“DNS 服务器”又称为resolver，它知道“根域名服务器”（root name server）的位置。发出请求的时候，客户端首先会向“DNS 服务器”发出请求。 对于客户端来说，“DNS 服务器”的网址要么是自动</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第26期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-26/</link>
+      <pubDate>Sat, 19 May 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-26/</guid>
+      <description>每周分享第 26 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 Basecamp 是 IT 行业很有名的一家公司，提供团队协作工具，同时也是 Rails on Ruby 框架的创造者。这家公司的特别之处在于，它不仅写软件，还写畅销书！ 它的两位</description>
+    </item>
+    
+    <item>
+      <title>配置</title>
+      <link>https://wellfrog27.github.io/blog/nginx/config/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/config/</guid>
+      <description>Nginx的主配置文件是nginx.conf，通常位于/usr/local/etc/nginx或者/etc/nginx。官方网站提供范例配置nginx.conf.default）可以查看。 虚拟主机的默</description>
+    </item>
+    
+    <item>
+      <title>Web开发</title>
+      <link>https://wellfrog27.github.io/blog/web/readme/</link>
+      <pubDate>Mon, 09 Apr 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/readme/</guid>
+      <description>工具 图片压缩 Online Smush.it TinyPNG Kraken.io JPEGmini Desktop ImageAlpha (Mac) RIOT (Windows) Trimage (Linux) JPEGmini (Mac, iOS, Windows) 图标字体 Fontello IcoMoon Fontastic 其他 ZamZar：在线文件格式转换，可转keynote文件 参考文章：Building an SVG Icon Font</description>
+    </item>
+    
+    <item>
+      <title>Linux的应用工具</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/tool/</link>
+      <pubDate>Thu, 05 Apr 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/tool/</guid>
+      <description>PdfTk PdfTk用于修改PDF文件。 1 2 # 合并两个PDF $ pdftk input1.pdf input2.pdf cat output output.pdf ffmpeg ffmpeg用于音频和视频的操作。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # 查看多媒体文件信息 $ ffprobe &amp;lt;inputFile&amp;gt; # 切割出一个片段 $ ffmpeg -ss &amp;lt;startTime #00:00:50&amp;gt; -i example -t &amp;lt;length #00:00:20&amp;gt; -vcodec</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第31期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-31/</link>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-31/</guid>
+      <description>每周分享第 31 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：天荒坪，安吉，2018） 计算机科学家 Tim Bray 最近写了一篇博客，他觉得自己可能应该退休了。 他</description>
+    </item>
+    
+    <item>
+      <title>Apache的用法</title>
+      <link>https://wellfrog27.github.io/blog/web/apache/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/apache/</guid>
+      <description>ab ab是一个HTTP服务器的压测工具。 1 $ ab -n10000 -c100 http://127.0.0.1:3000/ 参数。 -n：执行一次测试会话的时候所发出的请求数目，默认是执行一个单一的请求，当然了这样的测试结果也就没什么意义了。 -c：表示“concurrency</description>
+    </item>
+    
+    <item>
+      <title>时间管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/time/</link>
+      <pubDate>Mon, 19 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/time/</guid>
+      <description>timedatectl 命令 timedatectl命令用来控制系统的时间和日期。 不使用任何参数时，会显示当前的时间和日期。 1 2 3 4 5 6 7 8 9 $ timedatectl Local time: Wed 2017-11-15 15:58:33 UTC Universal time: Wed 2017-11-15 15:58:33 UTC RTC time: Wed 2017-11-15 15:58:32 Time zone: UTC (UTC, +0000) NTP enabled: yes NTP synchronized: yes RTC in local TZ: no DST active: n/a 上面字</description>
+    </item>
+    
+    <item>
+      <title>Server Blocks</title>
+      <link>https://wellfrog27.github.io/blog/nginx/server-blocks/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/server-blocks/</guid>
+      <description>nginx 允许一台服务器支持多个网站，这叫做 Server Blocks（跟 Apache 的 virtual host 是一个意思）。 如果/var/www/example.com/是网站的 document root 目录，网站的首页是/var/www/example.com/pub</description>
+    </item>
+    
+    <item>
+      <title>Linux常用操作</title>
+      <link>https://wellfrog27.github.io/blog/linux/operations/</link>
+      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/operations/</guid>
+      <description>用户操作 1 2 3 4 5 6 7 8 9 10 11 12 13 14 # 列出当前用户 $ whoami # 列出所有用户 $ sudo cat /etc/shadow # 列出所有用户的密码 $ sudo cat /etc/passwd # 创建用户 $ sudo useradd [用户名] # 为用户设置密码。 $ sudo passwd [用户名] 组操作 （1）显示当前用户所在的组 1 $</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第30期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-30/</link>
+      <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-30/</guid>
+      <description>每周分享第 30 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上个月谷歌宣布，社交应用 G+ 将在10个月后关闭。 主要原因有两个。一是缺乏用户，90%的用户会话短</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第39期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-39/</link>
+      <pubDate>Mon, 12 Feb 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-39/</guid>
+      <description>每周分享第 39 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 新年的1月2日，苹果公司发布了一份公开信，长达1400字。主要内容是，由于</description>
+    </item>
+    
+    <item>
+      <title>Apache Velocity</title>
+      <link>https://wellfrog27.github.io/blog/java/velocity/</link>
+      <pubDate>Sat, 30 Dec 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/java/velocity/</guid>
+      <description>Apache Velocity是一个基于Java的模板引擎，它提供了一个模板语言去引用由Java代码定义的对象。 变量 $ 开头，若该变量之前未创建则自动声明 语句 # 开头 嵌套语句 需以 #end 结束 变量 1 2 3 4 #set($var=</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第42期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-42/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-42/</guid>
+      <description>每周分享第 42 期（20190201） 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 通知：下周春节假期，周刊暂停一期。 呆伯特漫画的作者亚当</description>
+    </item>
+    
+    <item>
+      <title>Service Worker</title>
+      <link>https://wellfrog27.github.io/blog/web/serviceworker/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/serviceworker/</guid>
+      <description>简介 Service worker 是后台运行的一个 JavaScript 脚本。它由前台页面的 JavaScript 脚本新建，运行在独立的线程。它是异步的，不会造成页面的堵塞，可以发出通知（push notification），但拿不到 DOM。它要求页面必须使用 HTTPS 协议。</description>
+    </item>
+    
+    <item>
+      <title>bzip2</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/bzip2/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/bzip2/</guid>
+      <description>bzip2用于将文件压缩成bz2格式。 基本用法 1 2 3 4 5 6 7 8 9 10 11 12 # 格式 $ bzip2 [OPTIONS] filenames ... # 压缩单个文件 $ bzip2 list.txt # 压缩多个文件 # 下面的命令会产生三个 bz2 文件 $ bzip2 list.txt list1.txt list2.txt # 解压 $ bzip2 -d list.txt.bz2 注意，bzip2默认会在压缩</description>
+    </item>
+    
+    <item>
+      <title>Group</title>
+      <link>https://wellfrog27.github.io/blog/linux/account/group/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/account/group/</guid>
+      <description>一个用户可以属于多个组（group）。组的最大作用就是，同组的成员可以共享组权限。 Linux 的组分成两类。 主要组（primary group）。用户创建文件的时候，文件所在的组就是用户的主要组。大多数情况下，用</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第46期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-46/</link>
+      <pubDate>Wed, 11 Oct 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-46/</guid>
+      <description>每周分享第 46 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：西子宾馆，杭州，2018） 现在，很多网站使用大数据算法，很精确地知</description>
+    </item>
+    
+    <item>
+      <title>文件操作</title>
+      <link>https://wellfrog27.github.io/blog/vim/file/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/file/</guid>
+      <description>基本操作 vi 可以同时打开多个文件。 1 $ vi file1 file2 file3 默认显示第一个文件。 :n 转到下一个文件 :N 回到先前的文件 :buffers 显示正在编辑的文件列表 :buffer 1 转到缓冲区1 :e 加载一个新的文件 当我们从一个文件移到另一个文件时，如果当前文件</description>
+    </item>
+    
+    <item>
+      <title>终止进程</title>
+      <link>https://wellfrog27.github.io/blog/linux/process/kill/</link>
+      <pubDate>Sun, 24 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/process/kill/</guid>
+      <description>概述 如果进程失去响应，这时可以手动终止该进程。 kill和killall是清除进程的两个命令。它们的区别是，killall根据名称终止进程，kill根据进程号（PID）终止进程。注意，用户只能终止自己的</description>
+    </item>
+    
+    <item>
+      <title>帮助</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/help/</link>
+      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/help/</guid>
+      <description>manpath 命令 manpath命令显示帮助文件所在的路径。 1 2 $ manpath /usr/local/man:/usr/local/share/man:/usr/share/man 输出结果中，不同路径之间使用冒号分隔。 -d参数可以显示路径的详细信息。 1 $ manpath -d</description>
+    </item>
+    
+    <item>
+      <title>zsh的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/shells/zsh/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/shells/zsh/</guid>
+      <description>特点 补全文件名，可以在列出的文件名清单中选择。 自动从history中适配与已输入的部分吻合的前次命令。 多个活动shell共享history 自动将环境变量替换成值 自动将kill命令的参数，在ps ax中搜</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第60期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-60/</link>
+      <pubDate>Fri, 08 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-60/</guid>
+      <description>每周分享第 60 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 中国历史的第一课，总是教大家，我国很早就有人类活动，周口店发现的北京猿人已</description>
+    </item>
+    
+    <item>
+      <title>变量</title>
+      <link>https://wellfrog27.github.io/blog/clang/variable/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/variable/</guid>
+      <description>声明 变量名只能包含字母、数字和下划线，但是必须使用字母或下划线开头。 C 语言的变量，必须先声明后使用。声明的时候，必须把变量的类型告诉编译器。 1 int height; 上面代码将变量height，声明为int类型。 如果几个</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第55期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-55/</link>
+      <pubDate>Sat, 02 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-55/</guid>
+      <description>每周分享第 55 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 ：（题图：昆山火车站，苏州，2018） 关于 996 工作制，已经有很多评论和报道，</description>
+    </item>
+    
+    <item>
+      <title>Shadowsocks的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/shadowsocks/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/shadowsocks/</guid>
+      <description>Shadowsocks简称SS，是轻量代理应用服务端。在VPS上搭建SS服务端，可支持在android、iPhone、window、macos多平台上使用。 Linux 环境安装客户端 1 $ sudo pip install shadowsocks 启动客户端。 1 2</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第29期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-29/</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-29/</guid>
+      <description>每周分享第 29 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 1968年，计算机学家梅尔文·E·康威发表了一篇著名论文，后来被称为康威定律（Conway&amp;r</description>
+    </item>
+    
+    <item>
+      <title>窗口</title>
+      <link>https://wellfrog27.github.io/blog/vim/window/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/window/</guid>
+      <description>ZZ：退出窗口</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第56期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-56/</link>
+      <pubDate>Sun, 16 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-56/</guid>
+      <description>每周分享第 56 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：昆山森林公园，苏州，2018） 一篇新闻报道提到，美国就业行情最好的</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第22期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-22/</link>
+      <pubDate>Wed, 12 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-22/</guid>
+      <description>每周分享第 22 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 2008年，英国摄影师大卫·斯莱特（David Slater）来到印度尼西亚，拍摄一种珍贵的猕猴。他把照相机固定在三脚架上，放在丛林中</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第52期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-52/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-52/</guid>
+      <description>每周分享第 52 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 据报道，汉王科技开发了一个“课堂呵护系统”，已经在北京牛栏山一中、内蒙古赤</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第53期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-53/</link>
+      <pubDate>Sun, 18 Jun 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-53/</guid>
+      <description>每周分享第 53 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 日本东京最近举行了一次“DNA 相亲会”。参加活动的男女互不认识，婚介公司根</description>
+    </item>
+    
+    <item>
+      <title>Apache Ant</title>
+      <link>https://wellfrog27.github.io/blog/java/ant/</link>
+      <pubDate>Mon, 29 May 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/java/ant/</guid>
+      <description>ant（Another Neat Tool的）是一个Java项目的自动构建工具，类似于make。它使用xml文件作为配置文件，用来描述构建过程和依赖关系。 配置文件默认叫做build.xml，下面是一个实例。 1 2</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第48期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-48/</link>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-48/</guid>
+      <description>每周分享第 48 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上图是世界最著名的程序员之一：Bill Joy。 四十年前，他20岁出头，在加</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第36期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-36/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-36/</guid>
+      <description>每周分享第 36 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：安吉，浙江，2018） 美国一个编程培训班的老板，写了一篇文章。他说</description>
+    </item>
+    
+    <item>
+      <title>帮助</title>
+      <link>https://wellfrog27.github.io/blog/vim/help/</link>
+      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/help/</guid>
+      <description>:help进入帮助窗口，:help {主题}可以显示某个主题的帮助。下面是一些例子。 :help deleting :help index： 显示帮助索引 :help CTRL-A：显示CTRL-A的帮助 :help i_CTRL-H：显示插入模式的CTRL-H的帮</description>
+    </item>
+    
+    <item>
+      <title>.vimrc 配置文件</title>
+      <link>https://wellfrog27.github.io/blog/vim/vimrc/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/vimrc/</guid>
+      <description>用户主目录下的.vimrc，是 Vim 的配置文件。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 colorscheme badwolf &amp;#34; 配色方案 syntax enable &amp;#34; 打开语法处理 set tabstop=4 &amp;#34; 打开新文件时，遇到 tab 键等于4个空格 set softtabstop=4 &amp;#34; 编辑时按下 tab 键，相当于4个空格 set expandtab &amp;#34; 将 tab 键变为空格</description>
+    </item>
+    
+    <item>
+      <title>重定向</title>
+      <link>https://wellfrog27.github.io/blog/nginx/redirect/</link>
+      <pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/redirect/</guid>
+      <description>Nginx 的重定向命令较为简单。 1 2 3 4 5 server { listen 80; server_name domain1.com; return 301 $scheme://domain2.com$request_uri; } 上面的代码将所有请求，301重定向到另一个域名。 如果只要重定向某个目录的请求，可以像下面这样写。 1 2 3 4 5 # 301 重定向 rewrite ^/images/(.*)$ http://images.example.com/$1 redirect; # 302 重定向 rewrite ^/images/(.*)$ http://images.example.com/$1 permanent;</description>
+    </item>
+    
+    <item>
+      <title>xMonad的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/xmonad/</link>
+      <pubDate>Mon, 27 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/xmonad/</guid>
+      <description>xMonad是一款平铺式窗口管理器（Tiling window manager），即能够以一定顺序，自动将多个应用程序窗口平铺放置在桌面上。 xfce4 xMonad 一般与桌面环境 XFCE 配合使用。执行下面的命令，安装 XFCE。 1 2 $ sudo apt-get install xfce4</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第4期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-4/</link>
+      <pubDate>Thu, 09 Mar 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-4/</guid>
+      <description>每周分享第 4 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 今年5月5日是马克思诞生200周年的纪念日，中新社的记者来到伦敦的马克思墓地，写了一篇《墓地见闻》。 马克思墓地位于伦敦北部的海格特公</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第49期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-49/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-49/</guid>
+      <description>每周分享第 49 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：千岛湖，浙江，2018） 一个美国程序员分享自己的工作方法，其中有一</description>
+    </item>
+    
+    <item>
+      <title>nginx的用法</title>
+      <link>https://wellfrog27.github.io/blog/nginx/basic/</link>
+      <pubDate>Sun, 12 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/basic/</guid>
+      <description>简介 Nginx（发音/engine x/）是一个轻量级的开源 HTTP 服务器软件，可以用来取代 Apache，或者与 Apache 配合使用。 它与 Apache 的区别在于：它的设计基于事件和异步操作，而 Apache 完全依赖线程。当访问量很大的时候，</description>
+    </item>
+    
+    <item>
+      <title>Screen</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/screen/</link>
+      <pubDate>Fri, 03 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/screen/</guid>
+      <description>Screen 是一个对话（session）管理器。它允许多个用户共享一个 session，也可以下次登录时回到上次的 session。 1 2 3 4 5 # 新建 session $ screen -S foobar # 同一个用户在其他终端，进入这个 session $ screen -x foobar</description>
+    </item>
+    
+    <item>
+      <title>用户管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/account/user/</link>
+      <pubDate>Thu, 02 Feb 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/account/user/</guid>
+      <description>Linux系统的用户管理，主要用到以下命令。 useradd 增加新用户 usermod 修改现有用户 userdel 删除指定用户 passwd 为用户指定密码 chage 查看或修改用户密码的过期信息 在登录后，新 shell 进程会使用您的用户和组 ID 来运行。这些是控制您对系统上任何</description>
+    </item>
+    
+    <item>
+      <title>输入与输出</title>
+      <link>https://wellfrog27.github.io/blog/clang/io/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/io/</guid>
+      <description>printf printf函数用于格式化输出。 1 printf(&amp;#34;Height: %d\n&amp;#34;, height); printf的第一个参数是格式字符串，里面使用百分号%表示占位符，上面代码的%d就是占位符。printf的第二个参数代表填入第一个占位符的值，第三个参数代表第</description>
+    </item>
+    
+    <item>
+      <title>剪切，复制，粘贴</title>
+      <link>https://wellfrog27.github.io/blog/vim/copy/</link>
+      <pubDate>Wed, 30 Nov 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/copy/</guid>
+      <description>剪切 d命令不仅删除文本，它还“剪切”文本。每次我们使用d命令，删除的部分被复制到一个粘贴缓冲区中（看作剪切板）。 粘贴 p命令 剪切板中的文本粘贴到光标位置之后。 P 剪切板中的文本粘贴到光标之前。 :r 把指定的文</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第21期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-21/</link>
+      <pubDate>Fri, 25 Nov 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-21/</guid>
+      <description>每周分享第 21 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 漫画家蔡志忠有一个演讲，题目叫做《努力是没有用的》。读完这份演讲稿，我觉得他说的有道理。 有些人非常勤奋，别人休息和娱乐的时候，都在工</description>
+    </item>
+    
+    <item>
+      <title>TLS 设置</title>
+      <link>https://wellfrog27.github.io/blog/nginx/tls/</link>
+      <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/tls/</guid>
+      <description>启用 HTTP/2 打开配置文件（比如/etc/nginx/sites-enabled/sitename)，将下面的一行改掉。 1 listen 443 ssl; 改成 1 listen 443 ssl http2; 改完以后，可以使用下面的命令验证。 1 $ curl --http2 -I https://domain.com/ 弃用 TLS 1.0 如果要放弃使</description>
+    </item>
+    
+    <item>
+      <title>bash的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/bash/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/bash/</guid>
+      <description>Bash环境之中，用户配置文件位于主目录的~/.bashrc和~/.profile文件。这些配置文件会在用户登录时加载。 修改后，下面的命令可以让修改立刻生效。 1 $ source ~/bash_profile chsh命令可以切换shell。 1</description>
+    </item>
+    
+    <item>
+      <title>表达式</title>
+      <link>https://wellfrog27.github.io/blog/clang/expression/</link>
+      <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/expression/</guid>
+      <description>表达式（expression）是一个计算式，会返回一个值。 逻辑表达式 逻辑表达式返回0或1，表示真假。C 语言中，0表示假，1表示真。比如，20 &amp;gt; 12返回1，12 &amp;gt; 20返回0。 但是，对于逻辑运算符来说，任</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第11期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-11/</link>
+      <pubDate>Wed, 17 Aug 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-11/</guid>
+      <description>每周分享第 11 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：虎跑后山，杭州，2016。 很多人去虎跑泉游玩，却不知道，泉眼后面的山是可以爬上去的，山顶有很棒的视野。翻过山就是九溪，可以一</description>
+    </item>
+    
+    <item>
+      <title>显示</title>
+      <link>https://wellfrog27.github.io/blog/linux/hardware/display/</link>
+      <pubDate>Sun, 26 Jun 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/hardware/display/</guid>
+      <description>Display Manager Display Manager（显示管理器）是从命令行启动图形界面的引导器和管理器。它包含图形登录界面。 下面的命令用来查看本机的 Display Manager。 1 $ cat /etc/X11/default-display-manager 截图 PrtSc – Save a screenshot of the entire screen to the “Pictures” directory. Shift + PrtSc –</description>
+    </item>
+    
+    <item>
+      <title>端口</title>
+      <link>https://wellfrog27.github.io/blog/linux/network/port/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/network/port/</guid>
+      <description>端口（port）是网络通信的一种机制，用于将网络数据分配到指定的软件，供 TCP 和 UDP 协议使用。端口号是一个16位整数，从0到65535。 下面的命令可以查看已经定义用途的端口。 1 $ less /etc/services 端口号可以分成三段。 0～</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第24期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-24/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-24/</guid>
+      <description>每周分享第 24 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：浦东滨江，上海，2018。） Hacker News 上面，有人问：&amp;rdquo;新人进入软件行业，应该学什么？&amp;rdquo; 很多热心人提供建议。</description>
+    </item>
+    
+    <item>
+      <title>自定义错误页</title>
+      <link>https://wellfrog27.github.io/blog/nginx/error-page/</link>
+      <pubDate>Sat, 14 May 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/error-page/</guid>
+      <description>如果用户请求了错误的网址，或者处理请求时发生错误，nginx 会向用户显示一个错误页。该页面可以自定义。 可以在server块里面，写入下面的定义。 1 2 3 4 5 6 7 error_page 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 421</description>
+    </item>
+    
+    <item>
+      <title>文件管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/general/</link>
+      <pubDate>Fri, 29 Apr 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/general/</guid>
+      <description>file 命令 file命令用来查看文件类型。 1 2 $ file /etc /etc: directory 上面命令显示/etc是一个目录。 -f参数用于查询一个文件里面的多个路径的类型（每行一个文件）。 1 $ file -f files.list -s参数读取块文件或者字符文件。 1 2 $ file -s /dev/sda /dev/sda:</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第63期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-63/</link>
+      <pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-63/</guid>
+      <description>科技爱好者周刊：第 63 期 这里记录每周值得分享的科技内容，周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 前些日子，我看到一则新闻。 “5月17日，中国 CDN 服务提供商蓝汛发布公告称，公司因</description>
+    </item>
+    
+    <item>
+      <title>Vim的配置</title>
+      <link>https://wellfrog27.github.io/blog/vim/config/</link>
+      <pubDate>Mon, 07 Mar 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/config/</guid>
+      <description>使用下面的命令，在命令模式下，查看启动时加载的文件。 1 :scriptnames 可以打印成日志文件查看。 1 $ vim --startuptime start.log name-of-your-file :hlsearch 打开高亮搜索 :syntax on 打开语法高亮 :set hlsearch 查找结果高亮 :set tabstop=4 设置一个 tab 字符缩进的行数 :set autoindent 打开“auto indent”功</description>
+    </item>
+    
+    <item>
+      <title>Stream的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/stream/</link>
+      <pubDate>Thu, 25 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/stream/</guid>
+      <description>Bash接收输入和输出，是字符串的流（stream）形式完成的。这些流可以导向文件，或者导向另一个流。 Shell默认会打开三个文件。 文件0：名为stdin，标准输入 文件1：名为stdout，标准输出 文</description>
+    </item>
+    
+    <item>
+      <title>编辑</title>
+      <link>https://wellfrog27.github.io/blog/vim/edit/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/edit/</guid>
+      <description>进入编辑模式 进入编辑模式，有以下几个方式。 i 光标位于当前字符的前面（insert） a 光标位于当前字符的后面（append） I 光标位于当前行的行首 A 光标位于当前行的行尾 o 当前行的下方插入一行 O 当前行的上</description>
+    </item>
+    
+    <item>
+      <title>SSH 的配置</title>
+      <link>https://wellfrog27.github.io/blog/linux/ssh/configuration/</link>
+      <pubDate>Fri, 12 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/ssh/configuration/</guid>
+      <description>SSH 的配置文件是/etc/ssh/sshd_config（服务端）和/etc/ssh/ssh_config（客户端），用户个人的配置文件在~/.ssh/config，下面是一个例子。 1 2 3 4 5 6 7 8 Host *</description>
+    </item>
+    
+    <item>
+      <title>数据类型</title>
+      <link>https://wellfrog27.github.io/blog/clang/type/</link>
+      <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/type/</guid>
+      <description>int C 语言的整数类型共有8种。 short int unsigned short int int unsigned int long int unsigned long int long long int unsigned long long int 整数的进制 整数常量表示的时候，可以采用十进制、八进制、十六进制。 八进制使用0作为前缀，比如017、0377。 十六进制使用0x作为前缀</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第7期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-7/</link>
+      <pubDate>Sat, 23 Jan 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-7/</guid>
+      <description>每周分享第 7 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：海底都是矿泉水瓶。） 我看到一篇《国家地理》杂志的报道。地球最深的地方是太平洋的马里亚纳海沟，深达海平面下11公里。2016年</description>
+    </item>
+    
+    <item>
+      <title>PostCSS 的用法</title>
+      <link>https://wellfrog27.github.io/blog/web/postcss/</link>
+      <pubDate>Wed, 13 Jan 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/postcss/</guid>
+      <description>PostCSS是一个使用JavaScript插件转换CSS文件的工具。它允许在CSS文件之中使用JavaScript语法，然后将其转为正常的CSS文件。它可以像普通的CSS预处理器那样工作，但是能够完</description>
+    </item>
+    
+    <item>
+      <title>Mac电脑的用法</title>
+      <link>https://wellfrog27.github.io/blog/web/mac/</link>
+      <pubDate>Thu, 07 Jan 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/mac/</guid>
+      <description>快捷键 系统 输入法切换：Command + Space 应用程序切换：Command + tab 窗口最大化切换：Ctrl + Command + f 复制：Command + c 粘贴：Command +v 向后删除：fn + delete pageup: fn + Up arrow pagedown: fn + Down arrow 终端 打开多个</description>
+    </item>
+    
+    <item>
+      <title>pgrep</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/pgrep/</link>
+      <pubDate>Thu, 07 Jan 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/pgrep/</guid>
+      <description>pgrep用于从应用名搜索进程，返回相关进程的进程号。 1 2 3 4 $ pgrep nginx 1110 1112 19789</description>
+    </item>
+    
+    <item>
+      <title>Bash脚本</title>
+      <link>https://wellfrog27.github.io/blog/linux/script/</link>
+      <pubDate>Wed, 16 Dec 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/script/</guid>
+      <description>变量 概述 Bash脚本之中，可以自定义变量。变量使用等号赋值，等号前后都不能有空格。 1 $ a=3 对变量取值的时候，变量名前要加上美元符号。 1 2 $ echo $a 3 Bash变量名是大小写敏感的。变量名如果后面还紧跟着其他字</description>
+    </item>
+    
+    <item>
+      <title>Apache 的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/apache/apache/</link>
+      <pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/apache/apache/</guid>
+      <description>安装 1 2 3 4 5 # centos $ sudo yum install httpd # debian $ sudo apt-get install apache2 它的配置文件在/etc/apache2。 apache2.conf：主配置文件 ports.conf：指定虚拟主机监听的端口 conf.d/：该目录用于配置某些特定</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第34期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-34/</link>
+      <pubDate>Mon, 07 Dec 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-34/</guid>
+      <description>每周分享第 34 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 由于微信不允许外部链接，你需要点击页尾左下角的“阅读原文”，才能访问文中的</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第12期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-12/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-12/</guid>
+      <description>每周分享第 12 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：佘山，上海，2018。） 我看到一篇报道，美国2016年的社会福利支出，占到政府总支出的73%。这就是说，美国政府的大部分支出</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第2期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-2/</link>
+      <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-2/</guid>
+      <description>每周分享第 2 期 这里记录过去一周，我看到的值得分享的东西。 （题图：青岛火车站） 上周发了第一期以后，有朋友问为什么写这个专栏？ 我想了想，除了整理收藏夹，主要原因还是我希望自己多发声。长久以来，我一直努力，</description>
+    </item>
+    
+    <item>
+      <title>Apache Maven</title>
+      <link>https://wellfrog27.github.io/blog/java/mavan/</link>
+      <pubDate>Tue, 27 Oct 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/java/mavan/</guid>
+      <description>Maven是Java项目的自动构建工具，描述项目构建过程和依赖关系。 它的配置文件是pom.xml。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 &amp;lt;project&amp;gt; &amp;lt;!-- model version is always 4.0.0 for Maven 2.x POMs --&amp;gt; &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt; &amp;lt;!-- project coordinates, i.e. a group of values which</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第18期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-18/</link>
+      <pubDate>Sat, 24 Oct 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-18/</guid>
+      <description>每周分享第 18 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周（8月4日），委内瑞拉总统马杜罗发表公众演讲，结果天空中出现了两个无人飞行器，慢慢靠近人群。每个飞行器都携带了1公斤的炸药，企图</description>
+    </item>
+    
+    <item>
+      <title>Vim操作</title>
+      <link>https://wellfrog27.github.io/blog/vim/operation/</link>
+      <pubDate>Wed, 21 Oct 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/operation/</guid>
+      <description>命令格式 vim的命令采用下面的格式。 1 [OPERATOR][NUMBER][MOTION] Operator是动词。 d – Delete (等同于cut命令) c – Change y – Yank p – Insert last deleted text after cursor (put command) r – Replace v - 可视化选择 Motion表示操作的上下文。 w – 直到下一个单词的起始位置</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第58期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-58/</link>
+      <pubDate>Tue, 06 Oct 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-58/</guid>
+      <description>每周分享第 58 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 据我观察，经营最好的自媒体，似乎都是美妆类的，介绍化妆品和服饰。 那些频道天</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第25期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-25/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-25/</guid>
+      <description>每周分享第 25 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周我看到一个报道，9月23日是安卓手机的十周年纪念日。 十年前的2008年9月23日，HTC 发布了世界上第一台安卓手机 G1，3.2英</description>
+    </item>
+    
+    <item>
+      <title>Graphviz 的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/graphviz/</link>
+      <pubDate>Thu, 24 Sep 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/graphviz/</guid>
+      <description>简介 Graphviz（Graph Visualization Software的缩写）是贝尔实验室开发的一个开源的工具包，它使用一个特定的DSL(领域特定语言):dot作为脚本语言，然后使用布局引擎来解析此脚本，并完成自动布局。</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第62期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-62/</link>
+      <pubDate>Fri, 28 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-62/</guid>
+      <description>科技爱好者周刊：第 62 期 这里记录每周值得分享的科技内容，周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 今天向大家推荐一部日本电影《编舟记》。 它讲述了一个编词典的故事，编辑们花了15</description>
+    </item>
+    
+    <item>
+      <title>Angular.js的用法</title>
+      <link>https://wellfrog27.github.io/blog/javascript/angular/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/javascript/angular/</guid>
+      <description>Angular的典型句法之一。 1 &amp;lt;div ng-bind=”username” &amp;gt;&amp;lt;/div&amp;gt; 模板 1 2 3 4 5 &amp;lt;ul&amp;gt; &amp;lt;li ng-repeat=&amp;#34;framework in frameworks&amp;#34; title=&amp;#34;{{framework.description}}&amp;#34;&amp;gt; {{framework.name}} &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; 双向绑定 1 2 &amp;lt;input ng-model=&amp;#34;user.name&amp;#34; type=&amp;#34;text&amp;#34; /&amp;gt; Hello {{user.name}}!</description>
+    </item>
+    
+    <item>
+      <title>Backbone.js的用法</title>
+      <link>https://wellfrog27.github.io/blog/javascript/backbone/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/javascript/backbone/</guid>
+      <description>事件接口 Backbone.js通过事件，达到各个函数之间的通信。 发布者是发布事件的对象，监听者是监听事件的对象，它们都必须部署事件接口。 监听者可以使用listenTo方法，监听发布者。 1 subscriber.listenTo(publisher,eventname,callback); 发布者通过t</description>
+    </item>
+    
+    <item>
+      <title>撤销</title>
+      <link>https://wellfrog27.github.io/blog/vim/operations/undo/</link>
+      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/operations/undo/</guid>
+      <description>命令模块下，u（代表 undo）会撤销上一个操作。 默认情况下，撤销只在当前对话（session）有效。如果关闭文件再打开，就无法撤销上一个对话的操作。如果想跨对话撤销，需要在.vimrc里面打开下面的设</description>
+    </item>
+    
+    <item>
+      <title>Appium的用法</title>
+      <link>https://wellfrog27.github.io/blog/web/appium/</link>
+      <pubDate>Thu, 16 Jul 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/appium/</guid>
+      <description>Appium服务器的配置 1 2 3 4 exports.local = { host: &amp;#39;localhost&amp;#39;, port: 4723 }; 测试环境配置 真机配置。 1 2 3 4 5 6 7 8 9 var realDriverCfg = { browserName: &amp;#39;&amp;#39;, &amp;#39;appium-version&amp;#39;: &amp;#39;1.3&amp;#39;, platformName: &amp;#39;iOS&amp;#39;, platformVersion: &amp;#39;8.3&amp;#39;, // 这里要填写本机安装的模拟器版本 deviceName: &amp;#39;iPhone Simulator&amp;#39;, udid: &amp;#39;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&amp;#39;, app: &amp;#39;com.xudafeng.hybrid-sample-ios&amp;#39; //这里是 bundleId }; 模拟器的配置。 1 2 3 4 5 6 7</description>
+    </item>
+    
+    <item>
+      <title>模式</title>
+      <link>https://wellfrog27.github.io/blog/vim/mode/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/mode/</guid>
+      <description>Vim 分成多种模式。按i键进入编辑模式，按esc键退出编辑模式。 命令模式 编辑模式 可视模式 可视模式 v - Enter visual mode ctrl+v - Enter visual mode (vertical) V - Enter visual mode (full lines) 在窗口底部输入:set showmode，以后窗口底部就会显示当前状态，比</description>
+    </item>
+    
+    <item>
+      <title>反向代理</title>
+      <link>https://wellfrog27.github.io/blog/nginx/proxy/</link>
+      <pubDate>Sat, 04 Jul 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/nginx/proxy/</guid>
+      <description>基本配置 编辑/etc/nginx/sites-available/default，或者在该目录下新建一个配置文件/etc/nginx/sites-available/my-site。 下面是简单的配置。</description>
+    </item>
+    
+    <item>
+      <title>查找和替换</title>
+      <link>https://wellfrog27.github.io/blog/vim/search/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/search/</guid>
+      <description>查找 f查找一行，移动光标到下一个所指定的字符上。例如，命令fa会把光标定位到同一行中的下一个出现的a字符上。 在一行中执行了字符的查找命令之后，通过输入分号来重复这个查找。 /命令移动光标到下一个出现的单</description>
+    </item>
+    
+    <item>
+      <title>密码</title>
+      <link>https://wellfrog27.github.io/blog/linux/account/password/</link>
+      <pubDate>Sat, 27 Jun 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/account/password/</guid>
+      <description>passwd 命令 passwd命令用于修改用户的密码。 没有任何参数时，passwd只能改变用户自己的密码。 1 $ passwd 非根用户会被要求先输入当前密码，然后再设置新密码。 如果是根用户，可以改变其他用户的密码。 1 $ sudo passwd &amp;lt;username&amp;gt; 下</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第8期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-8/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-8/</guid>
+      <description>每周分享第 8 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：烟台山历史保护区，烟台，2017。我小时候的商店都是这种样子。） 最近，日本厚生劳动省公布了正式的统计数据。2017年，日本全</description>
+    </item>
+    
+    <item>
+      <title>rsync</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/rsync/</link>
+      <pubDate>Fri, 12 Jun 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/rsync/</guid>
+      <description>rsync 用来在两台计算机或者两个路径之间同步文件。它名称里面的r就是指 remote。 与其他文件传输工具（如 FTP 或 SCP）不同，rsync 检查发送方和接收方上的文件，仅传输同步它们所需的文件。 1 $ rsync -a /source/path /target/path 上面的</description>
+    </item>
+    
+    <item>
+      <title>shell 命令</title>
+      <link>https://wellfrog27.github.io/blog/vim/shell/</link>
+      <pubDate>Wed, 06 May 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/shell/</guid>
+      <description>有两种主要方法可以在 Vim 里调用外部程序： :!——在从 Vim 内容跑某命令时很有用，尤其是在你想把运行结果输出到 Vim buffer 的情况下。 :shell——以 Vim 子进程的方式弹开一个命令行。适合交互式命令。 可以用 :r! 把呼叫命令的</description>
+    </item>
+    
+    <item>
+      <title>Emacs的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/emacs/</link>
+      <pubDate>Sun, 15 Mar 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/emacs/</guid>
+      <description>通用命令 帮助：C-h C-h 退出 Emacs：C-x C-c 退出一个正在运行的命令：C-g（比如某条命令迟迟没有响应，或者取消输入到一半的命令，实质是退出当前buffer，回到前一个buffer） 执行命令：M-x 文</description>
+    </item>
+    
+    <item>
+      <title>基本知识</title>
+      <link>https://wellfrog27.github.io/blog/docker/basic/</link>
+      <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/docker/basic/</guid>
+      <description>docker-compose.yml 项目根目录下的docker-compose.yml文件，是项目的Docker配置文件。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 # version 2 of the Docker Compose file format version: &amp;#39;2&amp;#39; # sets up a persistable filesystem volume volumes: database_data: driver: local services: #</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第50期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-50/</link>
+      <pubDate>Mon, 02 Mar 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-50/</guid>
+      <description>每周分享第 50 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：杭州，2018） 前几天，我听一个广播节目。主持人问，现在很多人开网</description>
+    </item>
+    
+    <item>
+      <title>基本语法</title>
+      <link>https://wellfrog27.github.io/blog/clang/basic/</link>
+      <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/basic/</guid>
+      <description>最简单的示例 下面是一个简单的 C 程序hello.c。 1 2 3 4 5 6 # include &amp;lt;stdio.h&amp;gt; int main(void) { printf(&amp;#34;Hello World\n&amp;#34;); return 0; } 第一行是预处理信息，#表示是预处理指令，这里表示标准库stdio.h。注意，指令的尾部不需要分号表示结束。 第三行是主</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第61期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-61/</link>
+      <pubDate>Thu, 12 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-61/</guid>
+      <description>科技爱好者周刊：第61期 这里记录每周值得分享的科技内容，周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：前滩，上海，2018） 上月的周刊提到，文科生不容易就业，理工科的就业</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第45期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-45/</link>
+      <pubDate>Mon, 02 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-45/</guid>
+      <description>每周分享第 45 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 美国科幻小说大师阿西莫夫，写过一本回忆录《人生舞台》。他在里面提到，成名后</description>
+    </item>
+    
+    <item>
+      <title>文件链接</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/link/</link>
+      <pubDate>Sun, 01 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/link/</guid>
+      <description>硬链接 硬盘分成一个个数据块，文件的数据都保存在这些数据块里面。这种数据块就叫做 inode，每个数据库块都有编号，称为 inode 号码。 文件系统有一个文件表，将文件名与它所在的 inode 号码联系起来。每当读取文件的时候，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第38期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-38/</link>
+      <pubDate>Fri, 30 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-38/</guid>
+      <description>每周分享第 38 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：公交站的电子墨水屏，上海，2018） 最近我总在想，手机支付是否真的</description>
+    </item>
+    
+    <item>
+      <title>进程信息</title>
+      <link>https://wellfrog27.github.io/blog/linux/process/info/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/process/info/</guid>
+      <description>进程是程序的运行实例。 进程号 每个进程创建的时候，操作系统会为这个进程分配一个唯一编号（简称 PID），供内核使用。操作系统中创建时会自动分配给每个进程。 32位系统的 PID 最大值默认为是32,768，64位系</description>
+    </item>
+    
+    <item>
+      <title>系统管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/system/</link>
+      <pubDate>Sun, 18 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/system/</guid>
+      <description>Systemd Systemd是一个系统管理软件，主要用于管理后台守护进程（daemon）。它用来取代传统的initd服务启动方式。在使用它的系统中，它是所有其他进程的父进程。 Systemd每个启动的进程，称为“单</description>
+    </item>
+    
+    <item>
+      <title>软件包管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/basic/package/</link>
+      <pubDate>Wed, 14 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/basic/package/</guid>
+      <description>搜索 1 2 3 $ apt-cache search search_string $ yum search search_string 安装 1 2 $ apt-get install package_name $ yum install package_name 安装本地软件包文件。 1 2 $ dpkg --install package_file $ rpm -i package_file 卸载软件 1 2 $ apt-get remove package_name $ yum erase package_name 更新软件。 1 2 $ apt-get update; apt-get upgrade $ yum update 从本地软件包文件更新。 1 2 $ dpkg --install package_file $ rpm -U package_file 列出所安装</description>
+    </item>
+    
+    <item>
+      <title>Java语言入门</title>
+      <link>https://wellfrog27.github.io/blog/java/readme/</link>
+      <pubDate>Mon, 05 Jan 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/java/readme/</guid>
+      <description>Hello world 1 2 3 4 5 class Hello{ public static void main(String[] args) { System.out.println(&amp;#34;Hello world&amp;#34;); } }</description>
+    </item>
+    
+    <item>
+      <title>netrw 插件</title>
+      <link>https://wellfrog27.github.io/blog/vim/plugins/netrw/</link>
+      <pubDate>Sun, 14 Dec 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/plugins/netrw/</guid>
+      <description>netrw是 Vim 内置插件，用来提供目录浏览器功能。 启用 它可以用以下三个命令打开。 :Explore：netrw 在当前窗口中打开。 :Sexplore：垂直分割当前窗口，netrw 在上半部分打开。可用鼠标调整</description>
+    </item>
+    
+    <item>
+      <title>SSH 基本知识</title>
+      <link>https://wellfrog27.github.io/blog/linux/ssh/basic/</link>
+      <pubDate>Thu, 04 Dec 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/ssh/basic/</guid>
+      <description>SSH（Secure Shell 的缩写）是一种加密网络协议，用于客户端和服务器之间的安全连接，并支持各种身份验证机制。 两种最流行的机制是基于密码的身份验证和基于公钥的身份验证。后者比传统的密码验证更安全，更方便</description>
+    </item>
+    
+    <item>
+      <title>JavaScript测试</title>
+      <link>https://wellfrog27.github.io/blog/javascript/testing/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/javascript/testing/</guid>
+      <description>概述 Web应用程序越来越复杂，这意味着有更多的可能出错。测试是帮助我们提高代码质量、降低错误的最好方法和工具之一。 单元测试 单元测试（unit testing）指的是以模块为单位，对软件进行测试。通常来说</description>
+    </item>
+    
+    <item>
+      <title>数据库</title>
+      <link>https://wellfrog27.github.io/blog/database/datebase/</link>
+      <pubDate>Fri, 28 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/database/datebase/</guid>
+      <description>如何选择noSQL数据库 第一个问题，你是否应该使用noSQL数据库，还是关系型数据库？ 是否需要支持交易（Transaction），即操作的原子性？大多数noSQL数据库不支持交易。 是否需要记录之间立即</description>
+    </item>
+    
+    <item>
+      <title>Python的用法</title>
+      <link>https://wellfrog27.github.io/blog/web/python/</link>
+      <pubDate>Sun, 16 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/python/</guid>
+      <description>socket模块 一个简单的web服务器。 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 import socket server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM) server_sock.bind((&amp;#39;&amp;#39;, 5000)) server_sock.listen(10) while True: cli_sock, addr = server_sock.accept() print &amp;#39;We have opened a cli_sockection with&amp;#39;, addr print cli_sock.recv(100) output = &amp;#34;&amp;lt;h1&amp;gt;Hello Client&amp;lt;/h1&amp;gt;&amp;#34; cli_sock.send(&amp;#34;HTTP/1.1 200 OK\n&amp;#34;) cli_sock.send(&amp;#34;Content length: &amp;#34;+str(len(output))) cli_sock.send(&amp;#34;Content-Type: text/html\n\n&amp;#34;) cli_sock.send(output) cli_sock.close() 多进程版不会堵塞的web server。 1 2 3 4</description>
+    </item>
+    
+    <item>
+      <title>Tmux</title>
+      <link>https://wellfrog27.github.io/blog/linux/util/tmux/</link>
+      <pubDate>Wed, 12 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/util/tmux/</guid>
+      <description>简介 Tmux 是对话（session）复用工具，可以替代 GNU Screen。 它可以在一个会话中，打开多个窗口。每个窗口可以占据整个屏幕，可以分成矩形窗格。用户可以方便地切换窗口，并且某个窗口从当前对话转移到其他对</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第14期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-14/</link>
+      <pubDate>Sat, 08 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-14/</guid>
+      <description>每周分享第 14 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 上周，特斯拉汽车的老板马斯克（Elon Musk）来中国，7月11日在上海建立全球第二家工厂，7月12日在北京建立研发中心，当天下午就</description>
+    </item>
+    
+    <item>
+      <title>权限</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/permission/</link>
+      <pubDate>Thu, 02 Oct 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/permission/</guid>
+      <description>普通权限 文件有三种权限。 r，读权限，用八进制的4或者二进制的100表示 w，写权限，用八进制的2或者二进制的010表示 x，执行权限，用八进制的1或者二进制的001表示 文件权限的含义。 r：文件可以打开，读</description>
+    </item>
+    
+    <item>
+      <title>移动</title>
+      <link>https://wellfrog27.github.io/blog/vim/move/</link>
+      <pubDate>Sun, 21 Sep 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/vim/move/</guid>
+      <description>上下左右移动 l or 右箭头 向右移动一个字符 h or 左箭头 向左移动一个字符 j or 下箭头 向下移动一行 k or 上箭头 向上移动一行 0 (零按键) 移动到当前行的行首。 ^ 移动到当前行的第一个非空字符。 $ 移动到当前行的末尾。 语义移</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第27期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-27/</link>
+      <pubDate>Wed, 03 Sep 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-27/</guid>
+      <description>每周分享第 27 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎大家去 GitHub 的 ruanyf/weekly 提交 issue，进行投稿。 2005年，斯坦福大学邀请乔布斯在毕业典礼演讲。这个演讲后来成为经典，《乔布斯传》说&amp;rd</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第5期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-5/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-5/</guid>
+      <description>每周分享第 5 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （题图：世博公园，上海，2018） 本周，服务器遭受攻击，网站下线50多个小时。我一度以为，《每周分享》不能按时发了。现在，攻击停了，</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第47期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-47/</link>
+      <pubDate>Tue, 22 Jul 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-47/</guid>
+      <description>每周分享第 47 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 如果你长期看这个周刊，可能知道我的观点：人工智能将导致大量失业，因为算法将</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第16期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-16/</link>
+      <pubDate>Fri, 04 Jul 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-16/</guid>
+      <description>每周分享第 16 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 影视作品经常出现，病人的心脏停止跳动，医生使用两块电极板对心脏电击。它叫除颤器（defibrillator），通过放电刺激心脏恢复跳</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第43期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-43/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-43/</guid>
+      <description>每周分享第 43 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上图是一架小飞机停在草地，一个人从上面跳下来。 这张图取自一篇2018年12</description>
+    </item>
+    
+    <item>
+      <title>USB 设备</title>
+      <link>https://wellfrog27.github.io/blog/linux/hardware/usb/</link>
+      <pubDate>Thu, 26 Jun 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/hardware/usb/</guid>
+      <description>插入 USB 储存设备后，使用fdisk -l命令列出本机可用的储存系统。 1 $ sudo fdisk -l USB 储存设备通常是/dev/sdb[n]。 然后，新建一个挂载点（比如/media/USB）。 1 $ sudo mkdir /media/[mountPointName] 接着，将 USB 设备挂载到挂载点</description>
+    </item>
+    
+    <item>
+      <title>磁盘管理</title>
+      <link>https://wellfrog27.github.io/blog/linux/hardware/disk/</link>
+      <pubDate>Fri, 13 Jun 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/hardware/disk/</guid>
+      <description>硬件设备 块设备 是一个表示任何可格式化为固定大小的块的存储设备的抽象层；各个块可与其他块地址独立地存取。这种存取通常称为随机存取。 可使用 ls -l 命令显示 /dev 条目。每个输出行上的第一个字符是 b，表示块设备，比如</description>
+    </item>
+    
+    <item>
+      <title>Chrome浏览器的用法</title>
+      <link>https://wellfrog27.github.io/blog/web/chrome/</link>
+      <pubDate>Fri, 30 May 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/chrome/</guid>
+      <description>快捷键 Ctrl+N Opens a new window. Ctrl+T Opens a new tab. Press Ctrl+O, then select file. Opens a file from your computer in Google Chrome. Press Ctrl and click a link. Or click a link with your middle mouse button (or mousewheel). Opens the link in a new tab in the background . Press Ctrl+Shift and click a link. Or press Shift and click a link with your middle mouse button (or mousewheel). Opens the link in a new tab and switches to the newly opened tab. Press Shift and click a link. Opens the link in a</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第44期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-44/</link>
+      <pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-44/</guid>
+      <description>每周分享第 44 期（20190222） 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：杭州西湖，2018年） 最近，一位荷兰统计学教授</description>
+    </item>
+    
+    <item>
+      <title>OpenSSL的用法</title>
+      <link>https://wellfrog27.github.io/blog/linux/openssl/</link>
+      <pubDate>Tue, 06 May 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/openssl/</guid>
+      <description>生成私钥 1 2 3 4 # 密钥位数 1024 # 对称加密算法 des3 # 生成的密钥文件 server.enc.key $ openssl genrsa -des3 -out server.enc.key 1024 解除密钥的pass-phrase保护 1 $ openssl rsa -in server.enc.key -out server.key 生成证书 1 2 3 4 5 6 7 # 生成的证书文件 server.csr $ openssl req -new -key server.enc.key -out server.csr $ openssl x509 -req -days 365 -in server.csr</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第33期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-33/</link>
+      <pubDate>Sat, 26 Apr 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-33/</guid>
+      <description>每周分享第 33 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，请前往 GitHub 的 ruanyf/weekly 提交 issue。 上周六是台北市长选举。原定下午四点结束投票，但是排队的人太多，于是改成只要四点你还在排队，就可</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第9期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-9/</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-9/</guid>
+      <description>每周分享第 9 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 这个周末是端午节，我要陪家人旅行，所以提前一天发布，祝大家端午节快乐。 （题图：星愿公园，上海，2017） 一个网友看了我的新书《未来世</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第54期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-54/</link>
+      <pubDate>Sun, 09 Mar 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-54/</guid>
+      <description>https://github.com/ruanyf/weekly/issues/498# 每周分享第 54 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 （题图：鸣号自动侦测系统，上海，2019。） 能够获得暴利的职业，都有一个</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第35期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-35/</link>
+      <pubDate>Sun, 02 Mar 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-35/</guid>
+      <description>每周分享第 35 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 媒体报道，50岁以上的日本男性每四人就有一人独自生活，女性每七人就有一人独</description>
+    </item>
+    
+    <item>
+      <title>文件时间</title>
+      <link>https://wellfrog27.github.io/blog/linux/file/time/</link>
+      <pubDate>Thu, 27 Feb 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/file/time/</guid>
+      <description>概述 Linux 系统的每个文件都有三个时间戳。 atime（access time）：上一次读取时间，包括直接读取和 cat、vim、less 之类的软件读取。 mtime（modify time）：上一次修改时间，指的是</description>
+    </item>
+    
+    <item>
+      <title>宏</title>
+      <link>https://wellfrog27.github.io/blog/clang/macro/</link>
+      <pubDate>Sun, 16 Feb 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/macro/</guid>
+      <description>define语句可以用来定义常量。 1 #define RECIPROCAL_OF_PI (1.0f / 3.14159f) 注意，宏的名字一般都使用大写字母。 注意，预处理语句不用分号结尾。每个语句要占据一行。</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第51期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-51/</link>
+      <pubDate>Thu, 16 Jan 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-51/</guid>
+      <description>每周分享第 51 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 欢迎投稿，或推荐你自己的项目，请前往 GitHub 的 ruanyf/weekly 提交 issue。 一个程序员的 Macbook 送修了，他只好重新使用10年前的笔记本电脑（上图）。结果意外</description>
+    </item>
+    
+    <item>
+      <title>科技爱好者周刊：第17期</title>
+      <link>https://wellfrog27.github.io/blog/weekly/weekly-17/</link>
+      <pubDate>Mon, 13 Jan 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/weekly/weekly-17/</guid>
+      <description>每周分享第 17 期 这里记录过去一周，我看到的值得分享的东西，每周五发布。 （图片说明：2018年6月的气温与1951-1980年平均气温的对比，来自推特@SimonLeeWx） 今天夏天，全球高温创纪录。日本</description>
+    </item>
+    
+    <item>
+      <title>可视化</title>
+      <link>https://wellfrog27.github.io/blog/web/visualization/</link>
+      <pubDate>Tue, 07 Jan 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/web/visualization/</guid>
+      <description>人类可感知的梯度 位置（position） 长度（length） 角度/坡度（angle/slope） 面积（area） 体积（volumn） 颜色（color） 图像属性 形式（form） size shape rotation 颜色 brightness hue saturation texture granularity pattern orientation Optics</description>
+    </item>
+    
+    <item>
+      <title>Apache 重定向</title>
+      <link>https://wellfrog27.github.io/blog/linux/apache/redirect/</link>
+      <pubDate>Mon, 06 Jan 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/linux/apache/redirect/</guid>
+      <description>重定向功能用于将对一个网址的请求，自动导向另一个网址。 HTTP 提供两个重定向状态：301 永久性跳转和302 暂时性跳转。 Redirect 指令 Redirect指令将旧的 URL 导向新的 URL。 1 2 3 4 5 6 7 8 9 10 &amp;lt;VirtualHost *:80&amp;gt; ServerName www.domain1.com Redirect / http://www.domain2.com &amp;lt;/VirtualHost&amp;gt; &amp;lt;VirtualHost</description>
+    </item>
+    
+    <item>
+      <title>档案</title>
+      <link>https://wellfrog27.github.io/blog/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/archives/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

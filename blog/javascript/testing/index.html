@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>JavaScript测试 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/linux/ssh/basic/"
+                                            title="SSH 基本知识">SSH 基本知识</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/database/datebase/"
+                                            title="数据库">数据库</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/javascript/"
+                                            rel="tag">Javascript</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/ssh/basic/" title="SSH 基本知识">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/database/datebase/" title="数据库">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">JavaScript测试</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/javascript/"><abbr class="published"
+                                        title=2014-11-30&#32;00:00:00&#32;&#43;0000&#32;UTC>2014年11月30日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<h2 id="概述">概述</h2>
+
+<p>Web应用程序越来越复杂，这意味着有更多的可能出错。测试是帮助我们提高代码质量、降低错误的最好方法和工具之一。</p>
+
+<h3 id="单元测试">单元测试</h3>
+
+<p>单元测试（unit testing）指的是以模块为单位，对软件进行测试。通常来说，单元（unit）指的就是一个纯粹的函数，只要输入不变，必定返回同样的输出。</p>
+
+<p>单元测试通常采取断言（assertion）的形式，也就是测试某个功能的返回结果，是否与预期结果一致。如果与预期不一致，就表示测试失败。</p>
+
+<p>单元测试是函数正常工作、不出错的最基本、最有效的方法之一。 每一个单元测试发出一个特定的输入到所要测试的函数，看看函数是否返回预期的输出，或者采取了预期的行动。单元测试证明了所测试的代码行为符合预期。</p>
+
+<p>单元测试有助于代码的模块化，因此有助于长期的重用。因为有了测试，你就知道代码是可靠的，可以按照预期运行。从这个角度说，测试可以节省开发时间。单元测试的另一个好处是，有了测试，就等于就有了代码功能的文档，有助于其他开发者了解代码的意图。</p>
+
+<p>单元测试应该避免依赖性问题，比如不存取数据库、不访问网络等等，而是使用工具虚拟出运行环境。这种虚拟使得测试成本最小化，不用花大力气搭建各种测试环境。</p>
+
+<p>单元测试的步骤</p>
+
+<ol>
+<li>搭建测试环境</li>
+<li>触发测试</li>
+<li>验证结果是否正确</li>
+<li>还原被修改的环境</li>
+</ol>
+
+<p>单元测试需要用到测试框架，常用的有<a href="http://mochajs.org/">Mocha</a>和<a href="http://qunitjs.com/">QUnit</a>。其他需要用到的工具还有下面一些。</p>
+
+<ul>
+<li>断言库：Expect.js等</li>
+<li>mock库：Sinon.js等</li>
+<li>覆盖率测试工具：istanbul</li>
+</ul>
+
+<h3 id="集成测试-integration-test">集成测试（Integration test）</h3>
+
+<p>集成测试指的是多个部分在一起测试，比如在一个测试数据库上，测试数据库连接模块。</p>
+
+<h3 id="功能测试-functional-test">功能测试（Functional test）</h3>
+
+<p>功能测试指的是，自动测试整个应用程序的某个功能，比如使用Selenium工具自动打开浏览器运行程序。</p>
+
+<h3 id="tdd">TDD</h3>
+
+<p>TDD是测试驱动型开发（Test-Driven Development）的缩写，指的是先写好测试，然后再根据测试完成开发。使用这种开发方式，会有很高的测试覆盖率。</p>
+
+<p>TDD的开发步骤如下。</p>
+
+<ul>
+<li>先写一个测试。</li>
+<li>写出最小数量的代码，使其能够通过测试。</li>
+<li>优化代码。</li>
+<li>重复前面三步。</li>
+</ul>
+
+<p>TDD开发的测试覆盖率通常在90%以上，这意味着维护代码和新增特性会非常容易。因为测试保证了你可以信任这些代码，修改它们不会破坏其他代码的运行。</p>
+
+<h3 id="bdd">BDD</h3>
+
+<p>BDD是行为驱动开发（Behavior-Driven Development）的缩写，指的是写出优秀测试的最佳实践的总称。它应该与TDD和单元测试一起配合使用。</p>
+
+<p>BDD认为，不应该针对代码的实现细节写测试，而是要针对行为写测试。请看下面测试计数器是否加1的例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">suite(<span style="color:#cd5555">&#39;Counter&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span>() {
+  test(<span style="color:#cd5555">&#39;tick increases count to 1&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span>() {
+    <span style="color:#8b008b;font-weight:bold">var</span> counter = <span style="color:#8b008b;font-weight:bold">new</span> Counter();
+    counter.tick();
+    assert.equal(counter.count, <span style="color:#b452cd">1</span>);
+  });
+});
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面代码测试的是Counter的内部实现，即Counter实例的默认值为0，调用tick方法后增加为1。</p>
+
+<p>BDD测试的是行为，即应该怎样运行。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">describe(<span style="color:#cd5555">&#39;Counter&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span>() {
+  it(<span style="color:#cd5555">&#39;should increase count by 1 after calling tick&#39;</span>, <span style="color:#8b008b;font-weight:bold">function</span>() {
+    <span style="color:#8b008b;font-weight:bold">var</span> counter = <span style="color:#8b008b;font-weight:bold">new</span> Counter();
+    <span style="color:#8b008b;font-weight:bold">var</span> expectedCount = counter.count + <span style="color:#b452cd">1</span>;
+      counter.tick();
+    assert.equal(counter.count, expectedCount);
+  });
+});
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>总结一下，就是TDD告诉你何时写测试，何时写代码，BDD告诉你如何写测试，两者应该结合起来。</p>
+
+<h3 id="qunit">QUnit</h3>
+
+<p>QUnit的作者就是jQuery的作者，从2008年创立，最早只能在浏览器中运行。</p>
+
+<p>QUint自带断言库（assert对象），所以没有必要使用外部的断言库。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">QUnit.test(<span style="color:#cd5555">&#34;hello test&#34;</span>, <span style="color:#8b008b;font-weight:bold">function</span>(assert) {
+  assert.ok(<span style="color:#b452cd">1</span> == <span style="color:#cd5555">&#34;1&#34;</span>, <span style="color:#cd5555">&#34;Passed!&#34;</span>);
+});
+</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="断言的三种风格">断言的三种风格</h2>
+
+<p>assert、expext、should是断言的三种风格。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">   <span style="color:#228b22">// with an assert style
+</span><span style="color:#228b22"></span>   assert.equal(event.detail.item, <span style="color:#cd5555">&#39;(item).);
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">   // or an expect style
+</span><span style="color:#cd5555">   expect(event.detail.item).to.equal(&#39;</span>(item)<span style="color:#cd5555">&#39;);
+</span><span style="color:#cd5555">
+</span><span style="color:#cd5555">   // or should style
+</span><span style="color:#cd5555">   event.detail.item.should.equal(&#39;</span>(item)<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>);
+   done();
+</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="chai-js">Chai.js</h2>
+
+<h3 id="assert风格">assert风格</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#8b008b;font-weight:bold">var</span> assert = require(<span style="color:#cd5555">&#39;chai&#39;</span>).assert
+  , foo = <span style="color:#cd5555">&#39;bar&#39;</span>
+  , beverages = { tea: [ <span style="color:#cd5555">&#39;chai&#39;</span>, <span style="color:#cd5555">&#39;matcha&#39;</span>, <span style="color:#cd5555">&#39;oolong&#39;</span> ] };
+
+assert.typeOf(foo, <span style="color:#cd5555">&#39;string&#39;</span>, <span style="color:#cd5555">&#39;foo is a string&#39;</span>);
+assert.equal(foo, <span style="color:#cd5555">&#39;bar&#39;</span>, <span style="color:#cd5555">&#39;foo equal `bar`&#39;</span>);
+assert.lengthOf(foo, <span style="color:#b452cd">3</span>, <span style="color:#cd5555">&#39;foo`s value has a length of 3&#39;</span>);
+assert.lengthOf(beverages.tea, <span style="color:#b452cd">3</span>, <span style="color:#cd5555">&#39;beverages has 3 types of tea&#39;</span>);
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>上面代码中，assert方法的最后一个参数是错误提示信息，只有测试没有通过时，才会显示。</p>
+
+<h3 id="expect风格">expect风格</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#8b008b;font-weight:bold">var</span> expect = require(<span style="color:#cd5555">&#39;chai&#39;</span>).expect
+  , foo = <span style="color:#cd5555">&#39;bar&#39;</span>
+  , beverages = { tea: [ <span style="color:#cd5555">&#39;chai&#39;</span>, <span style="color:#cd5555">&#39;matcha&#39;</span>, <span style="color:#cd5555">&#39;oolong&#39;</span> ] };
+
+expect(foo).to.be.a(<span style="color:#cd5555">&#39;string&#39;</span>);
+expect(foo).to.equal(<span style="color:#cd5555">&#39;bar&#39;</span>);
+expect(foo).to.have.length(<span style="color:#b452cd">3</span>);
+expect(beverages).to.have.property(<span style="color:#cd5555">&#39;tea&#39;</span>).<span style="color:#8b008b;font-weight:bold">with</span>.length(<span style="color:#b452cd">3</span>);
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>显示的错误提示如下。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#8b008b;font-weight:bold">var</span> answer = <span style="color:#b452cd">43</span>;
+
+<span style="color:#228b22">// AssertionError: expected 43 to equal 42.
+</span><span style="color:#228b22"></span>expect(answer).to.equal(<span style="color:#b452cd">42</span>); 
+
+<span style="color:#228b22">// AssertionError: topic [answer]: expected 43 to equal 42.
+</span><span style="color:#228b22"></span>expect(answer, <span style="color:#cd5555">&#39;topic [answer]&#39;</span>).to.equal(<span style="color:#b452cd">42</span>);
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>Expect.js的例子。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">expect({}).to.be.an(<span style="color:#cd5555">&#39;object&#39;</span>);
+expect([<span style="color:#b452cd">1</span>,<span style="color:#b452cd">2</span>,<span style="color:#b452cd">3</span>]).to.contain(<span style="color:#b452cd">2</span>);
+expect([<span style="color:#cd5555">&#39;a&#39;</span>,<span style="color:#cd5555">&#39;b&#39;</span>,<span style="color:#cd5555">&#39;c&#39;</span>]).to.eql([<span style="color:#cd5555">&#39;a&#39;</span>, <span style="color:#cd5555">&#39;b&#39;</span>, <span style="color:#cd5555">&#39;c&#39;</span>]);
+</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="should风格">should风格</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#8b008b;font-weight:bold">var</span> should = require(<span style="color:#cd5555">&#39;chai&#39;</span>).should() <span style="color:#228b22">//actually call the the function
+</span><span style="color:#228b22"></span>  , foo = <span style="color:#cd5555">&#39;bar&#39;</span>
+  , beverages = { tea: [ <span style="color:#cd5555">&#39;chai&#39;</span>, <span style="color:#cd5555">&#39;matcha&#39;</span>, <span style="color:#cd5555">&#39;oolong&#39;</span> ] };
+
+foo.should.be.a(<span style="color:#cd5555">&#39;string&#39;</span>);
+foo.should.equal(<span style="color:#cd5555">&#39;bar&#39;</span>);
+foo.should.have.length(<span style="color:#b452cd">3</span>);
+beverages.should.have.property(<span style="color:#cd5555">&#39;tea&#39;</span>).<span style="color:#8b008b;font-weight:bold">with</span>.length(<span style="color:#b452cd">3</span>);
+</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="参考链接">参考链接</h2>
+
+<ul>
+<li>Jon Bretman, <a href="http://developers.lyst.com/javascript/testing/2014/03/03/javascript-unit-testing/">Unit Testing JavaScript</a></li>
+<li>Jani Hartikainen, <a href="http://codeutopia.net/blog/2015/03/01/unit-testing-tdd-and-bdd/">What’s the difference between Unit Testing, TDD and BDD?</a></li>
+</ul>
+
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2014年11月30日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2015.08.23: <a href="https://wellfrog27.github.io/blog/javascript/angular/"
+                                    title="Angular.js的用法">Angular.js的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2015.08.22: <a href="https://wellfrog27.github.io/blog/javascript/backbone/"
+                                    title="Backbone.js的用法">Backbone.js的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

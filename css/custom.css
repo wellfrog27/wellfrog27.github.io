@@ -1,0 +1,43 @@
+#main-content img {
+    cursor: pointer;
+}
+
+
+@keyframes zoom {
+    from {
+        transform: scale(0.2)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#click-img-container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+#click-img-container img {
+    cursor: pointer;
+    object-fit: contain;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+    animation-name: zoom;
+    animation-duration: 0.7s;
+    border: 0px;
+}

@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>xMonad的用法 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/nginx/redirect/"
+                                            title="重定向">重定向</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/weekly/weekly-4/"
+                                            title="科技爱好者周刊：第4期">科技爱好者周刊：第4期</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/nginx/redirect/" title="重定向">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/weekly/weekly-4/" title="科技爱好者周刊：第4期">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">xMonad的用法</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2017-03-27&#32;00:00:00&#32;&#43;0000&#32;UTC>2017年3月27日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<p>xMonad是一款平铺式窗口管理器（Tiling window manager），即能够以一定顺序，自动将多个应用程序窗口平铺放置在桌面上。</p>
+
+<h2 id="xfce4">xfce4</h2>
+
+<p>xMonad 一般与桌面环境 XFCE 配合使用。执行下面的命令，安装 XFCE。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install xfce4
+$ apt-get install xfce4-goodies</code></pre></td></tr></table>
+</div>
+</div>
+<p>安装完成后，注销当前用户。重新登录时，选择 XFCE 桌面环境。</p>
+
+<h2 id="xmonad">xMonad</h2>
+
+<p>xMonad是用 Haskell 语言开发的。但是即使对 Haskell 语言所知甚少，但是也能很顺利地使用。</p>
+
+<p>运行下面的语句，安装xMonad。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install xmonad xmobar</code></pre></td></tr></table>
+</div>
+</div>
+<p>安装完成后，退出再重新登录，选择xMonad会话。登录后，你会看到一个完全空白的桌面，这说明xMonad起作用了。</p>
+
+<p>按下<code>alt + shift + return</code>，打开终端窗口。</p>
+
+<p>再按下<code>alt + shift + return</code>，会打开另一个终端窗口，与现有窗口平分屏幕。每个窗口占据50%的屏幕，第二个窗口会成为当前窗口，称为”主栏“（master pane），第一个窗口进入副栏。打开第三个窗口，第三个窗口占据主栏，前两个窗口进入副栏。以后，前打开的窗口都会自动进入主栏，以前的窗口平分副栏。</p>
+
+<p>按下<code>mod + space</code>，布局由水平分割空间，改成了垂直分隔空间。</p>
+
+<p>再按<code>mod + space</code>，布局改为焦点模式，当前在主栏的窗口，独占整个空间。</p>
+
+<p>再按<code>mod + space</code>，回到水平分割模式。</p>
+
+<p>按下<code>mod + ,</code>，增加主栏的窗口数，减少副栏的窗口数。</p>
+
+<p>按下<code>mod + .</code>, 减少主栏的窗口数，增加副栏的窗口数。</p>
+
+<p>按下<code>mod + j</code>，焦点顺时针移动到下一个窗口。</p>
+
+<p>按下<code>mod + k</code>，焦点逆时针移动到上一个窗口。</p>
+
+<p>按下<code>mod + return</code>，将焦点窗口与主栏窗口对换。</p>
+
+<p>按下<code>mod + shift + j</code>，按照顺时针的顺序，将焦点窗口与下一个窗口交换位置。即当前窗口前进到上一个位置。</p>
+
+<p>按下<code>mod + shift + k</code>，按照逆时针顺序，将焦点窗口与上一个窗口交换位置。即当前窗口后退到下一个位置。</p>
+
+<p>按下<code>mod + h</code>，副栏增加尺寸。</p>
+
+<p>按下<code>mod + l</code>，主栏增加尺寸。</p>
+
+<p>按下<code>mod + shift + c</code>，关闭一个当前窗口，焦点移到下一个窗口。</p>
+
+<p>按下<code>mod + shift + q</code>，退出 xmonad。</p>
+
+<p>按下<code>mod + 鼠标左键</code>，拖动一个窗口，该窗口会脱离 xmonad 的布局，成为浮动窗口，可以摆放在屏幕的任意位置。</p>
+
+<p>按下<code>mod + 鼠标右键</code>，可以调节浮动窗口的大小。</p>
+
+<p>按下<code>mod + t</code>，让浮动窗口重新回到 xmonad 的布局。</p>
+
+<p>第一个打开的应用程序，从占据桌面的左边区域，这称为“主区域”（main area），即该窗口占据最大的一个区域。以后打开的应用程序，都会占据右边的区域。</p>
+
+<h3 id="操作">操作</h3>
+
+<p>xMonad的所有操作，都要通过一个特殊的键。这个键一般是alt，但可以修改成其他键。</p>
+
+<ul>
+<li>alt + shift + enter打开一个终端窗口。</li>
+<li>alt + j 顺时针选择焦点窗口</li>
+<li>alt + k 逆时针选择焦点窗口</li>
+<li>alt + shift + j 顺时针移动焦点窗口</li>
+<li>alt + shift + k 逆时针移动焦点窗口</li>
+<li>alt + enter 使得焦点窗口与主区域窗口互换位置</li>
+<li>alt + l 和 alt + h 调整焦点窗口大小</li>
+<li>alt + space 切换显示模式，依次为主区域在左边、主区域在桌面上方，主区域占据整个桌面。</li>
+<li>移动某个窗口，可以按住alt键，拖动它。</li>
+<li>alt + shift + q  退出xMonad。</li>
+</ul>
+
+<p>修改这个操作键，可以在配置文件<code>~/.xmonad/xmonad.hs</code>之中，做如下设置，将其修改为Win键。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00688b">modMask</span> = mod4Mask</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="工作区">工作区</h3>
+
+<p>xMonad提供9个工作区，使用<code>alt+1</code>到<code>alt+9</code>切换。 XMonad启动后，默认处于工作区1  。</p>
+
+<p>如果要将一个程序移到不同的工作区，先用<code>alt + j</code>或<code>alt + k</code>，将其变成焦点窗口，然后使用<code>alt + shift + [1-9]</code>，将其移到所要的工作区。</p>
+
+<h3 id="双显示器">双显示器</h3>
+
+<p>使用多显示器时，每个显示器会分配到一个工作区。xmonad启动时，工作区1在显示器1，工作区2在显示器2，以此类推。</p>
+
+<p>有两种方法可以切换显示器。</p>
+
+<ul>
+<li><code>mod + 1, 2, 3, ...0</code>切换到指定工作区。如果指定工作区当前不可见，那么当前焦点屏幕会变为该工作区。如果指定工作区位于当前可见的某个屏幕，然后当前焦点屏幕与指定工作区所在的屏幕会互换。</li>
+<li><code>mod + w, e, r</code>切换到指定屏幕，对工作区无影响，仅仅改变焦点</li>
+</ul>
+
+<p>多显示器配置工具：Xinerama、TwinView、 xrandr。另外，arandr是xrandr是GUI界面，可以单独使用。</p>
+
+<ul>
+<li>mod-{w,e,r} 显示器之间切换焦点，比如<code>mod + w</code>转移焦点到左显示器，<code>mod + e</code>转移焦点到右显示器。</li>
+<li>shift-mod-{w,e,r} 移动当前窗口到指定显示器。<code>mod + shift + w</code>将当前窗口移到右显示器，<code>mod + shift + e</code>将当前窗口移到右显示器。</li>
+</ul>
+
+<p>默认，工作区1显示在主显示器，工作区2显示在第二个显示器。 如果要将工作区在显示器之间移动，按<code>alt + 2</code> 或者<code>alt + 1</code>。</p>
+
+<p>首先查看本机的monitor设置。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ xrandr -q
+Screen <span style="color:#b452cd">0</span>: minimum <span style="color:#b452cd">320</span> x <span style="color:#b452cd">200</span>, current <span style="color:#b452cd">1920</span> x <span style="color:#b452cd">1080</span>, maximum <span style="color:#b452cd">8192</span> x <span style="color:#b452cd">8192</span>
+eDP1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 309mm x 175mm
+   1920x1080     <span style="color:#b452cd">60</span>.02*+  <span style="color:#b452cd">59</span>.93  
+   1680x1050     <span style="color:#b452cd">59</span>.95    <span style="color:#b452cd">59</span>.88  
+   1600x1024     <span style="color:#b452cd">60</span>.17  
+   1400x1050     <span style="color:#b452cd">59</span>.98  
+   1280x1024     <span style="color:#b452cd">60</span>.02  
+   1440x900      <span style="color:#b452cd">59</span>.89  
+   1280x960      <span style="color:#b452cd">60</span>.00  
+   1360x768      <span style="color:#b452cd">59</span>.80    <span style="color:#b452cd">59</span>.96  
+   1152x864      <span style="color:#b452cd">60</span>.00  
+   1024x768      <span style="color:#b452cd">60</span>.00  
+   800x600       <span style="color:#b452cd">60</span>.32    <span style="color:#b452cd">56</span>.25  
+   640x480       <span style="color:#b452cd">59</span>.94  
+HDMI1 connected (normal left inverted right x axis y axis)
+   1920x1080     <span style="color:#b452cd">60</span>.00 +  <span style="color:#b452cd">50</span>.00    <span style="color:#b452cd">59</span>.94  
+   1920x1080i    <span style="color:#b452cd">60</span>.00    <span style="color:#b452cd">50</span>.00    <span style="color:#b452cd">59</span>.94  
+   1680x1050     <span style="color:#b452cd">59</span>.88   
+   1400x1050     <span style="color:#b452cd">59</span>.95  
+   1600x900      <span style="color:#b452cd">59</span>.98  
+   1280x1024     <span style="color:#b452cd">75</span>.02    <span style="color:#b452cd">60</span>.02  
+   1440x900      <span style="color:#b452cd">59</span>.90  
+   1280x800      <span style="color:#b452cd">59</span>.91  
+   1152x864      <span style="color:#b452cd">75</span>.00  
+   1280x720      <span style="color:#b452cd">60</span>.00    <span style="color:#b452cd">50</span>.00    <span style="color:#b452cd">59</span>.94  
+   1024x768      <span style="color:#b452cd">75</span>.08    <span style="color:#b452cd">60</span>.00  
+   800x600       <span style="color:#b452cd">75</span>.00    <span style="color:#b452cd">60</span>.32  
+   720x576       <span style="color:#b452cd">50</span>.00  
+   720x480       <span style="color:#b452cd">60</span>.00    <span style="color:#b452cd">59</span>.94  
+   640x480       <span style="color:#b452cd">75</span>.00    <span style="color:#b452cd">60</span>.00    <span style="color:#b452cd">59</span>.94  
+   720x400       <span style="color:#b452cd">70</span>.08  
+DP1 disconnected (normal left inverted right x axis y axis)
+HDMI2 disconnected (normal left inverted right x axis y axis)</code></pre></td></tr></table>
+</div>
+</div>
+<p>打开双屏和单屏的Bash脚本。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># set dual monitors</span>
+dual () {
+    xrandr --output edp1 --primary --right-of HDMI1 --output HDMI1 --auto
+}
+
+<span style="color:#228b22"># set exactly alike monitors</span>
+same () {
+  xrandr --output HDMI1 --auto
+}
+
+<span style="color:#228b22"># set single monitor</span>
+single () {
+    xrandr --output HDMI1 --off
+}</code></pre></td></tr></table>
+</div>
+</div>
+<p>参考链接</p>
+
+<ul>
+<li><a href="https://www.reddit.com/r/xmonad/comments/ndww5/dual_screens_multi_monitors_tips_and_tricks/">Dual screens, multi monitors : tips and tricks?</a></li>
+</ul>
+
+<h3 id="配置">配置</h3>
+
+<p>在主目录下新建一个.xmonad目录，然后在这个目录下新建一个xmonad.hs文件。</p>
+
+<p>alt + q 重新运行配置文件</p>
+
+<h2 id="xmonad-hs">xmonad.hs</h2>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import XMonad
+import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.ManageDocks
+import XMonad.Util.Run(spawnPipe)
+import XMonad.Util.EZConfig(additionalKeys)
+import System.IO
+
+main = do
+    xmproc &lt;- spawnPipe &#34;xmobar&#34;
+
+    xmonad $ defaultConfig
+        { manageHook = manageDocks &lt;+&gt; manageHook defaultConfig
+        , layoutHook = avoidStruts  $  layoutHook defaultConfig
+        , logHook = dynamicLogWithPP xmobarPP
+                        { ppOutput = hPutStrLn xmproc
+                        , ppTitle = xmobarColor &#34;green&#34; &#34;&#34; . shorten 50
+                        }
+        , modMask = mod4Mask     -- Rebind Mod to the Windows key
+        } `additionalKeys`
+        [ ((mod4Mask .|. shiftMask, xK_z), spawn &#34;xscreensaver-command -lock; xset dpms force off&#34;)
+        , ((controlMask, xK_Print), spawn &#34;sleep 0.2; scrot -s&#34;)
+        , ((0, xK_Print), spawn &#34;scrot&#34;)
+        ]</pre></td></tr></table>
+</div>
+</div>
+<h2 id="xmobar">XMobar</h2>
+
+<p>在主目录下，建立一个.xmobarrc文件。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Config { <span style="color:#00688b">font</span> = <span style="color:#cd5555">&#34;-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*&#34;</span>
+, <span style="color:#00688b">bgColor</span> = <span style="color:#cd5555">&#34;black&#34;</span>
+, <span style="color:#00688b">fgColor</span> = <span style="color:#cd5555">&#34;grey&#34;</span>
+, <span style="color:#00688b">position</span> = Top
+, <span style="color:#00688b">lowerOnStart</span> = True
+, <span style="color:#00688b">commands</span> = [ Run Weather <span style="color:#cd5555">&#34;EGPN&#34;</span> [<span style="color:#cd5555">&#34;-t&#34;</span>,<span style="color:#cd5555">&#34;&lt;station&gt;: &lt;tempC&gt;C&#34;</span>,<span style="color:#cd5555">&#34;-L&#34;</span>,<span style="color:#cd5555">&#34;18&#34;</span>,<span style="color:#cd5555">&#34;-H&#34;</span>,<span style="color:#cd5555">&#34;25&#34;</span>,<span style="color:#cd5555">&#34;--normal&#34;</span>,<span style="color:#cd5555">&#34;green&#34;</span>,<span style="color:#cd5555">&#34;--high&#34;</span>,<span style="color:#cd5555">&#34;red&#34;</span>,<span style="color:#cd5555">&#34;--low&#34;</span>,<span style="color:#cd5555">&#34;lightblue&#34;</span>] <span style="color:#b452cd">36000</span>
+             , Run Network <span style="color:#cd5555">&#34;eth0&#34;</span> [<span style="color:#cd5555">&#34;-L&#34;</span>,<span style="color:#cd5555">&#34;0&#34;</span>,<span style="color:#cd5555">&#34;-H&#34;</span>,<span style="color:#cd5555">&#34;32&#34;</span>,<span style="color:#cd5555">&#34;--normal&#34;</span>,<span style="color:#cd5555">&#34;green&#34;</span>,<span style="color:#cd5555">&#34;--high&#34;</span>,<span style="color:#cd5555">&#34;red&#34;</span>] <span style="color:#b452cd">10</span>
+             , Run Network <span style="color:#cd5555">&#34;eth1&#34;</span> [<span style="color:#cd5555">&#34;-L&#34;</span>,<span style="color:#cd5555">&#34;0&#34;</span>,<span style="color:#cd5555">&#34;-H&#34;</span>,<span style="color:#cd5555">&#34;32&#34;</span>,<span style="color:#cd5555">&#34;--normal&#34;</span>,<span style="color:#cd5555">&#34;green&#34;</span>,<span style="color:#cd5555">&#34;--high&#34;</span>,<span style="color:#cd5555">&#34;red&#34;</span>] <span style="color:#b452cd">10</span>
+             , Run Cpu [<span style="color:#cd5555">&#34;-L&#34;</span>,<span style="color:#cd5555">&#34;3&#34;</span>,<span style="color:#cd5555">&#34;-H&#34;</span>,<span style="color:#cd5555">&#34;50&#34;</span>,<span style="color:#cd5555">&#34;--normal&#34;</span>,<span style="color:#cd5555">&#34;green&#34;</span>,<span style="color:#cd5555">&#34;--high&#34;</span>,<span style="color:#cd5555">&#34;red&#34;</span>] <span style="color:#b452cd">10</span>
+             , Run Memory [<span style="color:#cd5555">&#34;-t&#34;</span>,<span style="color:#cd5555">&#34;Mem: &lt;usedratio&gt;%&#34;</span>] <span style="color:#b452cd">10</span>
+             , Run Swap [ ] <span style="color:#b452cd">10</span>
+             , Run Date <span style="color:#cd5555">&#34;%a %b %_d %Y %H:%M:%S&#34;</span> <span style="color:#cd5555">&#34;date&#34;</span> <span style="color:#b452cd">10</span>
+             ]
+, <span style="color:#00688b">sepChar</span> = <span style="color:#cd5555">&#34;%&#34;</span>
+, <span style="color:#00688b">alignSep</span> = <span style="color:#cd5555">&#34;}{&#34;</span>
+, <span style="color:#00688b">template</span> = <span style="color:#cd5555">&#34;%cpu% | %memory% * %swap% | %eth0% }{ %EGPN% | &lt;fc=#ee9a00&gt;%date%&lt;/fc&gt;&#34;</span>
+}</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="dmenu">dmenu</h2>
+
+<p>dmenu提供一个菜单条，可以快速启动应用程序。它从$PATH变量指定的路径中，寻找应用程序。</p>
+
+<p>安装方法。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install dmenu</code></pre></td></tr></table>
+</div>
+</div>
+<p>运行dmenu。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dmenu_run</code></pre></td></tr></table>
+</div>
+</div>
+<p>一般来说，需要为这个命令定义一个快捷键，通常是Alt+p。按这个键，就可以启动dmenu菜单条。</p>
+
+<p>XFCE4环境下定义一个快捷键。   [Desktop Entry]
+   Encoding=UTF-8
+   Name=xmonad
+   Comment=This session starts xmonad
+   Exec=/usr/local/bin/xmonad
+   Type=Application</p>
+
+<ul>
+<li>Select Menu | Settings | Settings Manager from the main menu</li>
+<li>Click the Keyboard icon in the Settings Manager</li>
+<li>Click the Application Shortcuts tab</li>
+<li>Click Add</li>
+<li>Write dmenu_run in the command box that appears</li>
+<li>When prompted for the short cut keys, press Super and Space (or the combination you prefer)</li>
+<li>If the combination is in use, you will see an error message and be invited to type another</li>
+<li>Click OK and close the Settings Manager and Keyboard windows</li>
+<li>Test your new shortcut</li>
+</ul>
+
+<h2 id="yeganesh">Yeganesh</h2>
+
+<p><a href="http://dmwit.com/yeganesh/">Yeganesh</a>对dmenu再包装，优先返回最常用的程序。</p>
+
+<p>首先，安装dmenu，然后安装cabal-install，可以运行<code>cabal快捷键 --help</code>查看是否已经安装cabal。确定<code>$HOME/.cabal/bin</code>已经加入了$PATH变量的路径中，寻找可执行文件。</p>
+
+<p>运行下面的命令安装yeganesh。
+   [Desktop Entry]
+   Encoding=UTF-8
+   Name=xmonad
+   Comment=This session starts xmonad
+   Exec=/usr/local/bin/xmonad
+   Type=Application</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cabal install yeganesh</code></pre></td></tr></table>
+</div>
+</div>
+<p>运行yeganesh，最常用的程序排在最前面。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ yeganesh -x </code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="参考链接">参考链接</h2>
+
+<ul>
+<li><a href="http://www.huntlycameron.co.uk/2010/11/how-to-set-up-xmonad-xmobar-ubuntu/">How-to: Set up XMonad &amp; XMobar on Ubuntu</a>：入门介绍</li>
+<li><a href="http://beginners-guide-to-xmonad.readthedocs.org/en/latest/configure_xmobar.html">Xmonad Tutorial for Beginning Beginners</a></li>
+</ul>
+
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2017年3月27日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

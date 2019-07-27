@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+    <meta name="generator" content="Hugo 0.56.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/theme_scrapbook.css" />
+    <link rel="start" href="https://wellfrog27.github.io" title="Home" />
+    <link rel='icon' type='image/x-icon' href="https://wellfrog27.github.io/images/favicon.ico" />
+    
+
+    <title>用户管理 - 阮一峰的网络日志</title>
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    <script src="/js/click_enlarge_image.js"></script>
+    
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</head>
+
+
+<body id="scrapbook" class="mt-entry-archive one-column">
+
+    <div id="container">
+        <div id="container-inner">
+<div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+            
+            <div id="header-name">
+                阮一峰的网络日志
+                
+                <span>» <a href="/blog/" title="首页">首页</a></span>
+                
+                <span>» <a href="/blog/archives/" title="档案">档案</a></span>
+                
+            </div>
+            
+            <div id="google_search" style="background-image:url('/images/searchtop.gif');">
+                
+                <form action="https://www.baidu.com/s" target="_blank" method="get" id="cse-search-box">
+                    <div>
+                        <input type="text" size="20" name="origin" class="searchbox" id="sbi" value="">
+                        <input type="hidden" name="wd" value="">
+                        
+                        <input type="image" src="/images/top_search_submit.gif" class="searchbox_submit" value=""
+                            alt="搜索" name="sa" onclick="this.form.wd.value = this.form.origin.value + ' 阮一峰'">
+                    </div>
+                </form>
+
+                
+            </div>
+            <div id="feed_icon">
+                
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+<div id="content">
+    <div id="content-inner">
+        <div id="alpha">
+            <div id="alpha-inner">
+
+                <div id="entry-1983" class="entry-asset asset hentry">
+
+                    <div class="asset-header">
+                        <div class="asset-nav entry-nav">
+
+                            <div class="entry-location">
+                                <ul>
+                                    
+                                    <li>上一篇：<a href="https://wellfrog27.github.io/blog/linux/util/screen/"
+                                            title="Screen">Screen</a>
+                                    </li>
+                                    
+
+                                    
+                                    <li>下一篇：<a href="https://wellfrog27.github.io/blog/clang/io/"
+                                            title="输入与输出">输入与输出</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div>
+
+
+
+                            <div class="entry-categories">
+                                <p>分类<span class="delimiter">：</span></p>
+                                <ul>
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/"
+                                            rel="tag">Linux</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <div class="entry-location-mobile" style="float: right;">
+                                <ul>
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/linux/util/screen/" title="Screen">⇐</a></li>
+                                    
+                                    
+                                    <li><a href="https://wellfrog27.github.io/blog/clang/io/" title="输入与输出">⇒</a></li>
+                                    
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <article class="hentry">
+                        <h1 id="page-title" class="asset-name entry-title">用户管理</h1>
+                        
+                        
+                        
+                        <div id="share_button" class="social-share"
+                            style="float:right;padding-right:2em;padding-top:1em;">
+                            <a class="bshareDiv" href="http://www.bshare.cn/share" style="display: block; text-decoration: none; padding: 0px;
+                margin: 0px; font-size: 12px; height: 21px; width: 51px;">
+                                <div class="bsPromo bsPromo1"></div>
+                                <div class="buzzButton bsStyle10" style="height:21px;color:#333;;background:transparent
+                  url(http://static.bshare.cn/frame/images/button_custom10-zh-Orange.gif)
+                  no-repeat;text-align:center;width:51px;">
+                                </div>
+                                <div style="clear:both;"></div>
+                            </a>
+
+                            <script type="text/javascript" charset="utf-8"
+                                src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=10&amp;bgcolor=#fff&amp;bp=weixin,qqim,qzone,qqmb,sinaminiblog,fanfou,xueqiu,douban,facebook,twitter,gplus,instapaper&amp;ssc=false">
+                            </script>
+
+                            <script type="text/javascript" charset="utf-8">
+                                bShare.addEntry({
+                                    title: document.getElementById("page-title").innerHTML,
+                                    url: window.location.href
+                                });
+                            </script>
+
+                        </div>
+                        
+
+                        <div class="asset-meta">
+                            <p class="vcard author">作者： <a class="fn url" href="/">
+                                    
+                                    阮一峰
+                                    
+                                </a></p>
+                            <p>日期： <a href="https://wellfrog27.github.io/blog/linux/"><abbr class="published"
+                                        title=2017-02-02&#32;00:00:00&#32;&#43;0000&#32;UTC>2017年2月2日</abbr></a>
+                            </p>
+                        </div>
+
+                        <div class="asset-content entry-content" id="main-content">
+                            
+
+<p>Linux系统的用户管理，主要用到以下命令。</p>
+
+<ul>
+<li>useradd 增加新用户</li>
+<li>usermod 修改现有用户</li>
+<li>userdel 删除指定用户</li>
+<li>passwd 为用户指定密码</li>
+<li>chage 查看或修改用户密码的过期信息</li>
+</ul>
+
+<p>在登录后，新 shell 进程会使用您的用户和组 ID 来运行。这些是控制您对系统上任何文件的访问的权限。这通常意味着您不能访问数据其他用户的文件，不能写入系统文件。</p>
+
+<h2 id="用户信息">用户信息</h2>
+
+<h3 id="id">id</h3>
+
+<p><code>id</code>命令用来查看用户信息。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ id john
+<span style="color:#00688b">uid</span>=<span style="color:#b452cd">1001</span>(john) <span style="color:#00688b">gid</span>=<span style="color:#b452cd">100</span>(users) <span style="color:#00688b">groups</span>=<span style="color:#b452cd">100</span>(users)</code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="whoami">whoami</h3>
+
+<p><code>whoami</code>命令返回当前用户的ID。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ whoami
+jane</code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="用户管理">用户管理</h2>
+
+<h3 id="useradd">useradd</h3>
+
+<p><code>useradd</code>命令用于增加新用户。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 新增用户</span>
+$ sudo useradd &lt;username&gt;
+
+<span style="color:#228b22"># 定制新用户的参数</span>
+$ useradd -u <span style="color:#b452cd">2000</span> -g <span style="color:#b452cd">5000</span> -c <span style="color:#cd5555">&#34;Admin Account of SAP&#34;</span> -d /opt/sap -s /bin/ksh john
+$ useradd -g users -G wheel,developers nathan
+
+<span style="color:#228b22"># 查看新增的用户</span>
+$ grep john /etc/passwd</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>useradd</code>命令背后，Linux系统会进行以下操作。</p>
+
+<ul>
+<li>新建用户主目录<code>/home/&lt;username&gt;</code></li>
+<li>在<code>/etc/passwd</code>文件更新用户信息</li>
+<li>在<code>/etc/group</code>文件储存用户的组信息</li>
+<li>在<code>/etc/shadow</code>文件更新用户的密码信息</li>
+<li>在<code>/var/spool/mail/&lt;username&gt;</code>目录储存用户的Email</li>
+</ul>
+
+<p><code>useradd</code>命令的参数如下。</p>
+
+<ul>
+<li><code>-b</code> <code>--base-dir</code>：在其中创建用户主目录的默认基础目录。这通常是 /home，用户的主目录是 /home/$USER。</li>
+<li><code>-c</code> <code>--comment</code>：用户信息（Comments），一个描述该 ID 的文本字符串</li>
+<li><code>-d</code> <code>--home</code>：用户主目录（Home Directory）的目录名称</li>
+<li><code>-e</code> <code>--expiredate</code>：帐户将过期或被禁用的日期，格式为 YYYY-MM_DD。</li>
+<li><code>-g</code> <code>--gid</code>：组ID（GID），用户的初始登录组的名称或编号。该组必须存在。</li>
+<li><code>-G</code> <code>--groups</code>：用户所属的其他组的逗号分隔列表。</li>
+<li><code>-K</code> 可用于覆盖来自<code>/etc/login.defs</code>的默认值。</li>
+<li><code>-m</code> <code>--create-home</code>：创建用户主目录，如果用户的主目录不存在，则创建它。将框架文件和 /etc/skel 中的所有目录都复制到主目录。</li>
+<li><code>-o</code> <code>--non-unique</code> 允许用户拥有一个非唯一 ID。</li>
+<li><code>-p</code> <code>--password</code> 加密的密码。如果未指定密码，默认设置是禁用该帐户。您通常将在后续步骤中使用 passwd 命令，而不是生成一个加密的密码并在 useradd 命令上指定它。</li>
+<li><code>-s</code> <code>--shell</code>：用户Shell，如果用户的登录 shell 的名称与默认登录 shell 不同，则采用用户的登录 shell 名称。</li>
+<li><code>-u</code> <code>--uid</code>：用户ID（UID） 非负的用户 ID 编号，如果未指定 -o，那么它必须是唯一的。默认设置是使用不低于 UID_MIN 且大于任何现有用户的 ID 的最小值。</li>
+</ul>
+
+<h2 id="相关文件">相关文件</h2>
+
+<p>用户和组信息的主要存储库是 /etc 中的 4 个文件：</p>
+
+<ul>
+<li>/etc/passwd 是包含用户的基本信息的密码 文件。</li>
+<li>/etc/shadow 是包含已加密的密码的影子密码 文件。</li>
+<li>/etc/group 是组 文件，包含组的基本信息和哪些用户属于它们。</li>
+<li>/etc/gshadow 是包含已加密的组密码的影子组 文件。</li>
+</ul>
+
+<p>所有这些文件都是纯文本文件。通常，不要直接编辑它们。可以使用所提供的工具来更新它们，以便正确锁定它们并保持同步。</p>
+
+<p>出于安全原因，密码 (/etc/passwd) 和组 (/etc/group) 文件都添加了阴影。passwd 和 group 文件本身必须是所有用户可读的，但加密的密码不应是所有用户可读的。因此，影子文件包含加密的密码，而且这些文件仅能由 root 读取。suid 程序提供了必要的验证访问权，该程序具有根权限但可由任何用户运行。</p>
+
+<p>可以使用 vipw 命令安全地编辑 /etc/passwd，使用类似的 vigr 命令安全地编辑 /etc/group。当您在 vi 编辑器中执行更改时，这两个命令会锁定必要的文件。如果更改 /etc/passwd，vipw 会提示您查看是否还需要更新 /etc/shadow。类似地，如果使用 vigr 更新 /etc/group，系统会提示您更新 /etc/gshadow。如果需要删除组管理员，可能需要使用 vigr，因为 gpasswd 只允许添加管理员。</p>
+
+<h3 id="etc-passwd">/etc/passwd</h3>
+
+<p><code>/etc/passwd</code>文件包含系统中的每个用户的一行。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">root:x:0:0:root:/root:/bin/bash
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+john:x:1001:1020:John Doe:/home/john:/bin/bash
+jane:x:1002:1002:Jane Doe:/home/jane:/bin/bash
+john3:x:1003:1003:John Doe3:/home/john3:/bin/bash</pre></td></tr></table>
+</div>
+</div>
+<p>每一行包含 7 个以冒号 (:) 分隔的字段。</p>
+
+<ul>
+<li>用户名   用于登录系统的名称。例如 jane。</li>
+<li>密码    已加密的密码。使用影子密码时，只包含一个 x 字符。</li>
+<li>用户 ID (UID)   用于在系统中表示此用户名的编号。例如，表示用户 jane 的 1002。</li>
+<li>组 ID(GID) 用于表示此用户在系统中的主要组的编号。例如，用户 jane 的 1002。</li>
+<li>注释(GECOS) 一个用于描述用户的可选字段。例如 Jane Doe。该字段可以包含多个逗号分隔的条目。它也可供 finger 等程序使用。GECOS 是过去使用的名称。请在 man 5 passwd 中查阅详细信息。</li>
+<li>主目录   用户的主目录的绝对路径。例如 /home/jane。</li>
+<li>Shell 在用户登录到系统时自动启动的程序。这通常是一个交互式 shell，比如 /bin/bash 或 /bin/tcsh，但它可以是任何程序，不一定是交互式 shell。对于 mail 用户，它是 /sbin/nologin，指示系统 mail 用户无法登录。</li>
+</ul>
+
+<h3 id="etc-group">/etc/group</h3>
+
+<p><code>/etc/group</code>文件包含系统中的每个组的一行。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">root:x:0:
+mail:x:12:
+jane:x:1002:
+john2:x:1020:john3
+john3:x:1003:</pre></td></tr></table>
+</div>
+</div>
+<p>每一行包含 4 个以冒号 (:) 分隔的字段。</p>
+
+<ul>
+<li>组名称   此组的名称。例如 john2。</li>
+<li>密码    已加密的密码。使用影子组密码时，只包含一个 x 字符。</li>
+<li>组 ID(GID) 用于在系统中表示此组的编号。例如表示组 jane 的 1002。</li>
+<li>成员    一个逗号分隔的组成员列表，以此组作为主要组的成员除外。</li>
+</ul>
+
+<h2 id="usermod">usermod</h2>
+
+<p><code>usermod</code>命令用于修改用户信息。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">$ usermod -G sap -d /opt/sap -s /bin/sh harry
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>它的参数含义如下。</p>
+
+<ul>
+<li>-G：修改用户所在的组</li>
+<li>-d：修改用户主密码</li>
+<li>-s：修改用户的Shell</li>
+<li>-L：锁定或挂起帐户。</li>
+<li>-U：解锁帐户。</li>
+<li>-e：设置帐户的有效期。</li>
+<li>-f：密码过期之后到禁用帐户之前的天数。</li>
+</ul>
+
+<p>它可以使用用于 useradd 的大部分选项，但不能为用户创建或填充新主目录。如果需要更改用户的名称，可以指定 -l 或 &ndash;login 选项和新名称。</p>
+
+<p>如果您需要预防用户登录，可以使用 usermod 命令的 -L 选项挂起 或锁定 帐户。可以使用 -U 选项解锁帐户。</p>
+
+<h2 id="userdel">userdel</h2>
+
+<p><code>userdel</code>命令用于删除指定用户。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a61717;background-color:#e3d2d2">#</span> -r参数表示同时删除子目录
+$ userdel -r linuxtechi
+</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>-r</code>或<code>--remove</code>选项来删除用户的主目录及其内容，以及用户的邮件。</p>
+
+<h3 id="影子文件">影子文件</h3>
+
+<p><code>/etc/shadow</code>文件包含已加密的密码，以及密码和帐户有效期信息。</p>
+
+<p>密码可使用多种加密算法之一来进行加密。旧版的系统使用了 DES 或 MD5，但现代系统通常使用 Blowfish、SHA-256 或 SHA-512，或者可能使用 MD5。无论采用哪种加密算法，密码都会加盐，防止两个平常相同的密码生成相同的已加密值。盐是一个可变长度的字段，最长 8 个字符，并以下一个 $ 符号结尾。随后是已加密的密码。</p>
+
+<h3 id="etc-login-defs">/etc/login.defs</h3>
+
+<p>创建用户时的系统默认行为在<code>/etc/login.defs</code>中定义，它是一个文本文件，包含多个与系统登录相关的定义。此文件中的一些值可以控制用户和组的创建，其他值可以控制登录时的系统行为。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">#
+<span style="color:#228b22"># Min/max values for automatic uid selection in useradd</span>
+#
+UID_MIN			 <span style="color:#b452cd">1000</span>
+UID_MAX			<span style="color:#b452cd">60000</span>
+<span style="color:#228b22"># System accounts</span>
+<span style="color:#228b22">#SYS_UID_MIN		  100</span>
+<span style="color:#228b22">#SYS_UID_MAX		  999</span>
+
+#
+<span style="color:#228b22"># Min/max values for automatic gid selection in groupadd</span>
+#
+GID_MIN			 <span style="color:#b452cd">1000</span>
+GID_MAX			<span style="color:#b452cd">60000</span>
+<span style="color:#228b22"># System accounts</span>
+<span style="color:#228b22">#SYS_GID_MIN		  100</span>
+<span style="color:#228b22">#SYS_GID_MAX		  999</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>上面一段定义用户的最小编号是1000，用户组的最小编号是1000。</p>
+
+<h2 id="特殊帐号">特殊帐号</h2>
+
+<p>除了常规用户帐户和系统上的根帐户之外，通常还有一些特殊用途的帐户，用于 FTP、SSH、邮件、新闻等守护进程。</p>
+
+<p>这些帐户通常可以控制文件，不应被普通登录用户访问。因此，它们通常将登录 shell 指定为<code>/sbin/nologin</code>或<code>/bin/false</code>，以便让登录尝试失败。</p>
+
+<h2 id="sudo">sudo</h2>
+
+<p><code>sudo</code>命令让普通用户以根用户的身份执行命令。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#228b22"># 格式</span>
+$ sudo &lt;command&gt;
+
+<span style="color:#228b22"># 示例</span>
+$ sudo ls</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>-l</code>参数列出当前用户以根用户身份可以执行的命令。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo -l</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>-i</code>参数让当前用户进入根用户的 shell。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo -i</code></pre></td></tr></table>
+</div>
+</div>
+<p><code>-s</code>参数让本次 sudo 的有效期直到对话终止。默认情况下， sudo 的有效期只有15分钟，过了这段时候，就会提示用户再次输入密码。</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo -s
+<span style="color:#cd5555">````</span>
+
+<span style="color:#cd5555">`</span>-k<span style="color:#cd5555">`</span>参数使得当前 sudo 立刻到期。注意，该参数对于<span style="color:#cd5555">`</span>-s<span style="color:#cd5555">`</span>参数创造的对话无效。</code></pre></td></tr></table>
+</div>
+</div>
+<p>bash
+$ sudo -k
+```</p>
+
+                        </div>
+
+                        <div class="asset-footer">
+                            <h3>文档信息</h3>
+                            <ul>
+                                <li>版权声明：自由转载-非商用-非衍生-保持署名（<a
+                                        href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh">创意共享3.0许可证</a>）
+                                </li>
+                                <li>发表日期： <abbr class="published"
+                                        title=".Date">2017年2月2日</abbr></li>
+                            </ul>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                
+                
+                <div id="related_entries">
+
+                    <h2>相关文章</h2>
+                    <ul>
+                        
+                        <li><strong>2019.07.15: <a href="https://wellfrog27.github.io/blog/linux/shells/fish-shell/"
+                                    title="Fish Shell的用法">Fish Shell的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.06.26: <a href="https://wellfrog27.github.io/blog/linux/ssh/port-forwarding/"
+                                    title="SSH 端口转发">SSH 端口转发</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.30: <a href="https://wellfrog27.github.io/blog/linux/basic/"
+                                    title="Linux的用法">Linux的用法</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                        <li><strong>2019.03.09: <a href="https://wellfrog27.github.io/blog/linux/apache/config/"
+                                    title="配置文件">配置文件</a></strong>
+
+                            <div class="entry-body">
+                                暂无描述，请点击阅读全文
+                            </div>
+
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="click-img-container">
+    <img src="" alt="Big Image">
+</div>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "lin-hao-rong-de-wang-luo-ri-zhi" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+<div id="footer">
+  <div id="footer-inner">
+    <div id="footer-content">
+      <p>2019 &copy; <a title="电子邮件" href="mailto:yifeng.ruan@gmail.com" target="_blank">联系方式</a>
+        
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    
+    
+</body>
+
+</html>

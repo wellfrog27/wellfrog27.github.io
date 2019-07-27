@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C语言 on 阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/blog/clang/</link>
+    <description>Recent content in C语言 on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    
+        <atom:link href="https://wellfrog27.github.io/blog/clang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>变量的声明</title>
+      <link>https://wellfrog27.github.io/blog/clang/declaration/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/declaration/</guid>
+      <description>声明的结构 声明一个变量时，前面可以加上三类修饰词。 类型符（Type specifier）：变量的类型 储存符（Storage class）：变量储存在哪里 修饰符（Type qualifier）：一些其他属性 类</description>
+    </item>
+    
+    <item>
+      <title>运算符</title>
+      <link>https://wellfrog27.github.io/blog/clang/operator/</link>
+      <pubDate>Sun, 10 Feb 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/operator/</guid>
+      <description>C 语言的运算符非常多，一共有 50 多种。 算术运算符 +：一元的正值运算符 -：一元的负值运算符 +：加法运算符 -：减法运算符 *：乘法运算符 /：除法运算符 %：余值运算符 赋值运算符 = 赋值运算符 += 加法赋值运算符 -= 减法</description>
+    </item>
+    
+    <item>
+      <title>语句</title>
+      <link>https://wellfrog27.github.io/blog/clang/statement/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/statement/</guid>
+      <description>语句（statement）用来执行某个命令，通常没有返回值。 if 语句 if语句用于判断。 1 if (expression) statement 下面是一个例子。 1 2 if (line_num == MAX_LINES) line_num = 0; 多个语句组成的复合语句，必须写在大括号里面。 1 2 3 4 if (line_num == MAX_LINES) { line_num = 0; page_num++; } i</description>
+    </item>
+    
+    <item>
+      <title>字符串</title>
+      <link>https://wellfrog27.github.io/blog/clang/string/</link>
+      <pubDate>Tue, 19 Jun 2018 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/string/</guid>
+      <description>转义序列 \a 响铃 \b 退格 \n 换行符 \t 水平制表符 \&amp;rdquo; 双引号 \ 斜杠</description>
+    </item>
+    
+    <item>
+      <title>变量</title>
+      <link>https://wellfrog27.github.io/blog/clang/variable/</link>
+      <pubDate>Wed, 06 Sep 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/variable/</guid>
+      <description>声明 变量名只能包含字母、数字和下划线，但是必须使用字母或下划线开头。 C 语言的变量，必须先声明后使用。声明的时候，必须把变量的类型告诉编译器。 1 int height; 上面代码将变量height，声明为int类型。 如果几个</description>
+    </item>
+    
+    <item>
+      <title>输入与输出</title>
+      <link>https://wellfrog27.github.io/blog/clang/io/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/io/</guid>
+      <description>printf printf函数用于格式化输出。 1 printf(&amp;#34;Height: %d\n&amp;#34;, height); printf的第一个参数是格式字符串，里面使用百分号%表示占位符，上面代码的%d就是占位符。printf的第二个参数代表填入第一个占位符的值，第三个参数代表第</description>
+    </item>
+    
+    <item>
+      <title>表达式</title>
+      <link>https://wellfrog27.github.io/blog/clang/expression/</link>
+      <pubDate>Fri, 09 Sep 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/expression/</guid>
+      <description>表达式（expression）是一个计算式，会返回一个值。 逻辑表达式 逻辑表达式返回0或1，表示真假。C 语言中，0表示假，1表示真。比如，20 &amp;gt; 12返回1，12 &amp;gt; 20返回0。 但是，对于逻辑运算符来说，任</description>
+    </item>
+    
+    <item>
+      <title>数据类型</title>
+      <link>https://wellfrog27.github.io/blog/clang/type/</link>
+      <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/type/</guid>
+      <description>int C 语言的整数类型共有8种。 short int unsigned short int int unsigned int long int unsigned long int long long int unsigned long long int 整数的进制 整数常量表示的时候，可以采用十进制、八进制、十六进制。 八进制使用0作为前缀，比如017、0377。 十六进制使用0x作为前缀</description>
+    </item>
+    
+    <item>
+      <title>基本语法</title>
+      <link>https://wellfrog27.github.io/blog/clang/basic/</link>
+      <pubDate>Sun, 15 Feb 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/basic/</guid>
+      <description>最简单的示例 下面是一个简单的 C 程序hello.c。 1 2 3 4 5 6 # include &amp;lt;stdio.h&amp;gt; int main(void) { printf(&amp;#34;Hello World\n&amp;#34;); return 0; } 第一行是预处理信息，#表示是预处理指令，这里表示标准库stdio.h。注意，指令的尾部不需要分号表示结束。 第三行是主</description>
+    </item>
+    
+    <item>
+      <title>宏</title>
+      <link>https://wellfrog27.github.io/blog/clang/macro/</link>
+      <pubDate>Sun, 16 Feb 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/clang/macro/</guid>
+      <description>define语句可以用来定义常量。 1 #define RECIPROCAL_OF_PI (1.0f / 3.14159f) 注意，宏的名字一般都使用大写字母。 注意，预处理语句不用分号结尾。每个语句要占据一行。</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on 阮一峰的个人网站</title>
+    <link>https://wellfrog27.github.io/blog/javascript/</link>
+    <description>Recent content in Javascript on 阮一峰的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <managingEditor>yifeng.ruan@gmail.com (阮一峰)</managingEditor>
+    <webMaster>yifeng.ruan@gmail.com (阮一峰)</webMaster>
+    <copyright>&amp;copy; 2019</copyright>
+    
+        <atom:link href="https://wellfrog27.github.io/blog/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Angular.js的用法</title>
+      <link>https://wellfrog27.github.io/blog/javascript/angular/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/javascript/angular/</guid>
+      <description>Angular的典型句法之一。 1 &amp;lt;div ng-bind=”username” &amp;gt;&amp;lt;/div&amp;gt; 模板 1 2 3 4 5 &amp;lt;ul&amp;gt; &amp;lt;li ng-repeat=&amp;#34;framework in frameworks&amp;#34; title=&amp;#34;{{framework.description}}&amp;#34;&amp;gt; {{framework.name}} &amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; 双向绑定 1 2 &amp;lt;input ng-model=&amp;#34;user.name&amp;#34; type=&amp;#34;text&amp;#34; /&amp;gt; Hello {{user.name}}!</description>
+    </item>
+    
+    <item>
+      <title>Backbone.js的用法</title>
+      <link>https://wellfrog27.github.io/blog/javascript/backbone/</link>
+      <pubDate>Sat, 22 Aug 2015 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/javascript/backbone/</guid>
+      <description>事件接口 Backbone.js通过事件，达到各个函数之间的通信。 发布者是发布事件的对象，监听者是监听事件的对象，它们都必须部署事件接口。 监听者可以使用listenTo方法，监听发布者。 1 subscriber.listenTo(publisher,eventname,callback); 发布者通过t</description>
+    </item>
+    
+    <item>
+      <title>JavaScript测试</title>
+      <link>https://wellfrog27.github.io/blog/javascript/testing/</link>
+      <pubDate>Sun, 30 Nov 2014 00:00:00 +0000</pubDate>
+      <author>yifeng.ruan@gmail.com (阮一峰)</author>
+      <guid>https://wellfrog27.github.io/blog/javascript/testing/</guid>
+      <description>概述 Web应用程序越来越复杂，这意味着有更多的可能出错。测试是帮助我们提高代码质量、降低错误的最好方法和工具之一。 单元测试 单元测试（unit testing）指的是以模块为单位，对软件进行测试。通常来说</description>
+    </item>
+    
+    
+  </channel>
+</rss>
